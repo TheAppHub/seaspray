@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply font-body text-primary-700 bg-white;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-display text-primary-900;
+	}
+}
+
+@layer components {
+	.prose {
+		@apply font-body;
+	}
+
+	.prose h1,
+	.prose h2,
+	.prose h3,
+	.prose h4,
+	.prose h5,
+	.prose h6 {
+		@apply font-display text-primary-900;
+	}
+
+	.prose a {
+		@apply text-secondary-600 hover:text-secondary-700;
+	}
+}
+
+/* Custom styles can be added below */

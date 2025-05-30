@@ -1,0 +1,45 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+  # 标签: /tags
+  # 分类: /categories
+
+# Sidebar
+sidebar: right
+widgets:
+  - category
+  - tag
+  - recent_posts
+  - tagcloud
+  - archive
+  - links
+
+# Footer
+footer:
+  # Specify a date when the site was setup. If not defined, current year will be used.
+  since: 2024
+  # Icon between year and copyright info.
+  icon: heart
+  # If not defined, `author` from Hexo main config will be used.
+  copyright: Seaspray
+  # Hexo link (Powered by Hexo).
+  powered: true
+
+# Creative Commons 4.0 International License.
+# http://creativecommons.org/
+# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+creative_commons: by-nc-sa
+sidebar_icon: true
+# Change the color of the sidebar icon.
+sidebar_icon_color: "#3F51B5"
+
+# Miscelaneous
+google_analytics:
+favicon: /favicon.png
+twitter:
+  id:
+  google_plus:
+  fb_admins:
+  fb_app_id:

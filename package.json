@@ -1,0 +1,42 @@
+{
+	"name": "hexo-site",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"build": "hexo generate",
+		"clean": "hexo clean",
+		"deploy": "hexo deploy",
+		"server": "hexo server",
+		"css:build": "tailwindcss -i ./source/css/main.css -o ./source/css/tailwind.css --minify",
+		"css:watch": "tailwindcss -i ./source/css/main.css -o ./source/css/tailwind.css --watch",
+		"dev:tailwind": "tailwindcss -i ./source/css/main.css -o ./source/css/tailwind.css --watch",
+		"dev:hexo": "hexo server",
+		"dev": "hexo clean && concurrently \"npm run dev:tailwind\" \"npm run dev:hexo\""
+	},
+	"hexo": {
+		"version": "7.3.0"
+	},
+	"dependencies": {
+		"hexo": "^7.3.0",
+		"hexo-generator-archive": "^2.0.0",
+		"hexo-generator-category": "^2.0.0",
+		"hexo-generator-index": "^3.0.0",
+		"hexo-generator-tag": "^2.0.0",
+		"hexo-renderer-ejs": "^2.0.0",
+		"hexo-renderer-marked": "^7.0.0",
+		"hexo-renderer-stylus": "^3.0.1",
+		"hexo-server": "^3.0.0",
+		"hexo-theme-landscape": "^1.0.0"
+	},
+	"packageManager": "yarn@3.7.0+sha512.c0bef4cb2a32230b4baa5cab387b4051b47f6242ca8e2b3f9dbf3b7a3d0c729efb4bff872f753b977b2788e4a9a4af30bfc663885de15af1fde122ed0a268810",
+	"devDependencies": {
+		"@tailwindcss/forms": "^0.5.7",
+		"@tailwindcss/typography": "^0.5.10",
+		"autoprefixer": "^10.4.17",
+		"concurrently": "^8.2.2",
+		"flowbite": "^2.3.0",
+		"postcss": "^8.4.35",
+		"postcss-cli": "^11.0.0",
+		"tailwindcss": "^3.4.1"
+	}
+}

@@ -1,0 +1,55 @@
+<%- partial('_partial/head') %>
+
+<div class="min-h-screen bg-gray-50 dark:bg-gray-900">
+	<div class="container mx-auto px-4 py-8">
+		<article class="prose lg:prose-xl mx-auto">
+			<header class="mb-8">
+				<h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+					<%= page.title %>
+				</h1>
+				<div class="flex items-center text-gray-600 dark:text-gray-400">
+					<time datetime="<%= date_xml(page.date) %>" class="text-sm">
+						<%= date(page.date) %>
+					</time>
+					<% if (page.categories && page.categories.length) { %>
+					<span class="mx-2">•</span>
+					<div class="flex space-x-2">
+						<% page.categories.each(function(category) { %>
+						<a
+							href="<%- url_for(category.path) %>"
+							class="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+						>
+							<%= category.name %>
+						</a>
+						<% }); %>
+					</div>
+					<% } %>
+				</div>
+			</header>
+
+			<div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+				<%- page.content %>
+			</div>
+
+			<% if (page.tags && page.tags.length) { %>
+			<div class="mt-8">
+				<h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+					Tags
+				</h2>
+				<div class="flex flex-wrap gap-2">
+					<% page.tags.each(function(tag) { %>
+					<a
+						href="<%- url_for(tag.path) %>"
+						class="px-3 py-1 text-sm bg-gray-100 text-gray-800 rounded-full hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
+					>
+						<%= tag.name %>
+					</a>
+					<% }); %>
+				</div>
+			</div>
+			<% } %>
+		</article>
+	</div>
+</div>
+
+<%- partial('_partial/footer') %>
