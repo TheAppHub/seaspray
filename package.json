@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"build": "hexo generate",
+		"build": "hexo generate && npm run build:tailwind",
 		"clean": "hexo clean",
 		"deploy": "hexo deploy",
 		"server": "hexo server",
@@ -11,7 +11,8 @@
 		"css:watch": "tailwindcss -i ./source/css/main.css -o ./source/css/tailwind.css --watch",
 		"dev:tailwind": "tailwindcss -i ./source/css/main.css -o ./source/css/tailwind.css --watch",
 		"dev:hexo": "hexo server",
-		"dev": "hexo clean && concurrently \"npm run dev:tailwind\" \"npm run dev:hexo\""
+		"dev": "hexo clean && concurrently \"npm run dev:tailwind\" \"npm run dev:hexo\"",
+		"build:tailwind": "tailwindcss -i ./source/css/main.css -o ./source/css/tailwind.css --minify"
 	},
 	"hexo": {
 		"version": "7.3.0"
