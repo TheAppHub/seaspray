@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-	body {
-		@apply font-body text-primary-700 bg-white;
+	html {
+		font-family: "Open Sans", system-ui, sans-serif;
 	}
 
 	h1,
@@ -13,13 +13,13 @@
 	h4,
 	h5,
 	h6 {
-		@apply font-display text-primary-900;
+		font-family: "Montserrat", system-ui, sans-serif;
 	}
 }
 
 @layer components {
 	.prose {
-		@apply font-body;
+		@apply text-primary-200;
 	}
 
 	.prose h1,
@@ -28,11 +28,11 @@
 	.prose h4,
 	.prose h5,
 	.prose h6 {
-		@apply font-display text-primary-900;
+		@apply text-white;
 	}
 
 	.prose a {
-		@apply text-secondary-600 hover:text-secondary-700;
+		@apply text-primary-300 hover:text-primary-200;
 	}
 }
 

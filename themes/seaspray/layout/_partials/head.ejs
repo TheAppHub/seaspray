@@ -1,20 +1,37 @@
-<meta charset="utf-8" />
-<title><%- config.title %></title>
-<meta
-	name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no"
-/>
-<meta name="description" content="<%= config.description %>" />
-<link
-	rel="alternate"
-	href="<%- config.url %>/feed.xml"
-	title="<%- config.title %>"
-	type="application/atom+xml"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-	href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
-	rel="stylesheet"
-/>
-<link rel="stylesheet" href="<%- url_for('/css/tailwind.css') %>" />
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%= config.title %></title>
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Tailwind CSS -->
+		<link rel="stylesheet" href="/css/tailwind.css" />
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="/css/main.css" />
+	</head>
+
+	<meta charset="utf-8" />
+	<meta name="description" content="<%= config.description %>" />
+	<link
+		rel="alternate"
+		href="<%- config.url %>/feed.xml"
+		title="<%- config.title %>"
+		type="application/atom+xml"
+	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+		rel="stylesheet"
+	/>
+</html>

@@ -36,8 +36,8 @@ module.exports = {
 				},
 			},
 			fontFamily: {
-				sans: ["Cormorant Garamond", "serif"],
-				display: ["Playfair Display", "serif"],
+				sans: ["Open Sans", "sans-serif"],
+				display: ["Montserrat", "sans-serif"],
 				body: ["Montserrat", "sans-serif"],
 			},
 			typography: {
