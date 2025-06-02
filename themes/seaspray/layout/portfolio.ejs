@@ -1,0 +1,113 @@
+<%- partial('_partials/header') %>
+
+<main class="bg-primary-900 min-h-screen">
+	<article class="container mx-auto px-4 py-16">
+		<!-- Hero Section -->
+		<div class="max-w-4xl mx-auto mb-16">
+			<h1 class="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+				<%= page.title %>
+			</h1>
+			<div class="flex items-center space-x-4 text-primary-200">
+				<span><%= page.project_details.location %></span>
+				<span>•</span>
+				<span
+					>Completed: <%= new
+					Date(page.project_details.completion_date).toLocaleDateString()
+					%></span
+				>
+			</div>
+		</div>
+
+		<!-- Featured Image -->
+		<div class="max-w-6xl mx-auto mb-16">
+			<img
+				src="<%= page.featured_image %>"
+				alt="<%= page.title %>"
+				class="w-full h-[500px] object-cover rounded-lg shadow-xl"
+			/>
+		</div>
+
+		<!-- Project Details -->
+		<div class="max-w-4xl mx-auto mb-16">
+			<div class="bg-primary-800 rounded-lg p-8">
+				<h2 class="text-2xl font-display font-bold text-white mb-6">
+					Project Details
+				</h2>
+				<div class="grid md:grid-cols-2 gap-8">
+					<div>
+						<dl class="space-y-4">
+							<div>
+								<dt class="text-primary-300">Pool Type</dt>
+								<dd class="text-white">
+									<%= page.project_details.pool_type %>
+								</dd>
+							</div>
+							<div>
+								<dt class="text-primary-300">Size</dt>
+								<dd class="text-white"><%= page.project_details.size %></dd>
+							</div>
+							<div>
+								<dt class="text-primary-300">Location</dt>
+								<dd class="text-white"><%= page.project_details.location %></dd>
+							</div>
+						</dl>
+					</div>
+					<div>
+						<h3 class="text-lg font-display font-bold text-white mb-4">
+							Features
+						</h3>
+						<ul class="space-y-2">
+							<% page.project_details.features.forEach(function(feature) { %>
+							<li class="flex items-center text-white">
+								<svg
+									class="w-5 h-5 text-primary-400 mr-2"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"
+									></path>
+								</svg>
+								<%= feature %>
+							</li>
+							<% }); %>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Content -->
+		<div class="max-w-4xl mx-auto mb-16">
+			<div class="prose prose-lg prose-invert max-w-none">
+				<%- page.content %>
+			</div>
+		</div>
+
+		<!-- Gallery -->
+		<% if (page.gallery && page.gallery.length > 0) { %>
+		<div class="max-w-6xl mx-auto">
+			<h2 class="text-3xl font-display font-bold text-white mb-8">
+				Project Gallery
+			</h2>
+			<div class="grid md:grid-cols-3 gap-6">
+				<% page.gallery.forEach(function(image) { %>
+				<div class="aspect-w-4 aspect-h-3">
+					<img
+						src="<%= image %>"
+						alt="Gallery image"
+						class="w-full h-full object-cover rounded-lg shadow-lg"
+					/>
+				</div>
+				<% }); %>
+			</div>
+		</div>
+		<% } %>
+	</article>
+</main>
+
+<%- partial('_partials/footer') %>
