@@ -1,12 +1,37 @@
 <div class="relative min-h-screen">
 	<!-- Hero Section with Background Image -->
 	<div class="absolute inset-0 z-0">
-		<img
-			src="/img/hero-pool.jpg"
-			alt="Seaspray Pools"
-			class="w-full h-full object-cover"
-		/>
-		<div class="absolute inset-0 bg-primary-900/70"></div>
+		<div class="relative w-full h-full">
+			<img
+				src="/img/hero-pool.jpg"
+				alt="Luxury Pool Design"
+				class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-all ease-in-out duration-[3000ms]"
+				data-slide="1"
+				loading="eager"
+			/>
+			<img
+				src="/img/hero-pool-1.jpg"
+				alt="Modern Pool Design"
+				class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-all ease-in-out duration-[3000ms]"
+				data-slide="2"
+				loading="lazy"
+			/>
+			<img
+				src="/img/hero-pool-2.jpg"
+				alt="Contemporary Pool Design"
+				class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-all ease-in-out duration-[3000ms]"
+				data-slide="3"
+				loading="lazy"
+			/>
+			<img
+				src="/img/hero-pool-3.jpg"
+				alt="Elegant Pool Design"
+				class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-all ease-in-out duration-[3000ms]"
+				data-slide="4"
+				loading="lazy"
+			/>
+			<div class="absolute inset-0 bg-primary-900/70"></div>
+		</div>
 	</div>
 
 	<!-- Content Section -->
@@ -34,3 +59,53 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const slides = document.querySelectorAll(".hero-slide");
+		let currentSlide = 1;
+		const totalSlides = slides.length;
+		const transitionDelay = 6000; // 6 seconds between transitions
+
+		// Preload next image
+		function preloadNextImage() {
+			const nextSlideNum = (currentSlide % totalSlides) + 1;
+			const nextSlide = document.querySelector(
+				`[data-slide="${nextSlideNum}"]`,
+			);
+			if (nextSlide) {
+				nextSlide.loading = "eager";
+			}
+		}
+
+		function nextSlide() {
+			// Hide current slide
+			slides.forEach((slide) => {
+				if (parseInt(slide.dataset.slide) === currentSlide) {
+					slide.classList.remove("opacity-100");
+					slide.classList.add("opacity-0");
+				}
+			});
+
+			// Move to next slide
+			currentSlide = (currentSlide % totalSlides) + 1;
+
+			// Show next slide
+			slides.forEach((slide) => {
+				if (parseInt(slide.dataset.slide) === currentSlide) {
+					slide.classList.remove("opacity-0");
+					slide.classList.add("opacity-100");
+				}
+			});
+
+			// Preload the next image
+			preloadNextImage();
+		}
+
+		// Start the slideshow
+		setInterval(nextSlide, transitionDelay);
+
+		// Preload the second image initially
+		preloadNextImage();
+	});
+</script>
