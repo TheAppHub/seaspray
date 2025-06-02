@@ -1,55 +1,95 @@
-<%- partial('_partial/head') %>
+<%- partial('_partials/header') %>
 
-<div class="min-h-screen bg-gray-50 dark:bg-gray-900">
-	<div class="container mx-auto px-4 py-8">
-		<article class="prose lg:prose-xl mx-auto">
-			<header class="mb-8">
-				<h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-					<%= page.title %>
-				</h1>
-				<div class="flex items-center text-gray-600 dark:text-gray-400">
-					<time datetime="<%= date_xml(page.date) %>" class="text-sm">
-						<%= date(page.date) %>
-					</time>
-					<% if (page.categories && page.categories.length) { %>
-					<span class="mx-2">•</span>
-					<div class="flex space-x-2">
-						<% page.categories.each(function(category) { %>
-						<a
-							href="<%- url_for(category.path) %>"
-							class="text-sm text-blue-600 dark:text-blue-400 hover:underline"
-						>
-							<%= category.name %>
-						</a>
-						<% }); %>
-					</div>
-					<% } %>
-				</div>
-			</header>
-
-			<div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-				<%- page.content %>
-			</div>
-
-			<% if (page.tags && page.tags.length) { %>
-			<div class="mt-8">
-				<h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-					Tags
-				</h2>
+<main class="bg-primary-900 min-h-screen">
+	<article class="container mx-auto px-4 py-16">
+		<!-- Hero Section -->
+		<div class="max-w-4xl mx-auto mb-16">
+			<h1 class="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+				<%= page.title %>
+			</h1>
+			<div class="flex items-center space-x-4 text-primary-200">
+				<time datetime="<%= page.date.toISOString() %>">
+					<%= page.date.toLocaleDateString() %>
+				</time>
+				<% if (page.tags && page.tags.length > 0) { %>
+				<span>•</span>
 				<div class="flex flex-wrap gap-2">
-					<% page.tags.each(function(tag) { %>
-					<a
-						href="<%- url_for(tag.path) %>"
-						class="px-3 py-1 text-sm bg-gray-100 text-gray-800 rounded-full hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
-					>
-						<%= tag.name %>
-					</a>
+					<% page.tags.forEach(function(tag) { %>
+					<span class="text-primary-300">#<%= tag %></span>
 					<% }); %>
 				</div>
+				<% } %>
 			</div>
-			<% } %>
-		</article>
-	</div>
-</div>
+		</div>
 
-<%- partial('_partial/footer') %>
+		<!-- Featured Image -->
+		<% if (page.featured_image) { %>
+		<div class="max-w-6xl mx-auto mb-16">
+			<img
+				src="<%= page.featured_image %>"
+				alt="<%= page.title %>"
+				class="w-full h-[400px] object-cover rounded-lg shadow-xl"
+			/>
+		</div>
+		<% } %>
+
+		<!-- Content -->
+		<div class="max-w-4xl mx-auto mb-16">
+			<div class="prose prose-lg prose-invert max-w-none">
+				<%- page.content %>
+			</div>
+		</div>
+
+		<!-- Gallery -->
+		<% if (page.gallery && page.gallery.length > 0) { %>
+		<div class="max-w-6xl mx-auto">
+			<h2 class="text-3xl font-display font-bold text-white mb-8">Gallery</h2>
+			<div class="grid md:grid-cols-3 gap-6">
+				<% page.gallery.forEach(function(image) { %>
+				<div class="aspect-w-4 aspect-h-3">
+					<img
+						src="<%= image %>"
+						alt="Gallery image"
+						class="w-full h-full object-cover rounded-lg shadow-lg"
+					/>
+				</div>
+				<% }); %>
+			</div>
+		</div>
+		<% } %>
+
+		<!-- Related Posts -->
+		<% if (page.categories.includes('blog')) { %>
+		<div class="max-w-4xl mx-auto mt-16">
+			<h2 class="text-3xl font-display font-bold text-white mb-8">
+				Related Posts
+			</h2>
+			<div class="grid md:grid-cols-2 gap-8">
+				<% site.posts.filter(post => post.categories.includes('blog') &&
+				post.path !== page.path && post.tags.some(tag =>
+				page.tags.includes(tag)) ).limit(2).each(function(post) { %>
+				<article class="bg-primary-800 rounded-lg overflow-hidden shadow-xl">
+					<a href="<%- url_for(post.path) %>" class="block">
+						<% if (post.featured_image) { %>
+						<img
+							src="<%= post.featured_image %>"
+							alt="<%= post.title %>"
+							class="w-full h-48 object-cover"
+						/>
+						<% } %>
+						<div class="p-6">
+							<h3 class="text-xl font-display font-bold text-white mb-2">
+								<%= post.title %>
+							</h3>
+							<p class="text-primary-200 line-clamp-2"><%= post.excerpt %></p>
+						</div>
+					</a>
+				</article>
+				<% }); %>
+			</div>
+		</div>
+		<% } %>
+	</article>
+</main>
+
+<%- partial('_partials/footer') %>
