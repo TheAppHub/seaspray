@@ -19,29 +19,24 @@
 					data-carousel-item
 				>
 					<blockquote>
-						<p class="text-lg font-medium text-white sm:text-2xl">
+						<p class="text-display font-medium text-white">
 							"<%= testimonial.content %>"
 						</p>
 					</blockquote>
 					<figcaption class="flex justify-center items-center mt-6 space-x-3">
-						<img
-							class="w-12 h-12 rounded-full"
-							src="<%= testimonial.image %>"
-							alt="<%= testimonial.name %>"
-						/>
 						<div class="flex items-center divide-x-2 divide-primary-600">
 							<div class="pr-3 font-medium text-white">
 								<%= testimonial.name %>
 							</div>
 							<div class="pl-3 text-sm text-primary-300">
-								<%= testimonial.position %>
+								<%= testimonial.source %>
 							</div>
 						</div>
 					</figcaption>
 					<div class="flex items-center justify-center mt-4">
 						<% for(let i = 0; i < testimonial.rating; i++) { %>
 						<svg
-							class="w-5 h-5 text-primary-400"
+							class="w-5 h-5 text-secondary-400"
 							aria-hidden="true"
 							xmlns="http://www.w3.org/2000/svg"
 							fill="currentColor"
