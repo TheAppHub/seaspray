@@ -12,7 +12,12 @@
 		"dev:tailwind": "tailwindcss -i ./source/css/main.css -o ./source/css/tailwind.css --watch",
 		"dev:hexo": "hexo server",
 		"dev": "hexo clean && concurrently \"npm run dev:tailwind\" \"npm run dev:hexo\"",
-		"build:tailwind": "tailwindcss -i ./source/css/main.css -o ./source/css/tailwind.css --minify"
+		"build:tailwind": "tailwindcss -i ./source/css/main.css -o ./source/css/tailwind.css --minify",
+		"prepare": "husky install",
+		"precommit": "lint-staged",
+		"snyk:test": "snyk test",
+		"snyk:monitor": "snyk monitor",
+		"snyk:fix": "snyk wizard"
 	},
 	"hexo": {
 		"version": "7.3.0"
@@ -36,8 +41,20 @@
 		"autoprefixer": "^10.4.17",
 		"concurrently": "^8.2.2",
 		"flowbite": "^2.3.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.1.0",
 		"postcss": "^8.4.35",
 		"postcss-cli": "^11.0.0",
+		"snyk": "^1.1297.1",
 		"tailwindcss": "^3.4.1"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": [
+			"eslint --fix",
+			"prettier --write"
+		],
+		"*.{json,md}": [
+			"prettier --write"
+		]
 	}
 }
