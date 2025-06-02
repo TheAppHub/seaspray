@@ -2347,6 +2347,10 @@ h1,
   height: 100%;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -3920,6 +3924,10 @@ h1,
 @media (min-width: 640px) {
   .sm\:h-48 {
     height: 12rem;
+  }
+
+  .sm\:h-72 {
+    height: 18rem;
   }
 
   .sm\:flex-row {

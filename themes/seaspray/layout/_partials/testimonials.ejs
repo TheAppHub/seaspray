@@ -9,9 +9,16 @@
 			<p class="text-xl text-primary-200"><%= testimonials.subtitle %></p>
 		</div>
 
-		<div id="testimonial-carousel" class="relative" data-carousel="slide">
+		<div
+			id="testimonial-carousel"
+			class="relative"
+			data-carousel="slide"
+			data-carousel-interval="5000"
+			data-carousel-ride="true"
+			data-carousel-indicators="true"
+		>
 			<div
-				class="overflow-x-hidden overflow-y-visible relative mx-auto max-w-screen-md h-52 rounded-lg sm:h-48"
+				class="overflow-x-hidden overflow-y-visible relative mx-auto max-w-screen-md h-64 rounded-lg sm:h-72"
 			>
 				<% testimonials.testimonials.forEach((testimonial, index) => { %>
 				<figure
