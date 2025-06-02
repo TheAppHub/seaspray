@@ -1213,7 +1213,7 @@ input:checked + .toggle-bg {
 }
 
 html {
-  font-family: "Open Sans", system-ui, sans-serif;
+  font-family: "Montserrat", system-ui, sans-serif;
 }
 
 h1,
@@ -1222,7 +1222,7 @@ h1,
 	h4,
 	h5,
 	h6 {
-  font-family: "Montserrat", system-ui, sans-serif;
+  font-family: "Playfair Display", system-ui, sans-serif;
 }
 
 .container {
@@ -2781,14 +2781,14 @@ h1,
   background-color: rgb(235 245 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(28 100 242 / var(--tw-bg-opacity, 1));
-}
-
 .bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(26 86 219 / var(--tw-bg-opacity, 1));
+}
+
+.bg-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 56 118 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gray-100 {
@@ -2865,15 +2865,6 @@ h1,
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-blue-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(35 56 118 / var(--tw-bg-opacity, 1));
-}
-
-.bg-opacity-20 {
-  --tw-bg-opacity: 0.2;
 }
 
 .bg-opacity-50 {
@@ -2974,6 +2965,11 @@ h1,
   padding-bottom: 0.625rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2982,11 +2978,6 @@ h1,
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .pl-3 {
@@ -3103,6 +3094,11 @@ h1,
   color: rgb(30 66 159 / var(--tw-text-opacity, 1));
 }
 
+.text-blue-900 {
+  --tw-text-opacity: 1;
+  color: rgb(35 56 118 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
@@ -3171,11 +3167,6 @@ h1,
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-blue-900 {
-  --tw-text-opacity: 1;
-  color: rgb(35 56 118 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -3327,13 +3318,25 @@ h1,
 .bg-animated-primary {
   background-image: linear-gradient(
 			-45deg,
-			#000b14,
 			#0a1b26,
 			#1a2b3d,
 			#2a3f54
 		);
   background-size: 400% 400%;
   animation: bg-gradient-move 15s ease infinite;
+}
+
+@font-face {
+  font-family: "Retro";
+
+  src: url("/themes/seaspray/source/fonts/RetroSignatureRegular.woff2")
+		format("woff2");
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
 }
 
 /* Custom styles can be added below */
@@ -3603,9 +3606,9 @@ h1,
   background-color: rgb(10 27 38 / var(--tw-bg-opacity, 1)) !important;
 }
 
-.hover\:bg-blue-700:hover {
+.hover\:bg-blue-50:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(26 86 219 / var(--tw-bg-opacity, 1));
+  background-color: rgb(235 245 255 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-blue-800:hover {
@@ -3651,15 +3654,6 @@ h1,
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-blue-50:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(235 245 255 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-opacity-30:hover {
-  --tw-bg-opacity: 0.3;
 }
 
 .hover\:text-blue-600:hover {

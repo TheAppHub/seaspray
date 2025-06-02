@@ -1,19 +1,17 @@
 <section class="py-16">
 	<div class="container mx-auto px-4">
 		<div class="mx-auto max-w-screen-sm text-center mb-12">
-			<h2 class="text-4xl font-display font-bold text-white mb-4">
-				Featured Projects
-			</h2>
+			<h2 class="text-4xl font-bold text-white mb-4">Featured Projects</h2>
 			<p class="text-xl text-primary-200">
 				Explore our award-winning pool designs and transformations
 			</p>
 		</div>
 		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-			<% const portfolioPosts = site.posts.filter(post => {
-				if (!post.categories || !post.categories.data) return false;
-				return post.categories.data.some(cat => cat.name === 'portfolio') && post.featured;
-			}).sort((a, b) => a.featured - b.featured);
-			if (portfolioPosts.length > 0) { portfolioPosts.forEach(post => { %>
+			<% const portfolioPosts = site.posts.filter(post => { if (!post.categories
+			|| !post.categories.data) return false; return
+			post.categories.data.some(cat => cat.name === 'portfolio') &&
+			post.featured; }).sort((a, b) => a.featured - b.featured); if
+			(portfolioPosts.length > 0) { portfolioPosts.forEach(post => { %>
 			<div class="rounded-lg overflow-hidden shadow-lg bg-primary-800">
 				<a href="<%- url_for(post.path) %>">
 					<img
