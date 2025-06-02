@@ -110,3 +110,23 @@ deploy:
 
 # Custom CSS
 css: ["css/main.css"]
+
+# Address
+address:
+  street: 829 Burwood Highway
+  city: Ferntree Gully
+  state: Victoria
+  zip: 3156
+  country: Australia
+
+# Phone
+phone: 03 8756 4444
+
+# Email
+email: sales@seaspraypools.com.au
+
+# Facebook
+facebook: https://www.facebook.com/seaspraypoolsaustralia/
+
+# Instagram
+instagram: https://www.instagram.com/seaspraypools/

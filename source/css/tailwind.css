@@ -2199,6 +2199,10 @@ h1,
   margin-left: 0px;
 }
 
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -2251,17 +2255,6 @@ h1,
   margin-top: 2rem;
 }
 
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
-.line-clamp-2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-
 .block {
   display: block;
 }
@@ -2312,10 +2305,6 @@ h1,
 
 .h-4 {
   height: 1rem;
-}
-
-.h-48 {
-  height: 12rem;
 }
 
 .h-5 {
@@ -2378,6 +2367,10 @@ h1,
   width: 1rem;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -2400,10 +2393,6 @@ h1,
 
 .w-full {
   width: 100%;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .max-w-2xl {
@@ -2836,6 +2825,11 @@ h1,
   background-color: rgb(64 86 107 / var(--tw-bg-opacity, 1));
 }
 
+.bg-primary-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 63 84 / var(--tw-bg-opacity, 1));
+}
+
 .bg-primary-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(26 43 61 / var(--tw-bg-opacity, 1));
@@ -2871,11 +2865,6 @@ h1,
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-primary-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(42 63 84 / var(--tw-bg-opacity, 1));
 }
 
 .bg-opacity-20 {
@@ -3134,6 +3123,11 @@ h1,
   color: rgb(17 24 39 / var(--tw-text-opacity, 1));
 }
 
+.text-primary-100 {
+  --tw-text-opacity: 1;
+  color: rgb(217 226 236 / var(--tw-text-opacity, 1));
+}
+
 .text-primary-200 {
   --tw-text-opacity: 1;
   color: rgb(179 197 215 / var(--tw-text-opacity, 1));
@@ -3167,11 +3161,6 @@ h1,
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-primary-100 {
-  --tw-text-opacity: 1;
-  color: rgb(217 226 236 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -3286,16 +3275,16 @@ h1,
   transition-duration: 150ms;
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
 
 .duration-\[3000ms\] {
   transition-duration: 3000ms;
-}
-
-.duration-200 {
-  transition-duration: 200ms;
 }
 
 .ease-in-out {
@@ -3629,6 +3618,16 @@ h1,
   background-color: rgb(240 244 248 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-primary-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 86 107 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-primary-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 63 84 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-primary-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(10 27 38 / var(--tw-bg-opacity, 1));
@@ -3637,16 +3636,6 @@ h1,
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-primary-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(42 63 84 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-primary-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(64 86 107 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-opacity-30:hover {
