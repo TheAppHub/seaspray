@@ -1,7 +1,7 @@
 <% const intro = site.data.intro %>
 
 <!-- Intro Section -->
-<section class="py-16 bg-primary-900">
+<section class="py-16">
 	<div class="container mx-auto px-4">
 		<div class="max-w-3xl mx-auto text-center">
 			<h2 class="text-4xl font-display font-bold text-white mb-4">
@@ -18,7 +18,7 @@
 </section>
 
 <!-- Features Section -->
-<section class="py-16 bg-primary-800">
+<section class="py-16">
 	<div class="container mx-auto px-4">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 			<div class="space-y-8">
@@ -26,9 +26,7 @@
 					Why Choose Seaspray Pools?
 				</h3>
 				<div class="prose prose-lg prose-invert">
-					<p class="text-primary-200 mb-6">
-						We pride ourselves on:
-					</p>
+					<p class="text-primary-200 mb-6">We pride ourselves on:</p>
 					<ul class="space-y-4 text-primary-200 list-none">
 						<li class="flex items-start">
 							<svg
@@ -112,7 +110,8 @@
 						</li>
 					</ul>
 					<p class="text-primary-200 mt-8">
-						Whether you're dreaming of a modern infinity pool, a natural lagoon, or a family-friendly oasis, we're here to make it a reality.
+						Whether you're dreaming of a modern infinity pool, a natural lagoon,
+						or a family-friendly oasis, we're here to make it a reality.
 					</p>
 				</div>
 			</div>
@@ -128,7 +127,7 @@
 </section>
 
 <!-- Features Grid -->
-<section class="py-16 bg-primary-900">
+<section class="py-16 bg-transparent backdrop-blur-md">
 	<div class="container mx-auto px-4">
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 			<% intro.features.forEach(function(feature) { %>
@@ -153,9 +152,7 @@
 				<h4 class="text-xl font-display font-semibold text-white mb-2">
 					<%- feature.title %>
 				</h4>
-				<p class="text-primary-200">
-					<%- feature.description %>
-				</p>
+				<p class="text-primary-200"><%- feature.description %></p>
 			</div>
 			<% }); %>
 		</div>
