@@ -9,14 +9,14 @@
 			</p>
 		</div>
 		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-			<% const portfolioPosts = site.posts.filter(post => post.categories && 
-			post.categories.data && post.categories.data.some(cat => cat.name === 'portfolio') && 
-			post.featured).sort((a, b) => a.featured - b.featured);
-			if (portfolioPosts.length > 0) { portfolioPosts.forEach(post => { %>
-			<div class="rounded-lg overflow-hidden shadow-lg">
+			<% const portfolioPosts = site.posts.filter(post => post.categories &&
+			post.categories.data && post.categories.data.some(cat => cat.name ===
+			'portfolio') && post.featured).sort((a, b) => a.featured - b.featured); if
+			(portfolioPosts.length > 0) { portfolioPosts.forEach(post => { %>
+			<div class="rounded-lg overflow-hidden shadow-lg bg-primary-800">
 				<a href="<%- url_for(post.path) %>">
 					<img
-						class="w-full h-64 object-cover"
+						class="w-full h-72 object-cover"
 						src="<%- url_for(post.featured_image) %>"
 						alt="<%- post.title %>"
 					/>
