@@ -1,0 +1,7 @@
+title: "Welcome to My Website"
+subtitle: "Your compelling subtitle goes here"
+description: "A brief description of your website or business"
+cta_button:
+  text: "Contact us"
+  link: "/contact"
+background_image: "/images/hero-bg.jpg"

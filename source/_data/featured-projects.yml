@@ -1,0 +1,23 @@
+title: "Featured Projects"
+subtitle: "Check out some of our best work"
+projects:
+  - title: "Project One"
+    description: "A brief description of the first project"
+    image: "/images/projects/project1.jpg"
+    link: "/projects/project-one"
+    tags: ["Web Design", "Development"]
+    featured: true
+
+  - title: "Project Two"
+    description: "A brief description of the second project"
+    image: "/images/projects/project2.jpg"
+    link: "/projects/project-two"
+    tags: ["Branding", "UI/UX"]
+    featured: true
+
+  - title: "Project Three"
+    description: "A brief description of the third project"
+    image: "/images/projects/project3.jpg"
+    link: "/projects/project-three"
+    tags: ["Mobile App", "Development"]
+    featured: true

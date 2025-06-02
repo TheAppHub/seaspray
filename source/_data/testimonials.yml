@@ -1,0 +1,20 @@
+title: "What Our Clients Say"
+subtitle: "Testimonials from our satisfied customers"
+testimonials:
+  - name: "John Doe"
+    position: "CEO, Company One"
+    content: "Working with this team was an absolute pleasure. They delivered exceptional results that exceeded our expectations."
+    image: "/images/testimonials/john-doe.jpg"
+    rating: 5
+
+  - name: "Jane Smith"
+    position: "Marketing Director, Company Two"
+    content: "The attention to detail and professional approach made all the difference. Highly recommended!"
+    image: "/images/testimonials/jane-smith.jpg"
+    rating: 5
+
+  - name: "Mike Johnson"
+    position: "Founder, Company Three"
+    content: "Outstanding service and incredible results. They truly understand what makes a project successful."
+    image: "/images/testimonials/mike-johnson.jpg"
+    rating: 5
