@@ -28,12 +28,12 @@
 					</a>
 					<p class="text-primary-200 mb-4"><%= project.description %></p>
 					<div class="flex flex-wrap gap-2 mb-4">
-						<% project.tags.forEach(tag => { %>
+						<% if (project.tags) { project.tags.forEach(function(tag) { %>
 						<span
 							class="bg-primary-700 text-primary-200 text-sm px-3 py-1 rounded-full"
 							><%= tag %></span
 						>
-						<% }) %>
+						<% }); } %>
 					</div>
 					<a
 						href="<%= project.link %>"

@@ -1,23 +1,13 @@
-title: "Featured Projects"
-subtitle: "Check out some of our best work"
+# Featured Projects Configuration
+# Only the top three projects will be displayed on the homepage
+# Order determines the display order
+
 projects:
-  - title: "Project One"
-    description: "A brief description of the first project"
-    image: "/images/projects/project1.jpg"
-    link: "/projects/project-one"
-    tags: ["Web Design", "Development"]
-    featured: true
+  - id: st-andrews
+    order: 1
 
-  - title: "Project Two"
-    description: "A brief description of the second project"
-    image: "/images/projects/project2.jpg"
-    link: "/projects/project-two"
-    tags: ["Branding", "UI/UX"]
-    featured: true
+  - id: romsey
+    order: 2
 
-  - title: "Project Three"
-    description: "A brief description of the third project"
-    image: "/images/projects/project3.jpg"
-    link: "/projects/project-three"
-    tags: ["Mobile App", "Development"]
-    featured: true
+  - id: kew
+    order: 3
