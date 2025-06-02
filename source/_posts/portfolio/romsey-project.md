@@ -2,7 +2,8 @@
 title: Romsey Project
 date: 2024-03-20
 categories: [portfolio]
-tags: [concrete-pool, residential, spa, water-feature]
+tags: [concrete-pool, residential, infinity-edge, modern]
+featured: 2
 featured_image: /images/portfolio/romsey/romsey-pool-project-main.jpg
 gallery:
   - /images/portfolio/romsey/romsey-pool-project-gallery-2.jpg

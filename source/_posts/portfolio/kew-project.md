@@ -2,7 +2,8 @@
 title: Kew Project
 date: 2024-03-20
 categories: [portfolio]
-tags: [concrete-pool, residential, circular, award-winning]
+tags: [concrete-pool, residential, luxury, water-feature]
+featured: 3
 featured_image: /images/portfolio/kew/kew-pool-project-main.jpg
 gallery:
   - /images/portfolio/kew/kew-pool-project-gallery-1.jpg

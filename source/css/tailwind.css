@@ -2145,6 +2145,10 @@ h1,
   z-index: 50;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -2359,10 +2363,6 @@ h1,
 
 .w-1\/2 {
   width: 50%;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .w-16 {
@@ -3145,14 +3145,14 @@ h1,
   color: rgb(155 28 28 / var(--tw-text-opacity, 1));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
 .text-secondary-400 {
   --tw-text-opacity: 1;
   color: rgb(239 199 55 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -3865,11 +3865,6 @@ h1,
 
   .sm\:flex-row {
     flex-direction: row;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 

@@ -3,6 +3,7 @@ title: St Andrews Project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, award-winning, lap-pool]
+featured: 1
 featured_image: /images/portfolio/st-andrews/st-andrews-pool-project-main.jpg
 gallery:
   - /images/portfolio/st-andrews/st-andrews-pool-project-gallery-1.jpg

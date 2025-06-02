@@ -1,42 +1,48 @@
-<% const projects = site.data['featured-projects'] %>
-
 <section class="py-16">
 	<div class="container mx-auto px-4">
 		<div class="mx-auto max-w-screen-sm text-center mb-12">
 			<h2 class="text-4xl font-display font-bold text-white mb-4">
-				<%= projects.title %>
+				Featured Projects
 			</h2>
-			<p class="text-xl text-primary-200"><%= projects.subtitle %></p>
+			<p class="text-xl text-primary-200">
+				Explore our award-winning pool designs and transformations
+			</p>
 		</div>
 		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-			<% projects.projects.forEach(project => { %>
-			<div class="bg-primary-800 rounded-lg overflow-hidden shadow-lg">
-				<a href="<%= project.link %>">
+			<% const portfolioPosts = site.posts.filter(post => post.categories && 
+			post.categories.data && post.categories.data.some(cat => cat.name === 'portfolio') && 
+			post.featured).sort((a, b) => a.featured - b.featured);
+			if (portfolioPosts.length > 0) { portfolioPosts.forEach(post => { %>
+			<div class="rounded-lg overflow-hidden shadow-lg">
+				<a href="<%- url_for(post.path) %>">
 					<img
-						class="w-full h-48 object-cover"
-						src="<%= project.image %>"
-						alt="<%= project.title %>"
+						class="w-full h-64 object-cover"
+						src="<%- url_for(post.featured_image) %>"
+						alt="<%- post.title %>"
 					/>
 				</a>
 				<div class="p-6">
-					<a href="<%= project.link %>">
+					<a href="<%- url_for(post.path) %>">
 						<h3
 							class="text-xl font-bold text-white mb-2 hover:text-primary-200 transition-colors"
 						>
-							<%= project.title %>
+							<%- post.title %>
 						</h3>
 					</a>
-					<p class="text-primary-200 mb-4"><%= project.description %></p>
+					<p class="text-primary-200 mb-4">
+						<%- post.excerpt || post.description %>
+					</p>
 					<div class="flex flex-wrap gap-2 mb-4">
-						<% if (project.tags) { project.tags.forEach(function(tag) { %>
+						<% if (post.tags && post.tags.data && post.tags.data.length > 0) {
+						post.tags.data.forEach(function(tag) { %>
 						<span
 							class="bg-primary-700 text-primary-200 text-sm px-3 py-1 rounded-full"
-							><%= tag %></span
+							><%= tag.name %></span
 						>
 						<% }); } %>
 					</div>
 					<a
-						href="<%= project.link %>"
+						href="<%- url_for(post.path) %>"
 						class="inline-flex items-center text-primary-400 hover:text-primary-300 transition-colors"
 					>
 						View Project
@@ -58,7 +64,11 @@
 					</a>
 				</div>
 			</div>
-			<% }) %>
+			<% }); } else { %>
+			<div class="col-span-3 text-center text-primary-200">
+				<p>No featured projects available at the moment.</p>
+			</div>
+			<% } %>
 		</div>
 	</div>
 </section>
