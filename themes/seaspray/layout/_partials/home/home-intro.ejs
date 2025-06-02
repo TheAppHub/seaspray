@@ -1,22 +1,35 @@
 <% const intro = site.data.intro %>
 
-<section class="bg-primary-900 py-16">
+<!-- Intro Section -->
+<section class="py-16 bg-primary-900">
 	<div class="container mx-auto px-4">
-		<div class="max-w-3xl mx-auto text-center mb-16">
+		<div class="max-w-3xl mx-auto text-center">
 			<h2 class="text-4xl font-display font-bold text-white mb-4">
-				<%= intro.title %>
+				<%- intro.title %>
 			</h2>
-			<p class="text-xl text-primary-200 mb-8"><%= intro.subtitle %></p>
-			<div class="prose prose-lg prose-invert max-w-none">
-				<div class="text-primary-200 mb-6">
-					<%- intro.content.split('\n\n')[0] %>
-				</div>
+			<h3 class="text-2xl font-display font-semibold text-primary-200 mb-6">
+				<%- intro.subtitle %>
+			</h3>
+			<div class="text-primary-200 mb-12">
+				<%- intro.content.split('\n\n')[0] %>
+			</div>
+		</div>
+	</div>
+</section>
 
-				<div class="text-left mb-6">
-					<p class="text-primary-200 mb-4">We pride ourselves on:</p>
-					<ul class="space-y-3 text-primary-200">
-						<% intro.content.split('\n\n')[1].split('\n').forEach(item => { %>
-						<% if (item.trim().startsWith('-')) { %>
+<!-- Features Section -->
+<section class="py-16 bg-primary-800">
+	<div class="container mx-auto px-4">
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+			<div class="space-y-8">
+				<h3 class="text-2xl font-display font-semibold text-white mb-6">
+					Why Choose Seaspray Pools?
+				</h3>
+				<div class="prose prose-lg prose-invert">
+					<p class="text-primary-200 mb-6">
+						We pride ourselves on:
+					</p>
+					<ul class="space-y-4 text-primary-200 list-none">
 						<li class="flex items-start">
 							<svg
 								class="w-5 h-5 text-primary-400 mt-1 mr-3 flex-shrink-0"
@@ -29,25 +42,102 @@
 									stroke-linejoin="round"
 									stroke-width="2"
 									d="M5 13l4 4L19 7"
-								></path>
+								/>
 							</svg>
-							<span><%= item.trim().substring(2) %></span>
+							<span>Custom designs tailored to your space and style</span>
 						</li>
-						<% } %> <% }) %>
+						<li class="flex items-start">
+							<svg
+								class="w-5 h-5 text-primary-400 mt-1 mr-3 flex-shrink-0"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M5 13l4 4L19 7"
+								/>
+							</svg>
+							<span>Sustainable construction practices</span>
+						</li>
+						<li class="flex items-start">
+							<svg
+								class="w-5 h-5 text-primary-400 mt-1 mr-3 flex-shrink-0"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M5 13l4 4L19 7"
+								/>
+							</svg>
+							<span>Premium materials and finishes</span>
+						</li>
+						<li class="flex items-start">
+							<svg
+								class="w-5 h-5 text-primary-400 mt-1 mr-3 flex-shrink-0"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M5 13l4 4L19 7"
+								/>
+							</svg>
+							<span>Comprehensive maintenance services</span>
+						</li>
+						<li class="flex items-start">
+							<svg
+								class="w-5 h-5 text-primary-400 mt-1 mr-3 flex-shrink-0"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M5 13l4 4L19 7"
+								/>
+							</svg>
+							<span>Unmatched customer satisfaction</span>
+						</li>
 					</ul>
+					<p class="text-primary-200 mt-8">
+						Whether you're dreaming of a modern infinity pool, a natural lagoon, or a family-friendly oasis, we're here to make it a reality.
+					</p>
 				</div>
-
-				<p class="text-primary-200"><%= intro.content.split('\n\n')[2] %></p>
+			</div>
+			<div class="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
+				<img
+					src="/img/hero-pool-2.jpg"
+					alt="Luxury Pool Design"
+					class="w-full h-full object-cover"
+				/>
 			</div>
 		</div>
+	</div>
+</section>
 
-		<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-			<% intro.features.forEach(feature => { %>
-			<div class="bg-primary-800 rounded-lg p-6 text-center">
-				<div class="mb-4">
-					<% if (feature.icon === 'design') { %>
+<!-- Features Grid -->
+<section class="py-16 bg-primary-900">
+	<div class="container mx-auto px-4">
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+			<% intro.features.forEach(function(feature) { %>
+			<div class="text-center">
+				<div
+					class="w-16 h-16 mx-auto mb-4 bg-primary-800 rounded-full flex items-center justify-center"
+				>
 					<svg
-						class="w-12 h-12 mx-auto text-primary-400"
+						class="w-8 h-8 text-primary-400"
 						fill="none"
 						stroke="currentColor"
 						viewBox="0 0 24 24"
@@ -56,57 +146,18 @@
 							stroke-linecap="round"
 							stroke-linejoin="round"
 							stroke-width="2"
-							d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+							d="M5 13l4 4L19 7"
 						/>
 					</svg>
-					<% } else if (feature.icon === 'construction') { %>
-					<svg
-						class="w-12 h-12 mx-auto text-primary-400"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-						/>
-					</svg>
-					<% } else if (feature.icon === 'sustainability') { %>
-					<svg
-						class="w-12 h-12 mx-auto text-primary-400"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-						/>
-					</svg>
-					<% } else if (feature.icon === 'support') { %>
-					<svg
-						class="w-12 h-12 mx-auto text-primary-400"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-						/>
-					</svg>
-					<% } %>
 				</div>
-				<h3 class="text-xl font-bold text-white mb-2"><%= feature.title %></h3>
-				<p class="text-primary-200"><%= feature.description %></p>
+				<h4 class="text-xl font-display font-semibold text-white mb-2">
+					<%- feature.title %>
+				</h4>
+				<p class="text-primary-200">
+					<%- feature.description %>
+				</p>
 			</div>
-			<% }) %>
+			<% }); %>
 		</div>
 	</div>
 </section>
