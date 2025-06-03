@@ -7,6 +7,10 @@ menu:
   # 标签: /tags
   # 分类: /categories
 
+# Layout
+layout:
+  portfolio: portfolio
+
 # Sidebar
 sidebar: right
 widgets:

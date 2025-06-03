@@ -4,6 +4,7 @@ date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
 featured_image: /images/portfolio/elsternwick/elsternwick-pool-project-main.jpg
+layout: portfolio
 gallery:
   - /images/portfolio/elsternwick/elsternwick-pool-project-gallery-1.jpg
   - /images/portfolio/elsternwick/elsternwick-pool-project-gallery-2.jpg
@@ -25,6 +26,7 @@ project_details:
     - Waterline tiles
     - Solar heating
     - Smart control integration
+type: portfolio
 ---
 
 # Elsternwick Project
