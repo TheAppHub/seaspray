@@ -1,6 +1,7 @@
 ---
 title: About Us
 layout: page
+permalink: /about/
 description: Work with the award-winning, custom pool builders Melbourne families love.
 features:
   - title: Customised concrete swimming pools

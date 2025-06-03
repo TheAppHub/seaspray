@@ -1,7 +1,9 @@
 ---
 title: Lap Swimming Pools
 layout: pool-type
+permalink: /pool-types/lap-swimming-pools/
 description: We design and build the most stylish lap pools in Melbourne.
+shortDesc: The most stylish lap pools in Melbourne.
 featured_image: /images/pool-types/lap-pool.jpg
 features:
   - title: Space-Saving Design
