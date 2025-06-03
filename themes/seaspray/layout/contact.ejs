@@ -1,24 +1,5 @@
-<!-- Hero Section -->
-<section class="relative h-[60vh]">
-	<div class="absolute inset-0">
-		<img
-			src="/img/hero-pool-1.jpg"
-			alt="Luxury Pool Design"
-			class="w-full h-full object-cover"
-		/>
-		<div
-			class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent md:from-black/65 md:via-black/50 md:to-transparent"
-		></div>
-	</div>
-	<div class="relative container mx-auto px-4 h-full flex items-center">
-		<div class="max-w-3xl">
-			<h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
-				<%= page.title %>
-			</h1>
-			<p class="text-xl text-primary-200"><%= page.description %></p>
-		</div>
-	</div>
-</section>
+<!-- prettier-ignore -->
+<%- partial('_partials/page-hero', { title: page.title, description: page.description, heroImage: '/img/hero-pool-1.jpg', heroAlt: 'Luxury Pool Design' }) %>
 
 <!-- Contact Section -->
 <section class="py-16 bg-primary-900">

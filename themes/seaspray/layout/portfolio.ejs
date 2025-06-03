@@ -1,7 +1,10 @@
 <%- partial('_partials/header') %>
 
-<main class="bg-primary-900 min-h-screen">
-	<article class="container mx-auto px-4 py-16">
+<!-- prettier-ignore -->
+<%- partial('_partials/page-hero', { title: page.title, description: page.description, heroImage: page.featured_image, heroAlt: page.title }) %>
+
+<main class="py-16">
+	<div class="container mx-auto px-4">
 		<!-- Hero Section -->
 		<div class="max-w-4xl mx-auto mb-16">
 			<h1 class="text-4xl md:text-5xl font-display font-bold text-white mb-6">
@@ -90,24 +93,21 @@
 
 		<!-- Gallery -->
 		<% if (page.gallery && page.gallery.length > 0) { %>
-		<div class="max-w-6xl mx-auto">
-			<h2 class="text-3xl font-display font-bold text-white mb-8">
-				Project Gallery
-			</h2>
-			<div class="grid md:grid-cols-3 gap-6">
+		<div class="max-w-7xl mx-auto">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 				<% page.gallery.forEach(function(image) { %>
-				<div class="aspect-w-4 aspect-h-3">
+				<div class="relative aspect-[4/3] rounded-lg overflow-hidden">
 					<img
-						src="<%= image %>"
-						alt="Gallery image"
-						class="w-full h-full object-cover rounded-lg shadow-lg"
+						src="<%- url_for(image) %>"
+						alt="<%= page.title %>"
+						class="w-full h-full object-cover"
 					/>
 				</div>
 				<% }); %>
 			</div>
 		</div>
 		<% } %>
-	</article>
+	</div>
 </main>
 
 <%- partial('_partials/footer') %>
