@@ -4,6 +4,7 @@ layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
+featured: 1
 featured_image: /images/portfolio/essendon-2/essendon-pool-project-main.jpg
 gallery:
   - /images/portfolio/essendon-2/essendon-pool-project-gallery-1.jpg
