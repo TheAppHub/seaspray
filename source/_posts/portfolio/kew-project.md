@@ -1,9 +1,9 @@
 ---
 title: Kew Project
+layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
-tags: [concrete-pool, residential, luxury, water-feature]
-featured: 3
+tags: [concrete-pool, residential, modern]
 featured_image: /images/portfolio/kew/kew-pool-project-main.jpg
 gallery:
   - /images/portfolio/kew/kew-pool-project-gallery-1.jpg
@@ -13,17 +13,17 @@ gallery:
   - /images/portfolio/kew/kew-pool-project-gallery-6.jpg
 project_details:
   location: Kew, VIC
-  completion_date: 2019-01-01
-  pool_type: Circular Concrete Swimming Pool
-  size: 4m diameter
+  completion_date: 2024-02-01
+  pool_type: Concrete Swimming Pool
+  size: 8m x 4m
   features:
-    - Circular design
-    - Light blue glass pebble interior
-    - Curved external swimout (2m x 500mm)
-    - Automatic heat pump
+    - Modern design
     - Water and chemical management system
-    - Underwater LED multicolour lighting
-    - Hidden filtration equipment
+    - LED multicolour lighting
+    - Smooth rendered interior
+    - Waterline tiles
+    - Solar heating
+    - Smart control integration
   awards:
     - 2019 SPASA Victoria Gold Award - Best Residential Concrete Pool Under $60,000
 ---

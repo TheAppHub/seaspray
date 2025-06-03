@@ -1,9 +1,9 @@
 ---
 title: St Andrews Project
+layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
-tags: [concrete-pool, residential, award-winning, lap-pool]
-featured: 1
+tags: [concrete-pool, residential, modern]
 featured_image: /images/portfolio/st-andrews/st-andrews-pool-project-main.jpg
 gallery:
   - /images/portfolio/st-andrews/st-andrews-pool-project-gallery-1.jpg
@@ -12,18 +12,17 @@ gallery:
   - /images/portfolio/st-andrews/st-andrews-pool-project-gallery-4.jpg
 project_details:
   location: St Andrews, VIC
-  completion_date: 2014-01-01
-  pool_type: Concrete Lap Pool
-  size: 25m x 4m
+  completion_date: 2024-02-01
+  pool_type: Concrete Swimming Pool
+  size: 8m x 4m
   features:
-    - 25m lap pool design
-    - Rest ledges at both ends
-    - Automatic Remco pool cover
-    - Solar and electric heating
+    - Modern design
     - Water and chemical management system
     - LED multicolour lighting
-    - Dark blue fully tiled interior
-    - White tiled lap lane
+    - Smooth rendered interior
+    - Waterline tiles
+    - Solar heating
+    - Smart control integration
   awards:
     - SPASA Australia Pool of the Year Award 2014
     - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000

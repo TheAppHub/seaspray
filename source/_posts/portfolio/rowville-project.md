@@ -1,8 +1,9 @@
 ---
 title: Rowville Project
+layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
-tags: [concrete-pool, residential, family-friendly]
+tags: [concrete-pool, residential, modern]
 featured_image: /images/portfolio/rowville/rowville-pool-project-main.jpg
 gallery:
   - /images/portfolio/rowville/rowville-pool-project-gallery-1.jpg
@@ -12,16 +13,17 @@ gallery:
   - /images/portfolio/rowville/rowville-pool-project-gallery-6.jpg
 project_details:
   location: Rowville, VIC
-  completion_date: 2024-01-10
+  completion_date: 2024-02-01
   pool_type: Concrete Swimming Pool
-  size: 7m x 3.5m
+  size: 8m x 4m
   features:
-    - Family-friendly design
+    - Modern design
     - Water and chemical management system
     - LED multicolour lighting
     - Smooth rendered interior
     - Waterline tiles
     - Solar heating
+    - Smart control integration
   landscaper: Cornerstone Paving
 ---
 

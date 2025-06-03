@@ -1,5 +1,6 @@
 ---
 title: Mount Martha Project
+layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern, coastal]

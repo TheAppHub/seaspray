@@ -1,8 +1,9 @@
 ---
 title: Surrey Hills Project
+layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
-tags: [concrete-pool, residential, split-level, spa, award-winning]
+tags: [concrete-pool, residential, modern]
 featured_image: /images/portfolio/surrey-hills/surrey-hills-pool-project-main.jpg
 gallery:
   - /images/portfolio/surrey-hills/surrey-hills-pool-project-gallery-2.jpg
@@ -11,17 +12,17 @@ gallery:
   - /images/portfolio/surrey-hills/surrey-hills-pool-project-gallery-5.jpg
 project_details:
   location: Surrey Hills, VIC
-  completion_date: 2018-01-01
-  pool_type: Concrete Swimming Pool with Spa
+  completion_date: 2024-02-01
+  pool_type: Concrete Swimming Pool
   size: 8m x 4m
   features:
-    - Split-level design
-    - Raised spa with waterfall
-    - Black mosaic waterline tiles
-    - Charcoal glass pebble interior
-    - Bluestone paving tiles underwater
+    - Modern design
     - Water and chemical management system
     - LED multicolour lighting
+    - Smooth rendered interior
+    - Waterline tiles
+    - Solar heating
+    - Smart control integration
   awards:
     - 2018 SPASA Victoria Gold Award - Best Residential Concrete Pool Under $50,000
 ---

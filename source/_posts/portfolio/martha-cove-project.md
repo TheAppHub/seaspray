@@ -1,23 +1,27 @@
 ---
 title: Martha Cove Project
+layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: /images/portfolio/martha-cove/main.jpg
+featured_image: /images/portfolio/martha-cove/martha-cove-pool-project-main.jpg
 gallery:
-  - /images/portfolio/martha-cove/gallery-1.jpg
-  - /images/portfolio/martha-cove/gallery-2.jpg
-  - /images/portfolio/martha-cove/gallery-3.jpg
+  - /images/portfolio/martha-cove/martha-cove-pool-project-gallery-1.jpg
+  - /images/portfolio/martha-cove/martha-cove-pool-project-gallery-2.jpg
+  - /images/portfolio/martha-cove/martha-cove-pool-project-gallery-3.jpg
+  - /images/portfolio/martha-cove/martha-cove-pool-project-gallery-4.jpg
 project_details:
   location: Martha Cove, VIC
   completion_date: 2024-02-01
   pool_type: Concrete Swimming Pool
-  size: 10m x 5m
+  size: 8m x 4m
   features:
     - Modern design
-    - LED lighting
-    - Automated cleaning system
-    - Heating system
+    - Water and chemical management system
+    - LED multicolour lighting
+    - Smooth rendered interior
+    - Waterline tiles
+    - Solar heating
     - Smart control integration
 ---
 

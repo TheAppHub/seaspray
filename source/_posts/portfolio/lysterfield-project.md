@@ -1,23 +1,27 @@
 ---
 title: Lysterfield Project
+layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: /images/portfolio/lysterfield/main.jpg
+featured_image: /images/portfolio/lysterfield/lysterfield-pool-project-main.jpg
 gallery:
-  - /images/portfolio/lysterfield/gallery-1.jpg
-  - /images/portfolio/lysterfield/gallery-2.jpg
-  - /images/portfolio/lysterfield/gallery-3.jpg
+  - /images/portfolio/lysterfield/lysterfield-pool-project-gallery-1.jpg
+  - /images/portfolio/lysterfield/lysterfield-pool-project-gallery-2.jpg
+  - /images/portfolio/lysterfield/lysterfield-pool-project-gallery-3.jpg
+  - /images/portfolio/lysterfield/lysterfield-pool-project-gallery-4.jpg
 project_details:
   location: Lysterfield, VIC
-  completion_date: 2024-02-15
+  completion_date: 2024-02-01
   pool_type: Concrete Swimming Pool
   size: 8m x 4m
   features:
     - Modern design
-    - LED lighting
-    - Automated cleaning system
-    - Heating system
+    - Water and chemical management system
+    - LED multicolour lighting
+    - Smooth rendered interior
+    - Waterline tiles
+    - Solar heating
     - Smart control integration
 ---
 

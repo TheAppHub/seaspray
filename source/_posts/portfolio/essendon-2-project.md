@@ -1,8 +1,9 @@
 ---
-title: Essendon Project 2
+title: Essendon 2 Project
+layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
-tags: [concrete-pool, residential, traditional]
+tags: [concrete-pool, residential, modern]
 featured_image: /images/portfolio/essendon-2/essendon-pool-project-main.jpg
 gallery:
   - /images/portfolio/essendon-2/essendon-pool-project-gallery-1.jpg
@@ -13,11 +14,11 @@ gallery:
   - /images/portfolio/essendon-2/essendon-pool-project-gallery-7.jpg
 project_details:
   location: Essendon, VIC
-  completion_date: 2024-01-15
+  completion_date: 2024-02-01
   pool_type: Concrete Swimming Pool
-  size: 9m x 4.5m
+  size: 8m x 4m
   features:
-    - Traditional design
+    - Modern design
     - Water and chemical management system
     - LED multicolour lighting
     - Smooth rendered interior

@@ -1,5 +1,6 @@
 ---
 title: Romsey Project
+layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, infinity-edge, modern]
