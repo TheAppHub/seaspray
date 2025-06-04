@@ -1,15 +1,14 @@
 ---
-title: Essential Pool Maintenance Guide for Melbourne Homeowners
+title: Pool Maintenance Guide
 date: 2024-03-20
-description: Learn the essential steps to maintain your pool in Melbourne's unique climate, ensuring crystal clear water and optimal performance year-round.
+description: Essential steps to maintain your pool in Melbourne's climate for clear water and top performance.
 tags:
   - Pool Maintenance
   - Water Care
   - Melbourne Pools
-hero: pool-maintenance-guide/hero.jpg
+hero: pool-maintenance.jpg
+readingTime: 6
 ---
-
-# Essential Pool Maintenance Guide for Melbourne Homeowners
 
 Maintaining your pool in Melbourne's variable climate requires a consistent routine. Here's your comprehensive guide to keeping your pool in perfect condition throughout the year.
 

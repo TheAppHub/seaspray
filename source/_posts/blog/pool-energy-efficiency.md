@@ -1,12 +1,13 @@
 ---
-title: Energy-Efficient Pool Solutions for Melbourne Homes
+title: Energy-Efficient Pools
 date: 2024-03-17
-description: Learn how to reduce your pool's energy consumption and running costs with these expert tips and modern solutions.
+description: Reduce your pool's energy use and costs with these expert tips and solutions.
 tags:
   - Energy Efficiency
   - Pool Costs
   - Green Solutions
-hero: pool-energy-efficiency/hero.jpg
+hero: pool-energy.jpg
+readingTime: 8
 ---
 
 # Energy-Efficient Pool Solutions for Melbourne Homes

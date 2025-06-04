@@ -2165,6 +2165,10 @@ h1,
   z-index: 50;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .col-span-3 {
   grid-column: span 3 / span 3;
 }

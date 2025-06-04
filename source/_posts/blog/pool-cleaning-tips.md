@@ -1,12 +1,13 @@
 ---
-title: Expert Pool Cleaning Tips for Crystal Clear Water
+title: Pool Cleaning Tips
 date: 2024-03-19
-description: Discover professional tips and techniques for keeping your pool water crystal clear and perfectly balanced throughout the year.
+description: Professional tips for keeping your pool water crystal clear and balanced year-round.
 tags:
   - Pool Cleaning
   - Water Care
   - Pool Care
-hero: pool-cleaning-tips/hero.jpg
+hero: pool-cleaning.jpg
+readingTime: 7
 ---
 
 # Expert Pool Cleaning Tips for Crystal Clear Water

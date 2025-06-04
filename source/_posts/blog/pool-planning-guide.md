@@ -1,12 +1,13 @@
 ---
-title: Ultimate Pool Planning Guide for Melbourne Homes
+title: Pool Planning Guide
 date: 2024-03-18
-description: Everything you need to know about planning your perfect pool, from design considerations to council regulations in Melbourne.
+description: Key tips for planning your perfect pool, from design to council regulations in Melbourne.
 tags:
   - Pool Planning
   - Pool Design
   - Melbourne Pools
-hero: pool-planning-guide/hero.jpg
+hero: pool-planning.jpg
+readingTime: 9
 ---
 
 # Ultimate Pool Planning Guide for Melbourne Homes
