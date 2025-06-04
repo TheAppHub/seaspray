@@ -2187,6 +2187,11 @@ h1,
   margin-right: auto;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -2273,6 +2278,10 @@ h1,
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .block {
@@ -3141,6 +3150,10 @@ h1,
   font-weight: 600;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -3159,6 +3172,10 @@ h1,
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
 }
 
 .\!text-white {
@@ -4177,6 +4194,11 @@ html {
   background-color: rgb(17 24 39 / 0.8);
 }
 
+.dark\:bg-gray-900:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+}
+
 .dark\:text-blue-500:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(63 131 248 / var(--tw-text-opacity, 1));
@@ -4195,6 +4217,11 @@ html {
 .dark\:text-white:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.dark\:text-primary-500:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(64 86 107 / var(--tw-text-opacity, 1));
 }
 
 .dark\:hover\:\!bg-primary-700:hover:is(.dark *) {
@@ -4241,9 +4268,19 @@ html {
     flex-direction: row;
   }
 
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -4320,6 +4357,10 @@ html {
     margin-bottom: 2rem;
   }
 
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -4344,18 +4385,43 @@ html {
     gap: 3rem;
   }
 
+  .lg\:divide-x > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+
+  .lg\:divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-divide-opacity, 1));
+  }
+
   .lg\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .lg\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .lg\:pb-24 {
     padding-bottom: 6rem;
   }
 
+  .lg\:pl-8 {
+    padding-left: 2rem;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .dark\:lg\:divide-gray-700:is(.dark *) > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgb(55 65 81 / var(--tw-divide-opacity, 1));
   }
 }
 
