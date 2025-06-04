@@ -4,12 +4,12 @@ layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: /images/portfolio/martha-cove/martha-cove-pool-project-main.jpg
+featured_image: martha-cove-pool-project-main.jpg
 gallery:
-  - /images/portfolio/martha-cove/martha-cove-pool-project-gallery-1.jpg
-  - /images/portfolio/martha-cove/martha-cove-pool-project-gallery-2.jpg
-  - /images/portfolio/martha-cove/martha-cove-pool-project-gallery-3.jpg
-  - /images/portfolio/martha-cove/martha-cove-pool-project-gallery-4.jpg
+  - martha-cove-pool-project-gallery-1.jpg
+  - martha-cove-pool-project-gallery-2.jpg
+  - martha-cove-pool-project-gallery-3.jpg
+  - martha-cove-pool-project-gallery-4.jpg
 project_details:
   location: Martha Cove, VIC
   completion_date: 2024-02-01

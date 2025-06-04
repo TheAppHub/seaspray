@@ -1,6 +1,6 @@
 <!-- prettier-ignore -->
 <%- partial('_partials/page-hero', { title: page.title, description: page.description, heroImage: page.featured_image, heroAlt: page.title }) %>
-hello
+
 <main class="py-16">
 	<div class="container mx-auto px-4">
 		<!-- Hero Section -->
@@ -22,7 +22,7 @@ hello
 		<!-- Featured Image -->
 		<div class="max-w-6xl mx-auto mb-16">
 			<img
-				src="<%= page.featured_image %>"
+				src="<%- url_for(page.slug + '/' + page.featured_image) %>"
 				alt="<%= page.title %>"
 				class="w-full h-[500px] object-cover rounded-lg shadow-xl"
 			/>
@@ -96,7 +96,7 @@ hello
 				<% page.gallery.forEach(function(image) { %>
 				<div class="relative aspect-[4/3] rounded-lg overflow-hidden">
 					<img
-						src="<%- url_for(image) %>"
+						src="<%- url_for(page.slug + '/' + image) %>"
 						alt="<%= page.title %>"
 						class="w-full h-full object-cover"
 					/>

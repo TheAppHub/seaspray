@@ -4,15 +4,15 @@ layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: /images/portfolio/elsternwick/elsternwick-pool-project-main.jpg
+featured_image: elsternwick-pool-project-main.jpg
 gallery:
-  - /images/portfolio/elsternwick/elsternwick-pool-project-gallery-1.jpg
-  - /images/portfolio/elsternwick/elsternwick-pool-project-gallery-2.jpg
-  - /images/portfolio/elsternwick/elsternwick-pool-project-gallery-3.jpg
-  - /images/portfolio/elsternwick/elsternwick-pool-project-gallery-5.jpg
-  - /images/portfolio/elsternwick/elsternwick-pool-project-gallery-6.jpg
-  - /images/portfolio/elsternwick/elsternwick-pool-project-gallery-7.jpg
-  - /images/portfolio/elsternwick/elsternwick-pool-project-gallery-8.jpg
+  - elsternwick-pool-project-gallery-1.jpg
+  - elsternwick-pool-project-gallery-2.jpg
+  - elsternwick-pool-project-gallery-3.jpg
+  - elsternwick-pool-project-gallery-5.jpg
+  - elsternwick-pool-project-gallery-6.jpg
+  - elsternwick-pool-project-gallery-7.jpg
+  - elsternwick-pool-project-gallery-8.jpg
 project_details:
   location: Elsternwick, VIC
   completion_date: 2024-02-01

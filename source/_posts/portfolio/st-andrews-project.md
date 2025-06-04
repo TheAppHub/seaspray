@@ -4,12 +4,12 @@ layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: /images/portfolio/st-andrews/st-andrews-pool-project-main.jpg
+featured_image: st-andrews-pool-project-main.jpg
 gallery:
-  - /images/portfolio/st-andrews/st-andrews-pool-project-gallery-1.jpg
-  - /images/portfolio/st-andrews/st-andrews-pool-project-gallery-2.jpg
-  - /images/portfolio/st-andrews/st-andrews-pool-project-gallery-3.jpg
-  - /images/portfolio/st-andrews/st-andrews-pool-project-gallery-4.jpg
+  - st-andrews-pool-project-gallery-1.jpg
+  - st-andrews-pool-project-gallery-2.jpg
+  - st-andrews-pool-project-gallery-3.jpg
+  - st-andrews-pool-project-gallery-4.jpg
 project_details:
   location: St Andrews, VIC
   completion_date: 2024-02-01

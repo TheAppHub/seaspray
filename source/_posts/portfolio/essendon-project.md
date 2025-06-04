@@ -4,12 +4,12 @@ layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: /images/portfolio/essendon/essendon-pool-project-main.jpg
+featured_image: essendon-pool-project-main.jpg
 gallery:
-  - /images/portfolio/essendon/essendon-pool-project-gallery-1.jpg
-  - /images/portfolio/essendon/essendon-pool-project-gallery-2.jpg
-  - /images/portfolio/essendon/essendon-pool-project-gallery-3.jpg
-  - /images/portfolio/essendon/essendon-pool-project-gallery-4.jpg
+  - essendon-pool-project-gallery-1.jpg
+  - essendon-pool-project-gallery-2.jpg
+  - essendon-pool-project-gallery-3.jpg
+  - essendon-pool-project-gallery-4.jpg
 project_details:
   location: Essendon, VIC
   completion_date: 2024-02-01

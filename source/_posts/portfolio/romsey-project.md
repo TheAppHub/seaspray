@@ -5,13 +5,13 @@ date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, infinity-edge, modern]
 featured: 2
-featured_image: /images/portfolio/romsey/romsey-pool-project-main.jpg
+featured_image: romsey-pool-project-main.jpg
 gallery:
-  - /images/portfolio/romsey/romsey-pool-project-gallery-2.jpg
-  - /images/portfolio/romsey/romsey-pool-project-gallery-3.jpg
-  - /images/portfolio/romsey/romsey-pool-project-gallery-4.jpg
-  - /images/portfolio/romsey/romsey-pool-project-gallery-5.jpg
-  - /images/portfolio/romsey/romsey-pool-project-gallery-6.jpg
+  - romsey-pool-project-gallery-2.jpg
+  - romsey-pool-project-gallery-3.jpg
+  - romsey-pool-project-gallery-4.jpg
+  - romsey-pool-project-gallery-5.jpg
+  - romsey-pool-project-gallery-6.jpg
 project_details:
   location: Romsey, VIC
   completion_date: 2024-01-15

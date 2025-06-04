@@ -5,13 +5,13 @@ date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
 featured: 3
-featured_image: /images/portfolio/rowville/rowville-pool-project-main.jpg
+featured_image: rowville-pool-project-main.jpg
 gallery:
-  - /images/portfolio/rowville/rowville-pool-project-gallery-1.jpg
-  - /images/portfolio/rowville/rowville-pool-project-gallery-2.jpg
-  - /images/portfolio/rowville/rowville-pool-project-gallery-3.jpg
-  - /images/portfolio/rowville/rowville-pool-project-gallery-4.jpg
-  - /images/portfolio/rowville/rowville-pool-project-gallery-6.jpg
+  - rowville-pool-project-gallery-1.jpg
+  - rowville-pool-project-gallery-2.jpg
+  - rowville-pool-project-gallery-3.jpg
+  - rowville-pool-project-gallery-4.jpg
+  - rowville-pool-project-gallery-6.jpg
 project_details:
   location: Rowville, VIC
   completion_date: 2024-02-01

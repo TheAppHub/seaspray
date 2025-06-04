@@ -13,7 +13,7 @@
 				<a href="<%- url_for(post.path) %>">
 					<img
 						class="w-full h-72 object-cover"
-						src="<%- url_for(post.featured_image) %>"
+						src="<%- url_for(post.path + '/' + post.featured_image) %>"
 						alt="<%- post.title %>"
 					/>
 				</a>

@@ -4,15 +4,15 @@ layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern, coastal]
-featured_image: /images/portfolio/mount-martha/mount-martha-pool-project-main.jpg
+featured_image: mount-martha-project-main.jpg
 gallery:
-  - /images/portfolio/mount-martha/mount-martha-pool-project-gallery-1.jpg
-  - /images/portfolio/mount-martha/mount-martha-pool-project-gallery-2.jpg
-  - /images/portfolio/mount-martha/mount-martha-pool-project-gallery-3.jpg
-  - /images/portfolio/mount-martha/mount-martha-pool-project-gallery-5.jpg
-  - /images/portfolio/mount-martha/mount-martha-pool-project-gallery-6.jpg
-  - /images/portfolio/mount-martha/mount-martha-pool-project-gallery-7.jpg
-  - /images/portfolio/mount-martha/mount-martha-pool-project-gallery-8.jpg
+  - mount-martha-pool-project-gallery-1.jpg
+  - mount-martha-pool-project-gallery-2.jpg
+  - mount-martha-pool-project-gallery-3.jpg
+  - mount-martha-pool-project-gallery-5.jpg
+  - mount-martha-pool-project-gallery-6.jpg
+  - mount-martha-pool-project-gallery-7.jpg
+  - mount-martha-pool-project-gallery-8.jpg
 project_details:
   location: Mount Martha, VIC
   completion_date: 2024-02-15
