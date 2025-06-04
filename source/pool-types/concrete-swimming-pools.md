@@ -20,13 +20,13 @@ cta_title: Create a luxury holiday experience without leaving home
 cta_text: Visit our award-winning display centre today or contact us now
 ---
 
-# We tailor luxury concrete pools in Melbourne to your exact specifications.
+## Live a luxury lifestyle today with perfectly designed and built concrete pools made for your backyard space
 
-## Live a luxury lifestyle today with perfectly designed and built concrete pools made for your backyard space.
+We tailor luxury concrete pools in Melbourne to your exact specifications.
 
 When you choose a custom concrete pool builder, you can truly let your imagination run wild. It's our job to deliver a dream design, no matter how beyond-the-box your vision.
 
-### Natural concrete pools for Melbourne backyards.
+### Natural concrete pools for Melbourne backyards
 
 Custom design your pool to blend seamlessly with your landscape design and every day will feel like you're living in you're a personalised luxury oasis all year round.
 

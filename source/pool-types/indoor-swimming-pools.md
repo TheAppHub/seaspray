@@ -19,9 +19,9 @@ cta_title: Our indoor swimming pool designs deliver health, relaxation and luxur
 cta_text: Visit our award-winning display centre today or contact us now
 ---
 
-# Picture your life with an indoor swimming pool at home.
+## We can make that dream happen
 
-## We can make that dream happen.
+Picture your life with an indoor swimming pool at home.
 
 A home indoor swimming pool is the last word in luxury. If you love being in the water, it's the ultimate way to stay fit, cool and protected from the hot Melbourne sun (or cold Melbourne winters)—plus you'll be the envy of all your friends!
 

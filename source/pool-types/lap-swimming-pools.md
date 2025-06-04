@@ -20,9 +20,9 @@ cta_title: Build the lap pool of your dreams today
 cta_text: Visit our award-winning display centre today or contact us now
 ---
 
-# Get fit and look fabulous at home with a lap pool.
-
 ## We design and build the most stylish lap pools in Melbourne.
+
+Get fit and look fabulous at home with a lap pool.
 
 Whether for fitness or a refreshing dip on a hot day, our customised lap pools for the Melbourne climate will enliven your daily routine and bring your family fun and fitness for years to come.
 
