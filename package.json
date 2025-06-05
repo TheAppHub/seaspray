@@ -48,7 +48,7 @@
 		"postcss": "^8.4.35",
 		"postcss-cli": "^11.0.0",
 		"snyk": "^1.1297.1",
-		"tailwindcss": "^3.4.1"
+		"tailwindcss": "^4.1.8"
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx}": [
