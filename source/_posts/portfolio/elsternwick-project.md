@@ -5,6 +5,7 @@ date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
 featured_image: elsternwick-pool-project-main.jpg
+featured: 2
 gallery:
   - elsternwick-pool-project-gallery-1.jpg
   - elsternwick-pool-project-gallery-2.jpg
