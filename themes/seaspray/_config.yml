@@ -10,6 +10,11 @@ menu:
 # Layout
 layout:
   portfolio: portfolio
+  tag: tag
+  tags: tags
+  page: page
+  post: post
+  index: index
 
 # Sidebar
 sidebar: right

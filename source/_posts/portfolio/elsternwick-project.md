@@ -1,6 +1,6 @@
 ---
 title: Elsternwick Project
-layout: portfolio
+layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
@@ -9,10 +9,7 @@ gallery:
   - elsternwick-pool-project-gallery-1.jpg
   - elsternwick-pool-project-gallery-2.jpg
   - elsternwick-pool-project-gallery-3.jpg
-  - elsternwick-pool-project-gallery-5.jpg
-  - elsternwick-pool-project-gallery-6.jpg
-  - elsternwick-pool-project-gallery-7.jpg
-  - elsternwick-pool-project-gallery-8.jpg
+  - elsternwick-pool-project-gallery-4.jpg
 project_details:
   location: Elsternwick, VIC
   completion_date: 2024-02-01
@@ -26,6 +23,10 @@ project_details:
     - Waterline tiles
     - Solar heating
     - Smart control integration
+  awards:
+    - SPASA Australia Pool of the Year Award 2014
+    - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
+    - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
 type: portfolio
 ---
 

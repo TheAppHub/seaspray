@@ -1,6 +1,6 @@
 ---
 title: Surrey Hills Project
-layout: portfolio
+layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]

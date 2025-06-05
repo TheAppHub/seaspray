@@ -1,18 +1,15 @@
 ---
 title: Glen Iris Project
-layout: portfolio
+layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
 featured_image: glen-iris-pool-project-main.jpg
 gallery:
   - glen-iris-pool-project-gallery-1.jpg
+  - glen-iris-pool-project-gallery-2.jpg
   - glen-iris-pool-project-gallery-3.jpg
   - glen-iris-pool-project-gallery-4.jpg
-  - glen-iris-pool-project-gallery-5.jpg
-  - glen-iris-pool-project-gallery-6.jpg
-  - glen-iris-pool-project-gallery-7.jpg
-  - glen-iris-pool-project-gallery-8.jpg
 project_details:
   location: Glen Iris, VIC
   completion_date: 2024-02-01
@@ -26,6 +23,10 @@ project_details:
     - Waterline tiles
     - Solar heating
     - Smart control integration
+  awards:
+    - SPASA Australia Pool of the Year Award 2014
+    - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
+    - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
 ---
 
 # Glen Iris Project

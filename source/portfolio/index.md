@@ -1,6 +1,7 @@
 ---
-title: Our Projects
-layout: portfolio-index
+title: Portfolio
+description: Explore our pool projects
+layout: portfolio
 ---
 
 # Our Portfolio

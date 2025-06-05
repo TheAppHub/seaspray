@@ -1,0 +1,44 @@
+<%- partial('_partials/page-hero', { title: page.tag, description: 'Browse posts by tag', heroImage: '/img/hero-pool-1.jpg', heroAlt: page.tag }) %>
+
+<section class="bg-primary-700">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="flex flex-wrap gap-2 mb-4">
+            <% const tags = site.tags.toArray(); %>
+            <% tags.forEach(function(tag) { %>
+                <a href="<%- url_for(tag.path) %>" class="bg-blue-100 text-primary-400 text-xs font-medium px-2.5 py-0.5 rounded-sm">
+                    <%= tag.name %>
+                </a>
+            <% }); %>
+        </div>
+        <div class="grid gap-8 mb-16 lg:grid-cols-3">
+            <% if (page.posts && page.posts.length > 0) { %>
+                <% const filteredPosts = page.posts.filter(post => post.layout === 'post'); %>
+                <% if (filteredPosts.length > 0) { %>
+                    <% filteredPosts.each(function(post) { %>
+                        <article>
+                            <a href="<%- url_for(post.path) %>">
+                                <img class="mb-5 rounded-lg" src="<%- url_for(post.path + '/' + post.hero) %>" alt="<%= post.title %>">
+                            </a>
+                            <h2 class="my-2 text-2xl font-bold tracking-tight text-white">
+                                <a href="<%- url_for(post.path) %>" class="text-white"><%= post.title %></a>
+                            </h2>
+                            <p class="mb-4 font-light text-primary-200"><%= post.excerpt || post.description %></p>
+                            <a href="<%- url_for(post.path) %>" class="inline-flex items-center font-medium text-secondary-400 hover:underline">
+                                Read more
+                                <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </a>
+                        </article>
+                    <% }); %>
+                <% } else { %>
+                    <div class="col-span-3 text-center text-primary-200">
+                        <p>No blog posts available for this tag.</p>
+                    </div>
+                <% } %>
+            <% } else { %>
+                <div class="col-span-3 text-center text-primary-200">
+                    <p>No posts available for this tag.</p>
+                </div>
+            <% } %>
+        </div>  
+    </div>
+</section> 

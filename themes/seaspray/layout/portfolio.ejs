@@ -1,169 +1,38 @@
-<!-- prettier-ignore -->
-<%- partial('_partials/header') %> post <% let heroImage = page.hero || '/img/hero-pool-1.jpg' %>
+<%- partial('_partials/page-hero', { title: page.title, description: page.description, heroImage: '/img/hero-pool-1.jpg', heroAlt: page.title }) %>
 
-<main class="bg-primary-900">
-	<div class="pb-16 lg:pb-24 antialiased">
-		<header class="relative h-[60vh]">
-			<div class="absolute inset-0">
-				<img
-					src="<%= heroImage %>"
-					alt="<%= typeof heroAlt !== 'undefined' && heroAlt ? heroAlt : 'Luxury Pool Design' %>"
-					class="w-full h-full object-cover"
-				/>
-				<div class="absolute inset-0 bg-black bg-opacity-50"></div>
-			</div>
-			<div
-				class="absolute top-20 left-1/2 px-4 mx-auto w-full max-w-screen-xl -translate-x-1/2 xl:top-1/2 xl:-translate-y-1/2 xl:px-0"
-			>
-				<div class="block mb-4 font-bold text-gray-300">
-					Seaspray Pools
-					<span class="font-normal text-white hover:underline">Melbourne</span>
-				</div>
-				<h1
-					class="mb-4 max-w-4xl text-2xl font-extrabold leading-none text-white sm:text-3xl lg:text-4xl"
-				>
-					<%= page.title %>
-				</h1>
-				<p class="text-lg font-normal text-gray-300"><%= page.description %></p>
-			</div>
-		</header>
-		<div
-			class="flex relative z-20 justify-between p-6 -m-36 mx-4 max-w-screen-xl bg-primary-700 rounded xl:-m-32 xl:p-9 xl:mx-auto"
-		>
-			<article
-				class="xl:w-[828px] w-full max-w-none format format-sm sm:format-base lg:format-lg format-blue"
-			>
-				<div class="prose lg:prose-lg mx-auto"><%- page.content %></div>
-
-				<% if (page.tags && page.tags.length > 0) { %>
-				<div class="mt-12 pt-8 border-t border-primary-800">
-					<h2 class="text-2xl font-display font-bold text-white mb-4">Tags</h2>
-					<div class="flex flex-wrap gap-2">
-						<% page.tags.forEach(function(tag) { %>
-						<a
-							href="<%- url_for(tag.path) %>"
-							class="bg-primary-700 text-primary-200 text-sm px-3 py-1 rounded-full hover:bg-primary-600 transition-colors"
-							><%= tag.name %></a
-						>
-						<% }); %>
-					</div>
-				</div>
-				<% } %>
-			</article>
-			<aside class="hidden xl:block" aria-labelledby="sidebar-label">
-				<div class="xl:w-[336px] sticky top-6">
-					<!-- Project Details -->
-					<div class="mb-12">
-						<h4 class="mb-4 text-md font-bold text-white uppercase">
-							Project Details
-						</h4>
-						<div>
-							<dl class="space-y-4">
-								<div>
-									<dt class="text-primary-300">Pool Type</dt>
-									<dd class="text-white">
-										<%= page.project_details.pool_type %>
-									</dd>
-								</div>
-								<div>
-									<dt class="text-primary-300">Size</dt>
-									<dd class="text-white"><%= page.project_details.size %></dd>
-								</div>
-								<div>
-									<dt class="text-primary-300">Location</dt>
-									<dd class="text-white">
-										<%= page.project_details.location %>
-									</dd>
-								</div>
-							</dl>
-						</div>
-					</div>
-					<!-- Project Details -->
-
-					<!-- Project Features -->
-					<div class="mb-12">
-						<div>
-							<h4 class="mb-4 text-md font-bold text-white uppercase">
-								Features
-							</h4>
-							<ul class="space-y-2">
-								<% page.project_details.features.forEach(function(feature) { %>
-								<li class="flex items-center text-white">
-									<svg
-										class="w-5 h-5 text-primary-400 mr-2"
-										fill="none"
-										stroke="currentColor"
-										viewBox="0 0 24 24"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M5 13l4 4L19 7"
-										></path>
-									</svg>
-									<%= feature %>
-								</li>
-								<% }); %>
-							</ul>
-						</div>
-					</div>
-					<!-- Project Features -->
-
-					<div class="mb-12">
-						<a
-							href="/portfolio/"
-							class="flex justify-center items-center mb-3 w-full h-48 bg-gray-100 rounded-lg overflow-hidden"
-						>
-							<img
-								src="/img/hero-pool-3.jpg"
-								alt="Seaspray Pools Melbourne Project"
-								class="w-full h-full object-cover"
-							/>
-						</a>
-						<p class="mb-2 text-sm text-gray-500">
-							View our recent projects, and see how we've helped our clients
-							create their dream pools.
-						</p>
-						<p class="text-xs text-gray-400 uppercase">View all projects</p>
-					</div>
-
-					<h3 id="sidebar-label" class="sr-only">Sidebar</h3>
-					<div class="mb-12">
-						<h4 class="mb-2 text-sm font-bold text-gray-200 uppercase">
-							Seapray Pools Melbourne
-						</h4>
-						<p class="mb-4 text-sm text-gray-300">
-							We are a family-run business for over 30 years, we know a thing
-							(or three) about pool building for Melbourne's unique climate.
-						</p>
-						<a
-							href="/contact"
-							type="button"
-							class="block text-white bg-secondary-400 hover:bg-secondary-600 focus:ring-4 focus:ring-secondary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none text-center w-full"
-							>Get a quote</a
-						>
-					</div>
-				</div>
-			</aside>
-		</div>
-	</div>
-
-	<!-- Gallery -->
-	<% if (page.gallery && page.gallery.length > 0) { %>
-	<div class="mt-16 mb-12 mx-8 bg-primary-900">
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-			<% page.gallery.forEach(function(image) { %>
-			<div class="relative aspect-[4/3] rounded-lg overflow-hidden">
-				<img
-					src="<%- url_for(page.slug + '/' + image) %>"
-					alt="<%= page.title %>"
-					class="w-full h-full object-cover"
-				/>
-			</div>
-			<% }); %>
-		</div>
-	</div>
-	<% } %>
-	<!-- Gallery -->
-</main>
+<section class="bg-primary-700">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="flex flex-wrap gap-2 mb-4">
+            <% const tags = site.tags.toArray(); %>
+            <% tags.forEach(function(tag) { %>
+                <a href="<%- url_for(tag.path) %>" class="bg-blue-100 text-primary-400 text-xs font-medium px-2.5 py-0.5 rounded-sm">
+                    <%= tag.name %>
+                </a>
+            <% }); %>
+        </div>
+        <div class="grid gap-8 mb-16 lg:grid-cols-3">
+            <% const projects = site.posts.filter(post => post.source.startsWith('_posts/portfolio/')); %>
+            <% if (projects.length > 0) { %>
+                <% projects.forEach(function(project) { %>
+                    <article>
+                        <a href="<%- url_for(project.path) %>">
+                            <img class="mb-5 rounded-lg" src="<%- url_for(project.path + '/' + project.featured_image) %>" alt="<%= project.title %>">
+                        </a>
+                        <h2 class="my-2 text-2xl font-bold tracking-tight text-white">
+                            <a href="<%- url_for(project.path) %>" class="text-white"><%= project.title %></a>
+                        </h2>
+                        <p class="mb-4 font-light text-primary-200"><%= project.excerpt || project.description || 'No description available.' %></p>
+                        <a href="<%- url_for(project.path) %>" class="inline-flex items-center font-medium text-secondary-400 hover:underline">
+                            Read more
+                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </article>
+                <% }); %>
+            <% } else { %>
+                <div class="col-span-3 text-center text-primary-200">
+                    <p>No portfolio projects available at the moment.</p>
+                </div>
+            <% } %>
+        </div>  
+    </div>
+</section>

@@ -1,6 +1,6 @@
 ---
 title: Essendon Project
-layout: portfolio
+layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
@@ -23,6 +23,10 @@ project_details:
     - Waterline tiles
     - Solar heating
     - Smart control integration
+  awards:
+    - SPASA Australia Pool of the Year Award 2014
+    - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
+    - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
 ---
 
 # Essendon Project

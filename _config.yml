@@ -4,10 +4,10 @@
 
 # Site
 title: Seaspray Pools
-subtitle: ""
-description: ""
+subtitle: "Creating beautiful, sustainable swimming pools for your home"
+description: "Seaspray Pools is a leading provider of swimming pool construction and maintenance services in Melbourne. We specialise in creating beautiful, sustainable swimming pools for your home."
 keywords:
-author: Your Name
+author: Seaspray Pools
 language: en
 timezone: "UTC"
 
@@ -16,7 +16,9 @@ timezone: "UTC"
 url: http://example.com
 permalink: :title/
 permalink_defaults: []
-pretty_urls: []
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
 abbrlink:
   alg: crc32 # support crc16(default) and crc32
   rep: dec # support dec(default) and hex

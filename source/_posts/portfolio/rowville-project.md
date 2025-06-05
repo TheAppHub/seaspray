@@ -1,17 +1,15 @@
 ---
 title: Rowville Project
-layout: portfolio
+layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured: 3
 featured_image: rowville-pool-project-main.jpg
 gallery:
   - rowville-pool-project-gallery-1.jpg
   - rowville-pool-project-gallery-2.jpg
   - rowville-pool-project-gallery-3.jpg
   - rowville-pool-project-gallery-4.jpg
-  - rowville-pool-project-gallery-6.jpg
 project_details:
   location: Rowville, VIC
   completion_date: 2024-02-01
@@ -25,6 +23,10 @@ project_details:
     - Waterline tiles
     - Solar heating
     - Smart control integration
+  awards:
+    - SPASA Australia Pool of the Year Award 2014
+    - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
+    - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
   landscaper: Cornerstone Paving
 ---
 
