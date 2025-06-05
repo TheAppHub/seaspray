@@ -3,17 +3,24 @@
 <section class="bg-primary-700">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div class="flex flex-wrap gap-2 mb-4">
-            <% const tags = site.tags.toArray(); %>
-            <% tags.forEach(function(tag) { %>
-                <a href="<%- url_for(tag.path) %>" class="bg-blue-100 text-primary-400 text-xs font-medium px-2.5 py-0.5 rounded-sm">
-                    <%= tag.name %>
+            <% 
+            const portfolioPosts = site.posts.filter(post => post.source.startsWith('_posts/portfolio/'));
+            const portfolioTags = new Set();
+            portfolioPosts.forEach(post => {
+                if (post.tags && post.tags.length) {
+                    post.tags.forEach(tag => portfolioTags.add(tag.name));
+                }
+            });
+            %>
+            <% portfolioTags.forEach(function(tagName) { %>
+                <a href="<%- url_for('/tags/' + tagName) %>" class="bg-blue-100 text-primary-400 text-xs font-medium px-2.5 py-0.5 rounded-sm">
+                    <%= tagName %>
                 </a>
             <% }); %>
         </div>
         <div class="grid gap-8 mb-16 lg:grid-cols-3">
-            <% const projects = site.posts.filter(post => post.source.startsWith('_posts/portfolio/')); %>
-            <% if (projects.length > 0) { %>
-                <% projects.forEach(function(project) { %>
+            <% if (portfolioPosts.length > 0) { %>
+                <% portfolioPosts.forEach(function(project) { %>
                     <article>
                         <a href="<%- url_for(project.path) %>">
                             <img class="mb-5 rounded-lg" src="<%- url_for(project.path + '/' + project.featured_image) %>" alt="<%= project.title %>">
