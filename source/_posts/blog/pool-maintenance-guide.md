@@ -8,6 +8,7 @@ tags:
   - Melbourne Pools
 hero: pool-maintenance.jpg
 readingTime: 6
+layout: post
 ---
 
 Maintaining your pool in Melbourne's variable climate requires a consistent routine. Here's your comprehensive guide to keeping your pool in perfect condition throughout the year.

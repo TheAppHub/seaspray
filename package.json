@@ -17,7 +17,8 @@
 		"precommit": "lint-staged",
 		"snyk:test": "snyk test",
 		"snyk:monitor": "snyk monitor",
-		"snyk:fix": "snyk wizard"
+		"snyk:fix": "snyk wizard",
+		"lint:ejs": "ejslint themes/seaspray/layout/**/*.ejs"
 	},
 	"hexo": {
 		"version": "7.3.0"
@@ -40,6 +41,7 @@
 		"@tailwindcss/typography": "^0.5.10",
 		"autoprefixer": "^10.4.17",
 		"concurrently": "^8.2.2",
+		"ejs-lint": "^2.0.1",
 		"flowbite": "^2.3.0",
 		"flowbite-typography": "^1.0.5",
 		"husky": "^9.1.7",

@@ -8,6 +8,7 @@ tags:
   - Melbourne Pools
 hero: pool-planning.jpg
 readingTime: 9
+layout: post
 ---
 
 # Ultimate Pool Planning Guide for Melbourne Homes

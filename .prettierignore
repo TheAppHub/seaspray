@@ -1,9 +1,9 @@
-# Ignore EJS files
-*.ejs
-themes/**/*.ejs
-
 # Ignore other common files
 node_modules
 dist
 public
-.DS_Store 
+.DS_Store
+
+# Ignore EJS files
+*.ejs
+themes/**/*.ejs 

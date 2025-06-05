@@ -1,5 +1,4 @@
 <%- partial('_partials/header') %>
-post
 <% let heroImage = page.hero || '/img/hero-pool-1.jpg' %>
 
 <main class="pb-16 lg:pb-24 bg-primary-900 antialiased">
@@ -12,19 +11,29 @@ post
 			/>
 			<div class="absolute inset-0 bg-black bg-opacity-50"></div>
 		</div>
-		<div class="absolute top-20 left-1/2 px-4 mx-auto w-full max-w-screen-xl -translate-x-1/2 xl:top-1/2 xl:-translate-y-1/2 xl:px-0">
-			<div class="block mb-4 font-bold text-gray-300">Seaspray Pools <span class="font-normal text-white hover:underline">Melbourne</span></div>
-			<h1 class="mb-4 max-w-4xl text-2xl font-extrabold leading-none text-white sm:text-3xl lg:text-4xl"><%= page.title %></h1>
+		<div
+			class="absolute top-20 left-1/2 px-4 mx-auto w-full max-w-screen-xl -translate-x-1/2 xl:top-1/2 xl:-translate-y-1/2 xl:px-0"
+		>
+			<div class="block mb-4 font-bold text-gray-300">
+				Seaspray Pools
+				<span class="font-normal text-white hover:underline">Melbourne</span>
+			</div>
+			<h1
+				class="mb-4 max-w-4xl text-2xl font-extrabold leading-none text-white sm:text-3xl lg:text-4xl"
+			>
+				<%= page.title %>
+			</h1>
 			<p class="text-lg font-normal text-gray-300"><%= page.description %></p>
 		</div>
 	</header>
-	<div class="flex relative z-20 justify-between p-6 -m-36 mx-4 max-w-screen-xl bg-primary-700 rounded xl:-m-32 xl:p-9 xl:mx-auto">
-		<article class="xl:w-[828px] w-full max-w-none format format-sm sm:format-base lg:format-lg format-blue">
-
-			<div class="prose lg:prose-lg mx-auto">
-				<%- page.content %>
-			</div>
-
+	<div
+		class="flex relative z-20 justify-between p-6 -m-36 mx-4 max-w-screen-xl bg-primary-700 rounded xl:-m-32 xl:p-9 xl:mx-auto"
+	>
+		<article
+			class="xl:w-[828px] w-full max-w-none format format-sm sm:format-base lg:format-lg format-blue"
+		>
+			<div class="prose lg:prose-lg mx-auto"><%- page.content %></div>
+		
 			<% if (page.tags && page.tags.length > 0) { %>
 			<div class="mt-12 pt-8 border-t border-primary-800">
 				<h2 class="text-2xl font-display font-bold text-white mb-4">Tags</h2>
@@ -33,7 +42,8 @@ post
 					<a
 						href="<%- url_for(tag.path) %>"
 						class="bg-primary-700 text-primary-200 text-sm px-3 py-1 rounded-full hover:bg-primary-600 transition-colors"
-					><%= tag.name %></a>
+						><%= tag.name %></a
+					>
 					<% }); %>
 				</div>
 			</div>
@@ -43,69 +53,68 @@ post
 			<div class="xl:w-[336px] sticky top-6">
 				<h3 id="sidebar-label" class="sr-only">Sidebar</h3>
 				<div class="mb-12">
-					<h4 class="mb-2 text-sm font-bold text-gray-200 uppercase">Seapray Pools Melbourne</h4>
-					<p class="mb-4 text-sm text-gray-300">We are a family-run business for over 30 years, we know a thing (or three) about pool building for Melbourne's unique climate.</p>
-					<a href="/contact" type="button" class="block text-white bg-secondary-400 hover:bg-secondary-600 focus:ring-4 focus:ring-secondary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none text-center w-full">Get a quote</a> 
+					<h4 class="mb-2 text-sm font-bold text-gray-200 uppercase">
+						Seapray Pools Melbourne
+					</h4>
+					<p class="mb-4 text-sm text-gray-300">
+						We are a family-run business for over 30 years, we know a thing (or
+						three) about pool building for Melbourne's unique climate.
+					</p>
+					<a
+						href="/contact"
+						type="button"
+						class="block text-white bg-secondary-400 hover:bg-secondary-600 focus:ring-4 focus:ring-secondary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none text-center w-full"
+						>Get a quote</a
+					>
 				</div>
-
 				<div class="mb-12">
-					<h4 class="mb-4 text-md font-bold text-white uppercase">Pool Types</h4>
-					<% const poolTypes = site.pages.filter(page => page.source.startsWith('pool-types/') && page.layout === 'pool-type'); %>
-					<% poolTypes.forEach(function(poolType) { %>
+					<h4 class="mb-4 text-md font-bold text-white uppercase">Related Posts</h4>
+					<%
+					const sidebarPosts = site.posts.filter(post => post.source.startsWith('_posts/blog/') && post._id !== page._id);
+					// Shuffle the array
+					for (let i = sidebarPosts.length - 1; i > 0; i--) {
+						const j = Math.floor(Math.random() * (i + 1));
+						[sidebarPosts[i], sidebarPosts[j]] = [sidebarPosts[j], sidebarPosts[i]];
+					}
+					sidebarPosts.slice(0, 3).forEach(function(post) {
+					%>
 					<div class="mb-6 flex items-center">
-						<a href="<%- url_for(poolType.path) %>" class="shrink-0">
-							<img src="<%- url_for(poolType.featured_image) %>" class="mr-4 max-w-full w-24 h-24 rounded-lg" alt="<%= poolType.title %>">
+						<a href="<%- url_for(post.path) %>" class="shrink-0">
+							<img src="<%- url_for(post.path + '/' + post.hero) %>" class="mr-4 max-w-full w-24 h-24 rounded-md" alt="<%= post.title %>" />
 						</a>
 						<div>
-							<h5 class="mb-2 text-md font-bold leading-tight text-white"><%= poolType.title %></h5>
-							<p class="mb-2 text-gray-300 text.md"><%= poolType.shortDesc %></p>
-							<a href="<%- url_for(poolType.path) %>" class="inline-flex items-center font-medium underline underline-offset-4 text-secondary-400 hover:no-underline">
+							<h5 class="mb-2 text-md font-bold leading-tight text-white"><%= post.title %></h5>
+							<p class="mb-2 text-gray-300 text.md"><%= post.shortDesc %></p>
+							<a href="<%- url_for(post.path) %>" class="inline-flex items-center font-medium underline underline-offset-4 text-secondary-400 hover:no-underline">
 								Learn more
 							</a>
 						</div>
 					</div>
 					<% }); %>
 				</div>
-				<div>   
-					<a href="/portfolio/" class="flex justify-center items-center mb-3 w-full h-48 bg-gray-100 rounded-lg overflow-hidden">
-						<img src="/img/hero-pool-3.jpg" alt="Seaspray Pools Melbourne Project" class="w-full h-full object-cover">
+				<div>
+					<a
+						href="/portfolio/"
+						class="flex justify-center items-center mb-3 w-full h-48 bg-gray-100 rounded-lg overflow-hidden"
+					>
+						<img
+							src="/img/hero-pool-3.jpg"
+							alt="Seaspray Pools Melbourne Project"
+							class="w-full h-full object-cover"
+						/>
 					</a>
-					<p class="mb-2 text-sm text-gray-500">View our recent projects, and see how we've helped our clients create their dream pools.</p>
+					<p class="mb-2 text-sm text-gray-500">
+						View our recent projects, and see how we've helped our clients
+						create their dream pools.
+					</p>
 					<p class="text-xs text-gray-400 uppercase">Recent projects</p>
 				</div>
 			</div>
 		</aside>
 	</div>
-  </main>
-  
-  <aside aria-label="Related articles" class="py-8 lg:py-24 bg-primary-900">
-	<div class="px-4 mx-auto max-w-screen-xl">
-		<h2 class="mb-6 lg:mb-8 text-2xl font-bold text-white">Related articles</h2>
-		<div class="grid gap-6 lg:gap-12 md:grid-cols-2">
-			<% const blogPosts = site.posts.filter(post => post.source.startsWith('_posts/blog/')); %>
-			<% if (blogPosts.length > 0) { blogPosts.forEach(function(post) { %>
-			<article class="flex flex-col xl:flex-row">
-				<a href="<%- url_for(post.path) %>" class="mb-2 xl:mb-0">
-					<img src="<%- url_for(post.path + '/' + post.hero) %>" class="mr-5 max-w-sm" alt="<%= post.title %>">
-				</a>
-				<div class="flex flex-col justify-center">
-					<h2 class="mb-2 text-xl font-bold leading-tight text-white font-body">
-						<a href="<%- url_for(post.path) %>"><%= post.title %></a>
-					</h2>
-					<p class="mb-4 text-gray-300 max-w-sm"><%= post.excerpt || post.description %></p>
-					<a href="<%- url_for(post.path) %>" class="inline-flex items-center font-medium underline underline-offset-4 text-gray-300 hover:no-underline">
-						Read in <%= post.readingTime %> minutes
-					</a>
-				</div>
-			</article>
-			<% }); } else { %>
-			<div class="col-span-2 text-center text-gray-500">
-				<p>No blog posts available at the moment.</p>
-			</div>
-			<% } %>
-		</div>
-	</div>
-  </aside>
-</main>
 
-<%- partial('_partials/footer') %>
+	<!-- Features -->
+	<div class="mt-32">
+		<%- partial('_partials/featured-projects') %>
+	</div>
+</main>

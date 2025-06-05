@@ -8,6 +8,7 @@ tags:
   - Green Solutions
 hero: pool-energy.jpg
 readingTime: 8
+layout: post
 ---
 
 # Energy-Efficient Pool Solutions for Melbourne Homes

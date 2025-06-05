@@ -8,6 +8,7 @@ tags:
   - Pool Care
 hero: pool-cleaning.jpg
 readingTime: 7
+layout: post
 ---
 
 # Expert Pool Cleaning Tips for Crystal Clear Water
