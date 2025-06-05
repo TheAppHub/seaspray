@@ -112,32 +112,8 @@
 	</div>
   </main>
   
-  <aside aria-label="Related articles" class="py-8 lg:py-24 bg-primary-900">
-	<div class="px-4 mx-auto max-w-screen-xl">
-		<h2 class="mb-6 lg:mb-8 text-2xl font-bold text-white">Related articles</h2>
-		<div class="grid gap-6 lg:gap-12 md:grid-cols-2">
-			<% const blogPosts = site.posts.filter(post => post.source.startsWith('_posts/blog/')); %>
-			<% if (blogPosts.length > 0) { blogPosts.forEach(function(post) { %>
-			<article class="flex flex-col xl:flex-row">
-				<a href="<%- url_for(post.path) %>" class="mb-2 xl:mb-0">
-					<img src="<%- url_for(post.path + '/' + post.hero) %>" class="mr-5 max-w-sm" alt="<%= post.title %>">
-				</a>
-				<div class="flex flex-col justify-center">
-					<h2 class="mb-2 text-xl font-bold leading-tight text-white font-body">
-						<a href="<%- url_for(post.path) %>"><%= post.title %></a>
-					</h2>
-					<p class="mb-4 text-gray-300 max-w-sm"><%= post.excerpt || post.description %></p>
-					<a href="<%- url_for(post.path) %>" class="inline-flex items-center font-medium underline underline-offset-4 text-gray-300 hover:no-underline">
-						Read in <%= post.readingTime %> minutes
-					</a>
-				</div>
-			</article>
-			<% }); } else { %>
-			<div class="col-span-2 text-center text-gray-500">
-				<p>No blog posts available at the moment.</p>
-			</div>
-			<% } %>
-		</div>
-	</div>
+  <aside aria-label="Featured Projects" class="py-8 lg:py-24 bg-primary-900">
+	<!-- Featured Projects -->
+	<%- partial('_partials/featured-projects') %>
   </aside>
 </main>
