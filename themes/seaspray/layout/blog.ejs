@@ -13,7 +13,7 @@
             });
             %>
             <% blogTags.forEach(function(tagName) { %>
-                <a href="<%- url_for('/tags/' + tagName) %>" class="bg-blue-100 text-primary-400 text-xs font-medium px-2.5 py-0.5 rounded-sm">
+                <a href="<%- url_for('/blog-tags/' + tagName) %>" class="bg-blue-100 text-primary-400 text-xs font-medium px-2.5 py-0.5 rounded-sm">
                     <%= tagName %>
                 </a>
             <% }); %>

@@ -136,3 +136,18 @@ facebook: https://www.facebook.com/seaspraypoolsaustralia/
 
 # Instagram
 instagram: https://www.instagram.com/seaspraypools/
+
+# Tag pages
+tag_generator:
+  per_page: 10
+  order_by: -date
+  layout: blog-tag
+  path: blog-tags/:name/
+  data: blog-tags
+
+portfolio_tag_generator:
+  per_page: 10
+  order_by: -date
+  layout: portfolio-tag
+  path: portfolio-tags/:name/
+  data: portfolio-tags
