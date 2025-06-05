@@ -1,8 +1,9 @@
-<%- partial('_partials/page-hero', { title: page.tag, description: 'Browse portfolio projects by tag', heroImage: '/img/hero-pool-1.jpg', heroAlt: page.tag }) %>
+<%- partial('_partials/page-hero', { title: 'Portfolio', description:  'Seaspray Pools ' + page.tag + ' projects', heroImage: '/img/hero-pool-1.jpg', heroAlt: page.tag }) %>
 
 <section class="bg-primary-700">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div class="flex flex-wrap gap-2 mb-4">
+         
             <% 
             const portfolioPosts = site.posts.filter(post => post.source.startsWith('_posts/portfolio/'));
             const portfolioTags = new Set();
@@ -17,6 +18,7 @@
                     <%= tagName %>
                 </a>
             <% }); %>
+           
         </div>
         <div class="grid gap-8 mb-16 lg:grid-cols-3">
             <% if (page.posts && page.posts.length > 0) { %>
