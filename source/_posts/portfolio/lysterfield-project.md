@@ -4,7 +4,7 @@ layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: lysterfield-pool-project-main.jpg
+thumbnail_image: lysterfield-pool-project-main.jpg
 featured: 3
 gallery:
   - lysterfield-pool-project-gallery-1.jpg

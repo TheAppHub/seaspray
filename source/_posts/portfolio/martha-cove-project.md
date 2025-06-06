@@ -4,7 +4,7 @@ layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: martha-cove-pool-project-main.jpg
+thumbnail_image: martha-cove-pool-project-main.jpg
 gallery:
   - martha-cove-pool-project-gallery-1.jpg
   - martha-cove-pool-project-gallery-2.jpg

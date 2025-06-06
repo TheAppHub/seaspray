@@ -1,12 +1,11 @@
-<!-- prettier-ignore -->
-<%- partial('_partials/header') %>
+<% let heroImage = page.hero_image || page.featured_image || '/img/hero-pool-1.jpg' %>
 
 <main class="bg-primary-900">
 	<div class="pb-16 lg:pb-24 antialiased">
 		<header class="relative h-[60vh]">
 			<div class="absolute inset-0">
 				<img
-					src="<%= page.hero || '/img/hero-pool-1.jpg' %>"
+					src="<%= heroImage %>"
 					alt="<%= typeof heroAlt !== 'undefined' && heroAlt ? heroAlt : 'Luxury Pool Design' %>"
 					class="w-full h-full object-cover"
 				/>

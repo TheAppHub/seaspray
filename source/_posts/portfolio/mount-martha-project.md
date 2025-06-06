@@ -4,7 +4,7 @@ layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern, coastal]
-featured_image: mount-martha-project-main.jpg
+thumbnail_image: mount-martha-project-main.jpg
 gallery:
   - mount-martha-pool-project-gallery-1.jpg
   - mount-martha-pool-project-gallery-2.jpg

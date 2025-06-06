@@ -4,7 +4,7 @@ layout: portfolio
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: st-andrews-pool-project-main.jpg
+thumbnail_image: st-andrews-pool-project-main.jpg
 gallery:
   - st-andrews-pool-project-gallery-1.jpg
   - st-andrews-pool-project-gallery-2.jpg

@@ -4,7 +4,7 @@ layout: pool-type
 permalink: /pool-types/concrete-swimming-pools/
 description: We tailor luxury concrete pools in Melbourne to your exact specifications.
 shortDesc: Luxury concrete pools to your exact specifications.
-featured_image: /images/pool-types/concrete-pool.jpg
+thumbnail_image: /images/pool-types/concrete-pool.jpg
 features:
   - title: Design Flexibility
     content: |

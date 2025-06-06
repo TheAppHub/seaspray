@@ -4,7 +4,7 @@ layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: essendon-pool-project-main.jpg
+thumbnail_image: essendon-pool-project-main.jpg
 gallery:
   - essendon-pool-project-gallery-1.jpg
   - essendon-pool-project-gallery-2.jpg

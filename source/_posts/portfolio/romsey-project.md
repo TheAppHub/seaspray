@@ -4,7 +4,7 @@ layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: romsey-pool-project-main.jpg
+thumbnail_image: romsey-pool-project-main.jpg
 gallery:
   - romsey-pool-project-gallery-1.jpg
   - romsey-pool-project-gallery-2.jpg

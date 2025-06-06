@@ -6,12 +6,10 @@ tags:
   - Pool Cleaning
   - Water Care
   - Pool Care
-hero: pool-cleaning.jpg
+featured_image: pool-cleaning.jpg
 readingTime: 7
 layout: post
 ---
-
-# Expert Pool Cleaning Tips for Crystal Clear Water
 
 Achieving and maintaining crystal clear pool water requires more than just regular cleaning. Here's your comprehensive guide to professional pool cleaning techniques.
 

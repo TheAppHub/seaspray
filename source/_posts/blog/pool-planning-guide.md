@@ -6,12 +6,10 @@ tags:
   - Pool Planning
   - Pool Design
   - Melbourne Pools
-hero: pool-planning.jpg
+featured_image: pool-planning.jpg
 readingTime: 9
 layout: post
 ---
-
-# Ultimate Pool Planning Guide for Melbourne Homes
 
 Planning a new pool installation requires careful consideration of various factors. This comprehensive guide will help you make informed decisions for your Melbourne home.
 

@@ -6,7 +6,7 @@ tags:
   - Pool Maintenance
   - Water Care
   - Melbourne Pools
-hero: pool-maintenance.jpg
+featured_image: pool-maintenance.jpg
 readingTime: 6
 layout: post
 ---

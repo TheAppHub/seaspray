@@ -1,5 +1,5 @@
 
-<% let heroImage = page.featured_image || '/img/hero-pool-1.jpg' %>
+<% let heroImage = page.thumbnail_image || '/img/hero-pool-1.jpg' %>
 
 <main class="pb-16 lg:pb-24 bg-primary-900 antialiased">
 	<header class="relative h-[60vh]">
@@ -60,7 +60,7 @@
 					<% poolTypes.forEach(function(poolType) { %>
 					<div class="mb-6 flex items-center">
 						<a href="<%- url_for(poolType.path) %>" class="shrink-0">
-							<img src="<%- url_for(poolType.featured_image) %>" class="mr-4 max-w-full w-24 h-24 rounded-lg" alt="<%= poolType.title %>">
+							<img src="<%- url_for(poolType.thumbnail_image) %>" class="mr-4 max-w-full w-24 h-24 rounded-lg" alt="<%= poolType.title %>">
 						</a>
 						<div>
 							<h5 class="mb-2 text-md font-bold leading-tight text-white"><%= poolType.title %></h5>

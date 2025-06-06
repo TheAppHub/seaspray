@@ -4,7 +4,7 @@ layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: /images/portfolio/surrey-hills/surrey-hills-pool-project-main.jpg
+thumbnail_image: /images/portfolio/surrey-hills/surrey-hills-pool-project-main.jpg
 gallery:
   - /images/portfolio/surrey-hills/surrey-hills-pool-project-gallery-2.jpg
   - /images/portfolio/surrey-hills/surrey-hills-pool-project-gallery-3.jpg

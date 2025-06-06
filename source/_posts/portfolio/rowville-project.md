@@ -4,7 +4,7 @@ layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: rowville-pool-project-main.jpg
+thumbnail_image: rowville-pool-project-main.jpg
 gallery:
   - rowville-pool-project-gallery-1.jpg
   - rowville-pool-project-gallery-2.jpg

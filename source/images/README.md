@@ -55,7 +55,7 @@ source/images/
    ```markdown
    ---
    title: Post Title
-   featured_image: /images/blog/post-name/featured.jpg
+   thumbnail_image: /images/blog/post-name/featured.jpg
    gallery:
      - /images/blog/post-name/gallery-1.jpg
      - /images/blog/post-name/gallery-2.jpg
@@ -74,7 +74,7 @@ source/images/
    ```markdown
    ---
    title: Project Title
-   featured_image: /images/portfolio/project-name/main.jpg
+   thumbnail_image: /images/portfolio/project-name/main.jpg
    gallery:
      - /images/portfolio/project-name/gallery-1.jpg
      - /images/portfolio/project-name/gallery-2.jpg

@@ -6,12 +6,10 @@ tags:
   - Energy Efficiency
   - Pool Costs
   - Green Solutions
-hero: pool-energy.jpg
+featured_image: pool-energy.jpg
 readingTime: 8
 layout: post
 ---
-
-# Energy-Efficient Pool Solutions for Melbourne Homes
 
 Discover how to make your pool more energy-efficient and reduce running costs while maintaining perfect water quality.
 

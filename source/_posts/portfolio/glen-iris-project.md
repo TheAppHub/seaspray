@@ -4,7 +4,7 @@ layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: glen-iris-pool-project-main.jpg
+thumbnail_image: glen-iris-pool-project-main.jpg
 gallery:
   - glen-iris-pool-project-gallery-1.jpg
   - glen-iris-pool-project-gallery-2.jpg

@@ -4,7 +4,7 @@ layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured_image: balwyn-pool-project-main.jpg
+thumbnail_image: balwyn-pool-project-main.jpg
 gallery:
   - balwyn-pool-project-gallery-1.jpg
   - balwyn-pool-project-gallery-2.jpg
