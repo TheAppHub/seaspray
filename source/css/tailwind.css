@@ -3256,6 +3256,11 @@ input:checked + .toggle-bg {
   color: rgb(102 123 143 / var(--tw-text-opacity, 1));
 }
 
+.text-primary-50 {
+  --tw-text-opacity: 1;
+  color: rgb(240 244 248 / var(--tw-text-opacity, 1));
+}
+
 .text-primary-600 {
   --tw-text-opacity: 1;
   color: rgb(42 63 84 / var(--tw-text-opacity, 1));
@@ -3274,16 +3279,6 @@ input:checked + .toggle-bg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-primary-50 {
-  --tw-text-opacity: 1;
-  color: rgb(240 244 248 / var(--tw-text-opacity, 1));
-}
-
-.text-primary-100 {
-  --tw-text-opacity: 1;
-  color: rgb(217 226 236 / var(--tw-text-opacity, 1));
 }
 
 .underline {

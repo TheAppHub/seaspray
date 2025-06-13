@@ -1,7 +1,10 @@
-title: "Welcome to My Website"
-subtitle: "Your compelling subtitle goes here"
-description: "A brief description of your website or business"
+title: "Seaspray Pools"
+subtitle: "Creating beautiful, sustainable swimming pools for your home"
 cta_button:
-  text: "Contact us"
-  link: "/contact"
-background_image: "/images/hero-bg.jpg"
+  text: "Get started"
+  link: "#home-intro"
+background_images:
+  - "/img/hero-pool.jpg"
+  - "/img/hero-pool-1.jpg"
+  - "/img/hero-pool-2.jpg"
+  - "/img/hero-pool-3.jpg"
