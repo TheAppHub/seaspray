@@ -1,0 +1,16 @@
+features:
+  - title: "Expert Design"
+    description: "Our award-winning designers create pools that perfectly complement your home and lifestyle"
+    icon: "design"
+
+  - title: "Quality Construction"
+    description: "Built to last with premium materials and expert craftsmanship"
+    icon: "construction"
+
+  - title: "Sustainable Solutions"
+    description: "Eco-friendly options that reduce environmental impact and operating costs"
+    icon: "sustainability"
+
+  - title: "Lifetime Support"
+    description: "Comprehensive maintenance and support services to keep your pool perfect"
+    icon: "support"
