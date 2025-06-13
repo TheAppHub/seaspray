@@ -1,17 +1,17 @@
 features:
   - title: "Custom Concrete Design"
     description: "For any shape or size, we make pools for you, not from a template."
-    icon: "design"
+   
 
   - title: "Quality Construction"
     description: "Built to last with premium materials and expert craftsmanship"
-    icon: "construction"
+   
 
-  - title: "Sustainable Solutions"
-    description: "Eco-friendly options that reduce environmental impact and operating costs"
-    icon: "sustainability"
+  - title: "Local Knowledge"
+    description: "We understand the unique conditions and council requirements across Melbourne and the Mornington Peninsula."
+  
 
   - title: "Design Centre Access"
     description: "Visit our Ferntree Gully Design Centre to explore materials, colours, and finishes with expert advice."
-    icon: "support"
+   
 
