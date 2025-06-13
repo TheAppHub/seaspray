@@ -18,12 +18,12 @@
                 </a>
             <% }); %>
         </div>
-        <div class="grid gap-8 mb-16 lg:grid-cols-3">
+        <div class="grid gap-8 mb-16 md:grid-cols-2 lg:grid-cols-3">
             <% if (portfolioPosts.length > 0) { %>
                 <% portfolioPosts.forEach(function(project) { %>
                     <article>
                         <a href="<%- url_for(project.path) %>">
-                            <img class="mb-5 rounded-lg" src="<%- url_for(project.path + '/' + project.thumbnail_image) %>" alt="<%= project.title %>">
+                            <img class="mb-5 rounded-lg h-64 w-full object-cover" src="<%- url_for(project.path + '/' + project.thumbnail_image) %>" alt="<%= project.title %>">
                         </a>
                         <h2 class="my-2 text-2xl font-bold tracking-tight text-white">
                             <a href="<%- url_for(project.path) %>" class="text-white"><%= project.title %></a>
