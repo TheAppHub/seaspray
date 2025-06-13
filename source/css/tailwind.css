@@ -3153,6 +3153,16 @@ input:checked + .toggle-bg {
   line-height: 1rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -3413,6 +3423,10 @@ input:checked + .toggle-bg {
   }
 }
 
+.font-retro {
+  font-family: "Retro", system-ui, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -3420,14 +3434,17 @@ html {
 @font-face {
   font-family: "Retro";
 
-  src: url("/themes/seaspray/source/fonts/RetroSignatureRegular.woff2")
-		format("woff2");
+  src: url("/fonts/RetroSignatureRegular.woff2") format("woff2");
 
   font-weight: normal;
 
   font-style: normal;
 
   font-display: swap;
+}
+
+.font-retro {
+  font-family: "Retro", sans-serif;
 }
 
 /* Custom styles can be added below */

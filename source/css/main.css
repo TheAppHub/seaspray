@@ -8,11 +8,14 @@ html {
 
 @font-face {
 	font-family: "Retro";
-	src: url("/themes/seaspray/source/fonts/RetroSignatureRegular.woff2")
-		format("woff2");
+	src: url("/fonts/RetroSignatureRegular.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
+}
+
+.font-retro {
+	font-family: "Retro", sans-serif;
 }
 
 @layer components {

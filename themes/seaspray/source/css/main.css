@@ -1,4 +1,70 @@
-/* Scroll Indicator Animation */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: "Retro";
+	src: url("/themes/seaspray/source/fonts/RetroSignatureRegular.woff2")
+		format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.font-retro {
+	font-family: "Retro", system-ui, sans-serif;
+}
+
+@layer components {
+	.prose {
+		@apply text-primary-200;
+	}
+
+	.prose h1,
+	.prose h2,
+	.prose h3,
+	.prose h4,
+	.prose h5,
+	.prose h6 {
+		@apply text-white;
+	}
+
+	.prose a {
+		@apply text-primary-300 hover:text-primary-200;
+	}
+}
+
+@layer utilities {
+	@keyframes bg-gradient-move {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+
+	.bg-animated-primary {
+		background-image: linear-gradient(
+			-45deg,
+			theme("colors.primary.800"),
+			theme("colors.primary.700"),
+			theme("colors.primary.600")
+		);
+		background-size: 400% 400%;
+		animation: bg-gradient-move 15s ease infinite;
+	}
+}
+
+/* Custom styles can be added below */
+
 @keyframes scrollAnim {
 	0% {
 		transform: translate(-50%, 0) rotateX(0);
