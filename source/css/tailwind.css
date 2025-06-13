@@ -1212,19 +1212,6 @@ input:checked + .toggle-bg {
   border-color: #1C64F2;
 }
 
-html {
-  font-family: "Montserrat", system-ui, sans-serif;
-}
-
-h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-  font-family: "Playfair Display", system-ui, sans-serif;
-}
-
 .container {
   width: 100%;
 }
@@ -3279,14 +3266,24 @@ h1,
   color: rgb(160 140 106 / var(--tw-text-opacity, 1));
 }
 
+.text-secondary-500 {
+  --tw-text-opacity: 1;
+  color: rgb(140 122 90 / var(--tw-text-opacity, 1));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-secondary-500 {
+.text-primary-50 {
   --tw-text-opacity: 1;
-  color: rgb(140 122 90 / var(--tw-text-opacity, 1));
+  color: rgb(240 244 248 / var(--tw-text-opacity, 1));
+}
+
+.text-primary-100 {
+  --tw-text-opacity: 1;
+  color: rgb(217 226 236 / var(--tw-text-opacity, 1));
 }
 
 .underline {
