@@ -3284,6 +3284,11 @@ h1,
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-secondary-500 {
+  --tw-text-opacity: 1;
+  color: rgb(140 122 90 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -3899,6 +3904,11 @@ html {
 .focus\:ring-secondary-300:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(195 183 159 / var(--tw-ring-opacity, 1));
+}
+
+.focus\:ring-secondary-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(140 122 90 / var(--tw-ring-opacity, 1));
 }
 
 .group:hover .group-hover\:visible {
