@@ -4,12 +4,15 @@ layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-thumbnail_image: essendon-pool-project-main.jpg
+thumbnail_image: essendon-project-main.jpg
+hero_image: essendon-project-5.jpg
 gallery:
-  - essendon-pool-project-gallery-1.jpg
-  - essendon-pool-project-gallery-2.jpg
-  - essendon-pool-project-gallery-3.jpg
-  - essendon-pool-project-gallery-4.jpg
+  - essendon-project-5.jpg
+  - essendon-project-2.jpg
+  - essendon-project-3.jpg
+  - essendon-project-4.jpg
+  - essendon-project-6.jpg
+  - essendon-project-main.jpg
 project_details:
   location: Essendon, VIC
   completion_date: 2024-02-01
@@ -28,8 +31,6 @@ project_details:
     - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
     - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
 ---
-
-# Essendon Project
 
 A beautiful modern concrete swimming pool project in Essendon, designed to complement the modern architecture of the home.
 

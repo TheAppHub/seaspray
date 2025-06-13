@@ -5,11 +5,14 @@ date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
 thumbnail_image: glen-iris-pool-project-main.jpg
+hero_image: glen-iris-pool-project-main.jpg
 gallery:
   - glen-iris-pool-project-gallery-1.jpg
-  - glen-iris-pool-project-gallery-2.jpg
+  - glen-iris-pool-project-gallery-5.jpg
   - glen-iris-pool-project-gallery-3.jpg
   - glen-iris-pool-project-gallery-4.jpg
+  - glen-iris-pool-project-gallery-6.jpg
+  - glen-iris-pool-project-gallery-7.jpg
 project_details:
   location: Glen Iris, VIC
   completion_date: 2024-02-01
@@ -28,8 +31,6 @@ project_details:
     - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
     - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
 ---
-
-# Glen Iris Project
 
 A stunning modern concrete swimming pool project in Glen Iris, designed to create a luxurious outdoor living space that complements the contemporary architecture of the home.
 

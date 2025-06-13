@@ -1,6 +1,6 @@
 ---
 title: St Andrews Project
-layout: portfolio
+layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
@@ -29,7 +29,6 @@ project_details:
     - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
 ---
 
-# St Andrews Project
 
 This project truly was our proudest achievement! Seaspray Pools were honoured to receive the SPASA Australia Pool of the Year Award in 2014, alongside SPASA Victoria Gold Award for Best Residential Concrete Pool – Under $100,000 and Highly Commended for Best Residential Concrete Lap Pool.
 

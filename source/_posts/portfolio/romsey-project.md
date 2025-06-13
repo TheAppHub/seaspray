@@ -5,11 +5,14 @@ date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
 thumbnail_image: romsey-pool-project-main.jpg
+hero_image: romsey-pool-project-main.jpg
 gallery:
-  - romsey-pool-project-gallery-1.jpg
+  - romsey-pool-project-gallery-5.jpg
   - romsey-pool-project-gallery-2.jpg
   - romsey-pool-project-gallery-3.jpg
   - romsey-pool-project-gallery-4.jpg
+  - romsey-pool-project-main.jpg
+  - romsey-pool-project-gallery-6.jpg
 project_details:
   location: Romsey, VIC
   completion_date: 2024-02-01
@@ -28,8 +31,6 @@ project_details:
     - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
     - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
 ---
-
-# Romsey Project
 
 With the intention being a combination of both exercise and family fun, this impressive 15m x 5m swimming pool completely fit the brief. A pool of this size has plenty of freedom in design, which allowed the owners to include exciting elements such as the external fully tiled spa and raised sheerface water feature.
 

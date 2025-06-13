@@ -5,6 +5,7 @@ date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
 thumbnail_image: rowville-pool-project-main.jpg
+hero_image: rowville-pool-project-main.jpg
 gallery:
   - rowville-pool-project-gallery-1.jpg
   - rowville-pool-project-gallery-2.jpg
@@ -29,8 +30,6 @@ project_details:
     - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
   landscaper: Cornerstone Paving
 ---
-
-# Rowville Project
 
 The finished result of this pool certainly demonstrates what can be achieved in a confined space. The original brief for this design was to create a family friendly swimming pool to integrate with the profile of the house and compliment the space available.
 

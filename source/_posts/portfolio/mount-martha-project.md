@@ -1,10 +1,11 @@
 ---
 title: Mount Martha Project
-layout: portfolio
+layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern, coastal]
-thumbnail_image: mount-martha-project-main.jpg
+thumbnail_image: mount-martha-pool-project-gallery-5.jpg
+hero_image: mount-martha-pool-project-gallery-5.jpg
 gallery:
   - mount-martha-pool-project-gallery-1.jpg
   - mount-martha-pool-project-gallery-2.jpg
@@ -13,6 +14,7 @@ gallery:
   - mount-martha-pool-project-gallery-6.jpg
   - mount-martha-pool-project-gallery-7.jpg
   - mount-martha-pool-project-gallery-8.jpg
+  - mount-martha-pool-project-main.jpg
 project_details:
   location: Mount Martha, VIC
   completion_date: 2024-02-15
@@ -27,8 +29,6 @@ project_details:
     - Solar heating
     - Smart control integration
 ---
-
-# Mount Martha Project
 
 A stunning modern concrete swimming pool project in Mount Martha, designed to create a luxurious coastal outdoor living space that takes advantage of the beautiful surroundings.
 

@@ -4,6 +4,7 @@ layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
+featured: 2
 thumbnail_image: kew-pool-project-main.jpg
 hero_image: kew-pool-project-gallery-1.jpg
 gallery:
@@ -12,6 +13,7 @@ gallery:
   - kew-pool-project-gallery-3.jpg
   - kew-pool-project-gallery-4.jpg
   - kew-pool-project-gallery-6.jpg
+  - kew-pool-project-main.jpg
 project_details:
   location: Kew, VIC
   completion_date: 2024-02-01
@@ -28,8 +30,6 @@ project_details:
   awards:
     - 2019 SPASA Victoria Gold Award - Best Residential Concrete Pool Under $60,000
 ---
-
-# Kew Project
 
 To take on this tricky job, a solution needed to be found to dig the swimming pool with only 1m access onto the site. Fences were unable to be pulled down as this property in Kew already had established neighbouring lots. Despite the circumstances and working by the concept "where there is a will, there is a way", a 900mm retractable machine and motorized wheelbarrow were used to excavate the swimming pool.
 

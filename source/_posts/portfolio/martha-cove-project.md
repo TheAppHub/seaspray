@@ -1,10 +1,11 @@
 ---
 title: Martha Cove Project
-layout: portfolio
+layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
 thumbnail_image: martha-cove-pool-project-main.jpg
+hero_image: martha-cove-pool-project-main.jpg
 gallery:
   - martha-cove-pool-project-gallery-1.jpg
   - martha-cove-pool-project-gallery-2.jpg
@@ -24,8 +25,6 @@ project_details:
     - Solar heating
     - Smart control integration
 ---
-
-# Martha Cove Project
 
 A stunning modern concrete swimming pool project in Martha Cove, designed to create a luxurious outdoor living space.
 

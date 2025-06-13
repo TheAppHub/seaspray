@@ -1,6 +1,6 @@
 features:
-  - title: "Expert Design"
-    description: "Our award-winning designers create pools that perfectly complement your home and lifestyle"
+  - title: "Custom Concrete Design"
+    description: "For any shape or size, we make pools for you, not from a template."
     icon: "design"
 
   - title: "Quality Construction"
@@ -11,6 +11,7 @@ features:
     description: "Eco-friendly options that reduce environmental impact and operating costs"
     icon: "sustainability"
 
-  - title: "Lifetime Support"
-    description: "Comprehensive maintenance and support services to keep your pool perfect"
+  - title: "Design Centre Access"
+    description: "Visit our Ferntree Gully Design Centre to explore materials, colours, and finishes with expert advice."
     icon: "support"
+

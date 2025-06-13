@@ -4,12 +4,13 @@ layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-thumbnail_image: /images/portfolio/surrey-hills/surrey-hills-pool-project-main.jpg
+thumbnail_image: surrey-hills-pool-project-main.jpg
+hero_image: surrey-hills-pool-project-main.jpg
 gallery:
-  - /images/portfolio/surrey-hills/surrey-hills-pool-project-gallery-2.jpg
-  - /images/portfolio/surrey-hills/surrey-hills-pool-project-gallery-3.jpg
-  - /images/portfolio/surrey-hills/surrey-hills-pool-project-gallery-4.jpg
-  - /images/portfolio/surrey-hills/surrey-hills-pool-project-gallery-5.jpg
+  - surrey-hills-pool-project-gallery-2.jpg
+  - surrey-hills-pool-project-gallery-3.jpg
+  - surrey-hills-pool-project-gallery-4.jpg
+  - surrey-hills-pool-project-gallery-5.jpg
 project_details:
   location: Surrey Hills, VIC
   completion_date: 2024-02-01
@@ -26,8 +27,6 @@ project_details:
   awards:
     - 2018 SPASA Victoria Gold Award - Best Residential Concrete Pool Under $50,000
 ---
-
-# Surrey Hills Project
 
 Designed to be constructed on a sloping block, this swimming pool was specifically engineered to be almost entirely out of ground. Formwork was used on all sides of the pool for support, ensuring that the overall size and shape made the most of the area that was available.
 

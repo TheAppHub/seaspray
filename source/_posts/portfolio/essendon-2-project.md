@@ -1,11 +1,11 @@
 ---
 title: Essendon 2 Project
-layout: portfolio
+layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
-featured: 1
-thumbnail_image: essendon-pool-project-main.jpg
+thumbnail_image: essendon-pool-project-gallery-7.jpg
+hero_image: essendon-pool-project-gallery-7.jpg
 gallery:
   - essendon-pool-project-gallery-1.jpg
   - essendon-pool-project-gallery-2.jpg
@@ -27,8 +27,6 @@ project_details:
     - Solar heating
     - Smart control integration
 ---
-
-# Essendon Project 2
 
 A beautiful traditional concrete swimming pool project in Essendon, designed to complement the classic architecture of the home while incorporating modern features for enhanced functionality.
 

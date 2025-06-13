@@ -5,12 +5,13 @@ date: 2024-03-20
 categories: [portfolio]
 tags: [concrete-pool, residential, modern]
 thumbnail_image: lysterfield-pool-project-main.jpg
+hero_image: lysterfield-pool-project-main.jpg
 featured: 3
 gallery:
   - lysterfield-pool-project-gallery-1.jpg
   - lysterfield-pool-project-gallery-2.jpg
   - lysterfield-pool-project-gallery-3.jpg
-  - lysterfield-pool-project-gallery-4.jpg
+  - lysterfield-pool-project-main.jpg
 project_details:
   location: Lysterfield, VIC
   completion_date: 2024-02-01
@@ -29,8 +30,6 @@ project_details:
     - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
     - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
 ---
-
-# Lysterfield Project
 
 A stunning modern concrete swimming pool project in Lysterfield, showcasing our expertise in creating beautiful outdoor living spaces.
 
