@@ -41,7 +41,7 @@
 		"ejs-lint": "^2.0.1",
 		"flowbite": "^2.3.0",
 		"flowbite-typography": "^1.0.5",
-		"postcss": "^8.4.35",
+		"postcss": "^8.5.6",
 		"postcss-cli": "^11.0.0",
 		"snyk": "^1.1297.1",
 		"tailwindcss": "^3.4.1"
