@@ -3,7 +3,7 @@ title: Glen Iris Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [concrete-pool, residential, modern]
+tags: [Pool & Spa Combo]
 thumbnail_image: glen-iris-pool-project-main.jpg
 hero_image: glen-iris-pool-project-main.jpg
 gallery:
@@ -16,49 +16,28 @@ gallery:
 project_details:
   location: Glen Iris, VIC
   completion_date: 2024-02-01
-  pool_type: Concrete Swimming Pool
-  size: 8m x 4m
+  pool_type: Concrete Swimming Pool & Spa
+  size: 
   features:
     - Modern design
-    - Water and chemical management system
-    - LED multicolour lighting
-    - Smooth rendered interior
-    - Waterline tiles
-    - Solar heating
-    - Smart control integration
+    - Centre-depth layout with steps
+    - 23mm 'Seaspray' interior tiles
+    - Full automation and infloor cleaning
   awards:
-    - SPASA Australia Pool of the Year Award 2014
-    - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
-    - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
+
 ---
 
-A stunning modern concrete swimming pool project in Glen Iris, designed to create a luxurious outdoor living space that complements the contemporary architecture of the home.
+A striking custom concrete pool and spa perched high above ground in Glen Iris, designed for year-round resort-style relaxation and stunning views from the heart of the home.
 
 ## Project Overview
 
-This project features a contemporary concrete swimming pool that perfectly integrates with the modern design of the property. The design focuses on creating a seamless connection between indoor and outdoor living spaces, while maintaining privacy and functionality.
+This eye-catching pool and spa combination was crafted to become the centrepiece of this Glen Iris home. Elevated where an old retaining wall once stood, it’s perfectly positioned to be admired from the kitchen and living areas, turning everyday living into a luxury escape.
 
-## Key Features
-
-- Modern, minimalist design
-- Water and chemical management system
-- LED multicolour lighting
-- Smooth rendered interior
-- Waterline tiles
-- Solar heating
-- Smart control integration
-- Durable, high-quality materials
 
 ## Design Process
 
-Our team worked closely with the client to understand their vision and requirements. The design process included:
-
-1. Initial consultation and site assessment
-2. Concept development and 3D visualization
-3. Detailed design and engineering
-4. Construction and installation
-5. Final testing and handover
+The pool’s centre-depth layout features symmetrical ledges and steps at each end, providing easy, welcoming entry points for swimmers of all ages. The interior finish, with 23mm blended ‘Seaspray’ tiles, evokes a tropical retreat feel and shimmers beautifully year-round.
 
 ## Results
 
-The completed project exceeded the client's expectations, creating a stunning outdoor space that combines functionality with aesthetic appeal. The modern design creates a dramatic effect, while the integrated features ensure easy maintenance and enjoyment.
+With creative access solutions and smart landscaping, Seaspray maximised the available space without compromise. Multiple heating sources, an infloor cleaning system and full automation ensure stress-free pool care. Multi-coloured LED lights transform the pool at night, while the separate spa offers a cosy, fireplace-like warmth — the perfect spot to unwind, no matter the season.

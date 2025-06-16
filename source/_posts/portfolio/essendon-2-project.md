@@ -3,7 +3,7 @@ title: Essendon 2 Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [concrete-pool, residential, modern]
+tags: [Plunge Pool]
 thumbnail_image: essendon-pool-project-gallery-7.jpg
 hero_image: essendon-pool-project-gallery-7.jpg
 gallery:
@@ -16,45 +16,26 @@ gallery:
 project_details:
   location: Essendon, VIC
   completion_date: 2024-02-01
-  pool_type: Concrete Swimming Pool
+  pool_type: Concrete Plunge Pool
   size: 8m x 4m
   features:
-    - Modern design
-    - Water and chemical management system
-    - LED multicolour lighting
-    - Smooth rendered interior
-    - Waterline tiles
-    - Solar heating
-    - Smart control integration
+    - Compact plunge pool design
+    - Acrylic underwater viewing window
+    - Hidden Swimroll pool cover
+    - 1.7m flat depth
 ---
 
-A beautiful traditional concrete swimming pool project in Essendon, designed to complement the classic architecture of the home while incorporating modern features for enhanced functionality.
+A bold and innovative plunge pool in Essendon, cleverly designed for tight spaces with an acrylic viewing window, hidden swim cover and year-round comfort.
 
 ## Project Overview
 
-This project features a traditional concrete swimming pool that enhances the timeless appeal of the property. The design focuses on creating a classic outdoor living space that will be enjoyed for generations, while incorporating modern technology for ease of maintenance.
+This compact plunge pool proves that clever vertical design can transform a tight urban space into a luxurious escape. The client’s vision was clear: a pool that defies limited space yet delivers maximum enjoyment. The result is a stunning, feature-packed retreat that feels anything but small.
 
-## Key Features
-
-- Traditional design elements
-- Water and chemical management system
-- LED multicolour lighting
-- Smooth rendered interior
-- Waterline tiles
-- Solar heating
-- Smart control integration
-- Durable, high-quality materials
 
 ## Design Process
 
-Our team worked closely with the client to understand their vision and requirements. The design process included:
-
-1. Initial consultation and site assessment
-2. Concept development and 3D visualization
-3. Detailed design and engineering
-4. Construction and installation
-5. Final testing and handover
+One of the standout features is the acrylic window — integrated directly into both the pool wall and fencing — offering a unique underwater view while serving as a fully compliant, seamless pool barrier. Equally innovative is the hidden Remco Swimroll cover, neatly tucked inside a sleek stainless-steel housing within the pool ledge, keeping debris out and warmth in with minimal visual impact.
 
 ## Results
 
-The completed project exceeded the client's expectations, creating a stunning outdoor space that combines traditional aesthetics with modern functionality. The classic design creates an elegant effect, while the integrated features ensure easy maintenance and enjoyment.
+Designed for both relaxation and deeper plunges, the pool maintains a flat depth of 1.7 metres. It’s fully automated and practically zero-maintenance, with multiple heating options, an automatic water leveller, ozone sanitation and the crystal-clear acrylic panel adding a touch of chic elegance. This Essendon plunge pool redefines what a modern urban pool can be — smart, stylish and refreshingly different.

@@ -3,7 +3,7 @@ title: Essendon Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [concrete-pool, residential, modern]
+tags: [Pool & Spa Combo]
 thumbnail_image: essendon-project-main.jpg
 hero_image: essendon-project-5.jpg
 gallery:
@@ -16,47 +16,30 @@ gallery:
 project_details:
   location: Essendon, VIC
   completion_date: 2024-02-01
-  pool_type: Concrete Swimming Pool
-  size: 8m x 4m
+  pool_type: Concrete Swimming Pool & Spa
+  size: 
   features:
     - Modern design
-    - Water and chemical management system
-    - LED multicolour lighting
-    - Smooth rendered interior
-    - Waterline tiles
-    - Solar heating
-    - Smart control integration
+    - Fully tiled pool walls
+    - Bisazza glass mosaics
+    - Frameless glass barrier
+    - Rain drop waterfall
   awards:
     - SPASA Australia Pool of the Year Award 2014
     - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
     - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
 ---
 
-A beautiful modern concrete swimming pool project in Essendon, designed to complement the modern architecture of the home.
+A custom-designed concrete pool and spa maximising a compact backyard space in Essendon, with architectural tiling and a striking rain drop waterfall feature.
 
 ## Project Overview
 
-This project features a modern concrete swimming pool that enhances the contemporary appeal of the property. The design focuses on creating a sleek and stylish outdoor living space that will be enjoyed for generations.
+Positioned along the property boundary, this concrete pool and spa transform a narrow backyard into a functional, elegant outdoor retreat. Frameless glass fencing keeps the area secure while preserving clear sightlines to the water, adding safety without compromising style.
 
-## Key Features
-
-- Modern concrete construction
-- Contemporary design elements
-- Integrated LED lighting system
-- Automated cleaning and maintenance
-- Smart control system for temperature and features
-- Durable, high-quality materials
 
 ## Design Process
-
-Our team worked closely with the client to understand their vision and requirements. The design process included:
-
-1. Initial consultation and site assessment
-2. Concept development and 3D visualization
-3. Detailed design and engineering
-4. Construction and installation
-5. Final testing and handover
+To achieve the seamless look, Seaspray engineered thicker-than-standard pool walls so the fully tiled interior extends beyond the waterline into the surrounding block walls. Bisazza blue glass mosaics add depth and a touch of artistry, replacing plain render with a sophisticated finish. Every detail was considered to blend the pool with the home’s modern architecture.
 
 ## Results
 
-The completed project exceeded the client's expectations, creating a stunning outdoor space that combines modern aesthetics with modern functionality. The sleek design creates a stylish effect, while the integrated features ensure easy maintenance and enjoyment.
+A subtle rain drop waterfall installed in the roof truss creates a serene curtain of water in front of the dining window — an eye-catching feature from indoors and out. Despite the tight space, the pool and spa feel open and welcoming, providing a private oasis and showcasing Seaspray’s skill in compact luxury pool design.

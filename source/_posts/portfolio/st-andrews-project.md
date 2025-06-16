@@ -3,7 +3,7 @@ title: St Andrews Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [concrete-pool, residential, modern]
+tags: [Lap Pool]
 thumbnail_image: st-andrews-pool-project-main.jpg
 gallery:
   - st-andrews-pool-project-gallery-1.jpg
@@ -13,16 +13,15 @@ gallery:
 project_details:
   location: St Andrews, VIC
   completion_date: 2024-02-01
-  pool_type: Concrete Swimming Pool
-  size: 8m x 4m
+  pool_type: Concrete Lap Pool
+  size: 25m
   features:
     - Modern design
-    - Water and chemical management system
-    - LED multicolour lighting
-    - Smooth rendered interior
-    - Waterline tiles
-    - Solar heating
-    - Smart control integration
+    - 25m concrete lap pool
+    - Cliff-face construction
+    - Automatic pool cover
+    - White tiled lap lane
+   
   awards:
     - SPASA Australia Pool of the Year Award 2014
     - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
@@ -30,27 +29,18 @@ project_details:
 ---
 
 
-This project truly was our proudest achievement! Seaspray Pools were honoured to receive the SPASA Australia Pool of the Year Award in 2014, alongside SPASA Victoria Gold Award for Best Residential Concrete Pool – Under $100,000 and Highly Commended for Best Residential Concrete Lap Pool.
+A secluded 25m custom concrete lap pool in St Andrews, thoughtfully built into a bushland sanctuary and winner of multiple SPASA Awards for design and excellence.
+
 
 ## Project Overview
 
-This swimming pool situates within its very own private sanctuary. Located in a secluded area, the swimming pool has little distraction as it is immersed in a tranquil bushland setting. There is no view of the road or neighbouring homes, only the most serene site of the home-grown vineyard to admire every day.
+This award-winning custom concrete swimming pool sits within its own private retreat, surrounded by tranquil bushland and the property’s home-grown vineyard. Hidden from roads and neighbours, the design maximises seclusion and connection with nature, creating an idyllic space for daily swimming and relaxation.
 
-## Key Features
-
-- 25m lap pool 'retreat' designed for fitness purposes
-- Rest ledges at both ends for comfortable breaks
-- Steps at the deep end for easy access and exit
-- Automatic Remco pool cover completely concealed by the deck
-- Solar and electric heating for all year-round swimming
-- Water and chemical management system
-- LED multicolour lighting
-- Dark blue fully tiled interior with highlighted white tiled lap lane
 
 ## Design Process
 
-This extremely steep site presented many challenges throughout the construction. Designed on a sheer cliff face, the shape of the swimming pool had to be cut into the embankment. Formwork was required around three sides of the pool to stabilize the concrete shell against the precipice.
+Constructed on a sheer cliff face, this steep site demanded innovative engineering. The 25-metre pool shell was precisely cut into the embankment, with formwork stabilising three sides against the slope. A ledge at each end provides rest points for laps, while broad steps at the deep end ensure easy access and exit.
 
 ## Results
 
-The completed project exceeded all expectations, creating a stunning outdoor space that combines functionality with aesthetic appeal. The design creates a dramatic effect against the natural landscape, while the integrated features ensure easy maintenance and enjoyment. The awards received are a testament to the quality and innovation of this exceptional project.
+At the shallow end, a concealed tank houses an automatic Remco pool cover neatly hidden beneath the deck for safety and effortless maintenance. Solar and electric heating, an advanced water and chemical management system, LED multicolour lighting, and a dark blue fully tiled interior with a crisp white lap lane combine to create a premium swimming experience, year-round. This pool was proudly awarded the SPASA Australia Pool of the Year and SPASA Victoria Gold Award for Best Residential Concrete Pool under $100,000.

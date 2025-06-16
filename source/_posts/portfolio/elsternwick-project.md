@@ -3,7 +3,7 @@ title: Elsternwick Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [concrete-pool, residential, modern]
+tags: [Pool & Spa Combo, Family Pool]
 thumbnail_image: elsternwick-pool-project-main.jpg
 hero_image: elsternwick-pool-project-gallery-1.jpg
 featured: 2
