@@ -1,0 +1,16 @@
+<% 
+const portfolioPosts = site.posts.filter(post => post.source.startsWith('_posts/portfolio/'));
+const portfolioTags = new Set();
+portfolioPosts.forEach(post => {
+    if (post.tags && post.tags.length) {
+        post.tags.forEach(tag => portfolioTags.add(tag.name));
+    }
+});
+%>
+<div class="flex flex-wrap gap-2 mb-8 justify-center items-center pb-8 border-b border-primary-600 w-full">
+    <% portfolioTags.forEach(function(tagName) { %>
+        <a href="<%- url_for('/portfolio-tags/' + tagName) %>" class="px-4 py-2 text-sm font-medium text-gray-300 bg-transparent border rounded-lg border-gray-200 hover:bg-primary-500 focus:z-10 focus:ring-1 focus:ring-gray-300">
+            <%= tagName %>
+        </a>
+    <% }); %>
+</div> 

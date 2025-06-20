@@ -1,0 +1,11 @@
+<div class="grid gap-8 mb-16 lg:grid-cols-3">
+    <% if (posts && posts.length > 0) { %>
+        <% posts.forEach(function(post) { %>
+            <%- partial('_partials/blog-post-card', { post: post }) %>
+        <% }); %>
+    <% } else { %>
+        <div class="col-span-3 text-center text-primary-200">
+            <p><%= emptyMessage || 'No blog posts available at the moment.' %></p>
+        </div>
+    <% } %>
+</div> 

@@ -1,0 +1,11 @@
+<div class="grid gap-8 mb-16 md:grid-cols-2 lg:grid-cols-3">
+    <% if (posts && posts.length > 0) { %>
+        <% posts.forEach(function(project) { %>
+            <%- partial('_partials/portfolio-project-card', { project: project }) %>
+        <% }); %>
+    <% } else { %>
+        <div class="col-span-3 text-center text-primary-200">
+            <p><%= emptyMessage || 'No portfolio projects available at the moment.' %></p>
+        </div>
+    <% } %>
+</div> 

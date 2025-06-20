@@ -1,0 +1,16 @@
+<% 
+const blogPosts = site.posts.filter(post => post.source.startsWith('_posts/blog/'));
+const blogTags = new Set();
+blogPosts.forEach(post => {
+    if (post.tags && post.tags.length) {
+        post.tags.forEach(tag => blogTags.add(tag.name));
+    }
+});
+%>
+<div class="flex flex-wrap gap-2 mb-8 justify-center items-center pb-8 border-b border-primary-600 w-full">
+    <% blogTags.forEach(function(tagName) { %>
+        <a href="<%- url_for('/blog-tags/' + tagName) %>" class="px-4 py-2 text-sm font-medium text-gray-300 bg-transparent border rounded-lg border-gray-200 hover:bg-primary-500 focus:z-10 focus:ring-1 focus:ring-gray-300">
+            <%= tagName %>
+        </a>
+    <% }); %>
+</div> 
