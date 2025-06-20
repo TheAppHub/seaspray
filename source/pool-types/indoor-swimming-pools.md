@@ -1,6 +1,7 @@
 ---
 title: Indoor Swimming Pools
 layout: pool-type
+permalink: /pool-types/indoor-swimming-pools/
 description: We can make your dream of having an indoor swimming pool at home come true.
 shortDesc: Making dream of an indoor swimming pool come true.
 thumbnail_image: /images/pool-types/indoor-pool.jpg
