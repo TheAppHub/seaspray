@@ -1,6 +1,6 @@
 ---
 title: Portfolio
-description: Explore our pool projects
+description: Explore our collection of stunning pool projects, each showcasing our commitment to quality, innovation, and customer satisfaction.
 layout: portfolio
 ---
 

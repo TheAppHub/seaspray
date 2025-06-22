@@ -1,7 +1,7 @@
 ---
 title: About Us
 date: 2024-03-30
-description: "Work with the award-winning, custom pool builders Melbourne families love."
+description: "Work with the award-winning, custom pool builders that Melbourne families love."
 ---
 
 ## Seaspray Pools Melbourne
@@ -16,7 +16,7 @@ It's why we're the number one, award-winning custom pool builder in Melbourne, y
 
 At Seaspray Pools, we believe in building excellent relationships with our customers. Our expert team of three registered builders and an in-house landscape architect and designer will work closely with you to create a look you'll love. We also ensure that we provide affordable prices and personalised service from all our friendly staff for the entire process of your project.
 
-### Fun in the sun all summer long
+### Fun in the sun, all summer long
 
 There's few things more thrilling than adding a pool to your home. There's the prospect of fun get-togethers when the mercury rises, relaxing poolside friends and family, and beating the summer heat in style.
 

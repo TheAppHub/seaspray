@@ -9,7 +9,7 @@ features:
   - title: Design Flexibility
     content: |
       Concrete pools are super flexible, so we can design concrete pools in Melbourne to meet any size, shape, or depth requirement you want. Because most hotel and apartment pools are made from concrete, you'll get that extra-luxurious lifestyle look you're after.
-  - title: Customization Options
+  - title: Customisation Options
     content: |
       You've got more options when it comes to interior finishes – including choosing coloured render or tiles to match your home décor. They can be renovated in years to come, so that you can make your pool feel brand new again.
   - title: Durability & Longevity
