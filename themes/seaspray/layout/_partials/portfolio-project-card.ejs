@@ -1,9 +1,12 @@
 <article>
     <a href="<%- url_for(project.path) %>">
-        <img class="mb-5 rounded-lg h-64 w-full object-cover" src="<%- url_for(project.path + '/' + project.thumbnail_image) %>" alt="<%= project.title %>">
+        <div class="relative mb-5 rounded-lg overflow-hidden group">
+            <img class="h-64 w-full object-cover" src="<%- url_for(project.path + '/' + project.thumbnail_image) %>" alt="<%= project.title %>">
+            <div class="absolute inset-0 bg-black bg-opacity-30 transition-opacity duration-300 group-hover:bg-opacity-0"></div>
+        </div>
     </a>
     <h2 class="my-2 text-2xl font-bold tracking-tight text-white">
-        <a href="<%- url_for(project.path) %>" class="text-white"><%= project.title %></a>
+        <a href="<%- url_for(project.path) %>" class="text-white hover:text-primary-200"><%= project.title %></a>
     </h2>
     <p class="mb-4 font-light text-primary-200"><%= project.project_details.pool_type || 'Swimming Pool' %></p>
     <a href="<%- url_for(project.path) %>" class="inline-flex items-center font-medium text-secondary-400 hover:underline">

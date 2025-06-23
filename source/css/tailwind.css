@@ -2926,6 +2926,10 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
+.bg-opacity-30 {
+  --tw-bg-opacity: 0.3;
+}
+
 .bg-gradient-to-l {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
@@ -3823,6 +3827,11 @@ html {
   color: rgb(160 140 106 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-primary-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(102 123 143 / var(--tw-text-opacity, 1));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -3909,6 +3918,10 @@ html {
 
 .group:hover .group-hover\:visible {
   visibility: visible;
+}
+
+.group:hover .group-hover\:bg-opacity-0 {
+  --tw-bg-opacity: 0;
 }
 
 .group:hover .group-hover\:opacity-100 {
