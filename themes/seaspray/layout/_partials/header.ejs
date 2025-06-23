@@ -6,37 +6,27 @@
 			<img src="/logos/logo.svg" alt="Seaspray Pools" class="h-10 w-auto" />
 		</a>
 		<div class="hidden lg:flex items-center justify-center space-x-8">
-			<a href="/" class="text-white hover:text-secondary-400 transition-colors"
-				>Home</a
-			>
-			<a
-				href="/about"
-				class="text-white hover:text-secondary-400 transition-colors"
-				>About</a
-			>
-			<div class="relative group">
-				<button class="text-white hover:text-secondary-400 transition-colors flex items-center">
-					Pool Types
-					<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-					</svg>
-				</button>
-				<div class="absolute left-0 mt-2 w-48 bg-primary-400/50 backdrop-blur-md rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-					<a href="/pool-types/concrete-swimming-pools" class="block px-4 py-2 text-white hover:bg-primary-800/30 backdrop-blur-md transition-colors">Concrete Pools</a>
-					<a href="/pool-types/lap-swimming-pools" class="block px-4 py-2 text-white hover:bg-primary-800/30 backdrop-blur-md transition-colors">Lap Pools</a>
-					<a href="/pool-types/indoor-swimming-pools" class="block px-4 py-2 text-white hover:bg-primary-800/30 backdrop-blur-md transition-colors">Indoor Pools</a>
-				</div>
-			</div>
-			<a
-				href="/portfolio"
-				class="text-white hover:text-secondary-400 transition-colors"
-				>Portfolio</a
-			>
-			<a
-				href="/blog"
-				class="text-white hover:text-secondary-400 transition-colors"
-				>Blog</a
-			>
+			<% for (let item in theme.menu) { %>
+				<% if (typeof theme.menu[item] === 'string') { %>
+					<a href="<%= theme.menu[item] %>" class="text-white hover:text-secondary-400 transition-colors"><%= item %></a>
+				<% } else if (typeof theme.menu[item] === 'object') { %>
+					<div class="relative group">
+						<button class="text-white hover:text-secondary-400 transition-colors flex items-center">
+							<%= item %>
+							<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+							</svg>
+						</button>
+						<div class="absolute left-0 mt-2 w-48 bg-primary-400/50 backdrop-blur-md rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+							<% for (let subItem in theme.menu[item]) { %>
+								<% if (subItem !== 'default') { %>
+									<a href="<%= theme.menu[item][subItem] %>" class="block px-4 py-2 text-white hover:bg-primary-800/30 backdrop-blur-md transition-colors"><%= subItem %></a>
+								<% } %>
+							<% } %>
+						</div>
+					</div>
+				<% } %>
+			<% } %>
 			<a
 				href="/contact"
 				class="text-white bg-primary-400 hover:bg-primary-500 rounded-lg px-4 py-2 transition-colors"
@@ -77,23 +67,27 @@
 				</button>
 			</div>
 			<nav class="flex flex-col space-y-6">
-				<a href="/" class="text-white hover:text-secondary-400 transition-colors text-xl font-medium border-b border-primary-200 pb-2">Home</a>
-				<a href="/about" class="text-white hover:text-secondary-400 transition-colors text-xl font-medium border-b border-primary-200 pb-2">About</a>
-				<div class="space-y-2 border-b border-primary-200 pb-2">
-					<button class="text-white hover:text-primary-300 transition-colors text-xl font-medium flex items-center" id="mobile-pool-types">
-						Pool Types
-						<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-						</svg>
-					</button>
-					<div id="mobile-pool-types-menu" class="hidden pl-4 space-y-2 mt-2">
-						<a href="/pool-types/concrete-swimming-pools" class="block text-white hover:text-primary-300 transition-colors py-1">Concrete Pools</a>
-						<a href="/pool-types/lap-swimming-pools" class="block text-white hover:text-primary-300 transition-colors py-1">Lap Pools</a>
-						<a href="/pool-types/indoor-swimming-pools" class="block text-white hover:text-primary-300 transition-colors py-1">Indoor Pools</a>
-					</div>
-				</div>
-				<a href="/portfolio" class="text-white hover:text-secondary-400 transition-colors text-xl font-medium border-b border-primary-200 pb-2">Portfolio</a>
-				<a href="/blog" class="text-white hover:text-secondary-400 transition-colors text-xl font-medium border-b border-primary-200 pb-2">Contact</a>
+				<% for (let item in theme.menu) { %>
+					<% if (typeof theme.menu[item] === 'string') { %>
+						<a href="<%= theme.menu[item] %>" class="text-white hover:text-secondary-400 transition-colors text-xl font-medium border-b border-primary-200 pb-2"><%= item %></a>
+					<% } else if (typeof theme.menu[item] === 'object') { %>
+						<div class="space-y-2 border-b border-primary-200 pb-2">
+							<button class="text-white hover:text-primary-300 transition-colors text-xl font-medium flex items-center mobile-dropdown" data-target="<%= item.toLowerCase().replace(/\s+/g, '-') %>">
+								<%= item %>
+								<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+								</svg>
+							</button>
+							<div class="hidden pl-4 space-y-2 mt-2 mobile-submenu" id="<%= item.toLowerCase().replace(/\s+/g, '-') %>-menu">
+								<% for (let subItem in theme.menu[item]) { %>
+									<% if (subItem !== 'default') { %>
+										<a href="<%= theme.menu[item][subItem] %>" class="block text-white hover:text-primary-300 transition-colors py-1"><%= subItem %></a>
+									<% } %>
+								<% } %>
+							</div>
+						</div>
+					<% } %>
+				<% } %>
 				<a href="/contact" class="text-white bg-primary-400 hover:bg-primary-500 rounded-lg px-6 py-3 transition-colors text-xl font-medium inline-block mt-4">Get a free quote</a>
 			</nav>
 		</div>
@@ -105,8 +99,7 @@
 		const mobileMenuButton = document.getElementById('mobile-menu-button');
 		const closeMenuButton = document.getElementById('close-menu');
 		const mobileMenu = document.getElementById('mobile-menu');
-		const mobilePoolTypes = document.getElementById('mobile-pool-types');
-		const mobilePoolTypesMenu = document.getElementById('mobile-pool-types-menu');
+		const mobileDropdowns = document.querySelectorAll('.mobile-dropdown');
 
 		// Toggle mobile menu
 		mobileMenuButton.addEventListener('click', function() {
@@ -117,9 +110,13 @@
 			mobileMenu.classList.add('-translate-x-full');
 		});
 
-		// Toggle pool types submenu
-		mobilePoolTypes.addEventListener('click', function() {
-			mobilePoolTypesMenu.classList.toggle('hidden');
+		// Toggle mobile dropdowns
+		mobileDropdowns.forEach(function(dropdown) {
+			dropdown.addEventListener('click', function() {
+				const target = this.getAttribute('data-target');
+				const submenu = document.getElementById(target + '-menu');
+				submenu.classList.toggle('hidden');
+			});
 		});
 
 		// Close menu when clicking outside
