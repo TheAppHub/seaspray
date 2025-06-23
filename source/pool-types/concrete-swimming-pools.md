@@ -32,6 +32,6 @@ Custom design your pool to blend seamlessly with your landscape design and every
 
 We can add water features and rock pools, landscape design and privacy screens to create the backyard experience of your dreams. Create a water playground for the kids or add a spa suite for parents only – whatever you've imagined we can build for you. In fact, it's what we do best.
 
-### How we build our concrete pools in Melbourne.
+### How we build our concrete pools in Melbourne
 
 We build all our custom-designed concrete pools on-site to create a backyard statement that's wholly unique to your style. We can then tile, render or pebble the pool's interior and take care of the surrounding landscape design, for the perfect finish.
