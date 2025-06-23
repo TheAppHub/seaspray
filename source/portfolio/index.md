@@ -2,8 +2,7 @@
 title: Portfolio
 description: Explore our collection of stunning pool projects, each showcasing our commitment to quality, innovation, and customer satisfaction.
 layout: portfolio
+image: /img/hero-pool-2.jpg
 ---
-
-# Our Portfolio
 
 Explore our collection of stunning pool projects, each showcasing our commitment to quality, innovation, and customer satisfaction.
