@@ -27,15 +27,15 @@
 			</div>
 		</header>
 		<div
-			class="flex relative z-20 justify-between p-6 -m-36 mx-4 max-w-screen-xl bg-primary-700 rounded xl:-m-32 xl:p-9 xl:mx-auto"
+			class="relative z-20 grid grid-cols-1 md:grid-cols-[1fr_200px] lg:grid-cols-[1fr_250px] xl:grid-cols-[1fr_336px] gap-8 p-6 -m-36 mx-4 max-w-screen-xl bg-primary-700 rounded xl:-m-32 xl:p-9 xl:mx-auto"
 		>
 			<article
-				class="xl:w-[828px] w-full max-w-none format format-sm sm:format-base lg:format-lg format-blue"
+				class="w-full max-w-none format format-sm sm:format-base lg:format-lg format-blue"
 			>
 				<div class="prose lg:prose-lg mx-auto"><%- page.content %></div>
 			</article>
-			<aside class="hidden xl:block" aria-labelledby="sidebar-label">
-				<div class="xl:w-[336px] sticky top-6">
+			<aside class="xl:block " aria-labelledby="sidebar-label">
+				<div class="md:w-[200px] lg:w-[250px] xl:w-[336px] xl:sticky xl:top-6">
 					<!-- Project Details -->
 					<div class="mb-12">
 						<h4 class="mb-4 text-md font-bold text-white uppercase">
@@ -135,7 +135,7 @@
 
 	<!-- Gallery -->
 	<% if (page.gallery && page.gallery.length > 0) { %>
-	<div class="mt-16 mb-12 mx-8 bg-primary-900">
+	<div class="mt-32 lg:mt-16 mb-12 mx-8 bg-primary-900">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 			<% page.gallery.forEach(function(image) { %>
 			<div class="relative aspect-[4/3] rounded-lg overflow-hidden">
