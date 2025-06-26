@@ -4173,8 +4173,16 @@ html {
 }
 
 @media (min-width: 1280px) {
+  .xl\:sticky {
+    position: sticky;
+  }
+
   .xl\:top-1\/2 {
     top: 50%;
+  }
+
+  .xl\:top-6 {
+    top: 1.5rem;
   }
 
   .xl\:-m-32 {
@@ -4188,6 +4196,10 @@ html {
 
   .xl\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .xl\:mt-0 {
+    margin-top: 0px;
   }
 
   .xl\:block {
