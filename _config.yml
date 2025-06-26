@@ -138,6 +138,15 @@ facebook: https://www.facebook.com/seaspraypoolsaustralia/
 # Instagram
 instagram: https://www.instagram.com/seaspraypools/
 
+# MailChimp Newsletter Configuration
+mailchimp:
+  enabled: true
+  user_id: "YOUR_MAILCHIMP_USER_ID" # Replace with your MailChimp User ID
+  list_id: "YOUR_MAILCHIMP_LIST_ID" # Replace with your MailChimp Audience/List ID
+  api_key: "YOUR_MAILCHIMP_API_KEY" # Replace with your MailChimp API Key
+  server_prefix: "us21" # Your MailChimp server prefix (e.g., us21, us1, etc.)
+  form_action_url: "https://seaspraypools.us21.list-manage.com/subscribe/post" # Base URL for form submission
+
 # Tag pages
 tag_generator:
   per_page: 10
