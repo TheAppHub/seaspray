@@ -1,0 +1,41 @@
+{
+	"name": "hexo-image-opt",
+	"version": "1.0.0",
+	"description": "A Hexo plugin for image optimization and processing",
+	"main": "index.js",
+	"keywords": [
+		"hexo",
+		"hexo-plugin",
+		"image",
+		"optimization",
+		"compression",
+		"webp",
+		"responsive"
+	],
+	"author": "Your Name",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yourusername/hexo-image-opt.git"
+	},
+	"bugs": {
+		"url": "https://github.com/yourusername/hexo-image-opt/issues"
+	},
+	"homepage": "https://github.com/yourusername/hexo-image-opt#readme",
+	"dependencies": {
+		"sharp": "^0.33.0",
+		"glob": "^10.3.10",
+		"fs-extra": "^11.2.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.57.0",
+		"jest": "^29.7.0"
+	},
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"scripts": {
+		"test": "jest",
+		"lint": "eslint ."
+	}
+}
