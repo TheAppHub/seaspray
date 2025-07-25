@@ -27,10 +27,12 @@ project_details:
     - Fully tiled interior
     - Solar heating
     - Smart control integration
-  awards:
-    - SPASA Australia Pool of the Year Award 2014
-    - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
-    - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
+awards:
+  - name: SPASA Australia Pool of the Year Award 2014
+  - name: SPASA Victoria Gold Award
+    description: Best Residential Concrete Pool Under $100,000
+  - name: SPASA Victoria Highly Commended
+    description: Best Residential Concrete Lap Pool
 type: portfolio
 ---
 
@@ -39,7 +41,6 @@ A stunning modern concrete swimming pool project in Elsternwick, designed to cre
 ## Project Overview
 
 Located in Melbourne’s inner south-east, this Elsternwick backyard was transformed into a serene poolside retreat. The brief focused on balancing visual impact with practicality — delivering a beautiful, low-maintenance space that could be enjoyed year-round. The pool design incorporates family-focused features, energy-efficient systems, and seamless integration with the existing landscape.
-
 
 ## Design Process
 
