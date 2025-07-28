@@ -1,0 +1,54 @@
+<% let heroImage = page.heroImage || '/img/hero-pool-1.jpg' %>
+
+<main class="pb-16 lg:pb-24 bg-primary-900 antialiased">
+    <header class="relative h-[60vh]">
+		<div class="absolute inset-0">
+			<img
+				src="<%= heroImage %>"
+				alt="<%= typeof heroAlt !== 'undefined' && heroAlt ? heroAlt : 'Luxury Pool Design' %>"
+				class="w-full h-full object-cover"
+			/>
+			<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+		</div>
+		<div class="absolute top-20 left-1/2 px-4 mx-auto w-full max-w-screen-xl -translate-x-1/2 xl:top-1/2 xl:-translate-y-1/2 xl:px-0">
+			<div class="block mb-4 font-bold text-gray-300">Seaspray Pools <span class="font-normal text-white hover:underline">Melbourne</span></div>
+			<h1 class="mb-4 max-w-4xl text-2xl font-extrabold leading-none text-white sm:text-3xl lg:text-4xl"><%= page.title %></h1>
+			<p class="text-lg font-normal text-gray-300"><%= page.description %></p>
+		</div>
+	</header>
+
+    <section class="py-16 px-4 md:px-8 lg:px-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <% site.data.gallery.images.forEach(function(image, index) { %>
+                <div class="aspect-[4/3]">
+                    <img class="h-full w-full object-cover rounded-lg transition-opacity hover:shadow-lg md:cursor-pointer md:hover:opacity-90" 
+                         src="<%= image.image %>" 
+                         alt="<%= image.alt %>"
+                         onclick="if (window.innerWidth >= 768) { openModal();currentSlide(<%= index + 1 %>); }">
+                </div>
+            <% }); %>
+        </div>
+    </section>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="hidden fixed inset-0 z-50 overflow-auto bg-primary-900 bg-opacity-95">
+        <span class="absolute top-4 right-6 text-4xl font-bold text-gray-300 hover:text-white cursor-pointer z-50" onclick="closeModal()">&times;</span>
+        <div class="relative mx-auto my-8 p-4 w-11/12 max-w-6xl">
+            <% site.data.gallery.images.forEach(function(image, index) { %>
+                <div class="mySlides hidden text-center" data-description="<%= image.description %>">
+                    <div class="absolute top-4 left-4 text-sm text-white bg-white bg-opacity-80 text-black px-3 py-1 rounded-br"><%= index + 1 %> / <%= site.data.gallery.images.length %></div>
+                    <img src="<%= image.image %>" class="max-h-[80vh] w-auto mx-auto object-contain rounded-lg">
+                </div>
+            <% }); %>
+
+            <!-- Next/previous controls -->
+            <a class="absolute top-1/2 left-4 transform -translate-y-1/2 cursor-pointer text-primary-900 text-2xl font-bold bg-primary-100 bg-opacity-50 hover:bg-opacity-70 px-4 py-10 rounded-r transition-all duration-300" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer text-primary-900 text-2xl font-bold bg-primary-100 bg-opacity-50 hover:bg-opacity-70 px-4 py-10 rounded-l transition-all duration-300" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="text-center bg-primary-700 bg-opacity-90 text-white px-4 py-2 rounded mt-4">
+                <p id="caption"></p>
+            </div>
+        </div>
+    </div>
+</main>
