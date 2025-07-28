@@ -1,4 +1,8 @@
-<%- partial('_partials/page-hero', { title: 'Portfolio', description:  'Seaspray Pools ' + page.tag + ' projects', heroImage: '/img/hero-pool-1.jpg', heroAlt: page.tag }) %>
+<% 
+const description = 'Explore our collection of stunning ' + page.tag + ' projects, each showcasing our commitment to quality, innovation, and customer satisfaction.';
+%>
+
+<%- partial('_partials/page-hero', { title: page.tag + ' Projects', description: description, heroImage: site.data.portfolio.hero_image, heroAlt: page.tag + ' Projects | Seaspray Pools Melbourne' }) %>
 
 <section class="bg-primary-700">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
