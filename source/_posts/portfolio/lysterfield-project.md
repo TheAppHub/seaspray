@@ -3,7 +3,7 @@ title: Lysterfield Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [Family Pool]
+tags: [Family Pool, Award Winning]
 thumbnail_image: lysterfield-pool-project-main.jpg
 hero_image: lysterfield-pool-project-main.jpg
 featured: 3
@@ -24,10 +24,12 @@ project_details:
     - Glass fencing
     - LED lights
   
-  awards:
-    - SPASA Australia Pool of the Year Award 2014
-    - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
-    - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
+awards:
+  - name: SPASA Australia Pool of the Year Award 2014
+  - name: SPASA Victoria Gold Award
+    description: Best Residential Concrete Pool Under $100,000
+  - name: SPASA Victoria Highly Commended
+    description: Best Residential Concrete Lap Pool
 ---
 
 A modern concrete pool designed to complement contemporary landscaping, creating a luxurious outdoor sanctuary for family living in Melbourne’s leafy south-east.

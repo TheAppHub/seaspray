@@ -3,7 +3,7 @@ title: Surrey Hills Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [Pool & Spa Combo]
+tags: [Pool & Spa Combo, Award Winning]
 thumbnail_image: surrey-hills-pool-project-main.jpg
 hero_image: surrey-hills-pool-project-main.jpg
 gallery:
@@ -22,8 +22,9 @@ project_details:
     - Cornered spillway waterfall
     - Underwater bluestone paving
  
-  awards:
-    - 2018 SPASA Victoria Gold Award - Best Residential Concrete Pool Under $50,000
+awards:
+  - name: 2018 SPASA Victoria Gold Award
+    description: Best Residential Concrete Pool Under $50,000
 ---
 
 A beautifully engineered custom concrete pool with elevated spa in Surrey Hills, designed for a sloping block and crafted to be the focal point of a split-level backyard.
