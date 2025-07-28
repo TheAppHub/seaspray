@@ -1,0 +1,55 @@
+images:
+  - title: "Elsternwick Pool Project"
+    image: "/portfolio/elsternwick-project/elsternwick-pool-project-main.jpg"
+    description: "Modern concrete swimming pool with elegant design"
+    alt: "Elsternwick concrete swimming pool with modern design and landscaping"
+
+  - title: "Essendon Pool Project"
+    image: "/portfolio/essendon-project/essendon-project-main.jpg"
+    description: "Family-friendly pool with safety features"
+    alt: "Essendon family pool with safety features and entertainment area"
+
+  - title: "Glen Iris Pool Project"
+    image: "/portfolio/glen-iris-project/glen-iris-pool-project-main.jpg"
+    description: "Luxury pool with custom features"
+    alt: "Glen Iris luxury swimming pool with custom features and premium finishes"
+
+  - title: "Kew Pool Project"
+    image: "/portfolio/kew-project/kew-pool-project-main.jpg"
+    description: "Contemporary pool design with modern aesthetics"
+    alt: "Kew contemporary swimming pool with modern design and clean lines"
+
+  - title: "Lysterfield Pool Project"
+    image: "/portfolio/lysterfield-project/lysterfield-pool-project-main.jpg"
+    description: "Natural-looking pool with landscaping"
+    alt: "Lysterfield natural swimming pool with landscaping and rural setting"
+
+  - title: "Martha Cove Pool Project"
+    image: "/portfolio/martha-cove-project/martha-cove-pool-project-main.jpg"
+    description: "Coastal-inspired pool design"
+    alt: "Martha Cove coastal-inspired swimming pool with beach-style design"
+
+  - title: "Mount Martha Pool Project"
+    image: "/portfolio/mount-martha-project/mount-martha-pool-project-main.jpg"
+    description: "Elegant pool with premium finishes"
+    alt: "Mount Martha elegant swimming pool with premium finishes and luxury features"
+
+  - title: "Romsey Pool Project"
+    image: "/portfolio/romsey-project/romsey-pool-project-main.jpg"
+    description: "Rural property pool with natural elements"
+    alt: "Romsey rural swimming pool with natural elements and countryside setting"
+
+  - title: "Rowville Pool Project"
+    image: "/portfolio/rowville-project/rowville-pool-project-main.jpg"
+    description: "Modern family pool with entertainment area"
+    alt: "Rowville modern family swimming pool with entertainment area and outdoor living space"
+
+  - title: "St Andrews Pool Project"
+    image: "/portfolio/st-andrews-project/st-andrews-pool-project-main.jpg"
+    description: "Classic pool design with timeless appeal"
+    alt: "St Andrews classic swimming pool design with timeless appeal and traditional styling"
+
+  - title: "Surrey Hills Pool Project"
+    image: "/portfolio/surrey-hills-project/surrey-hills-pool-project-main.jpg"
+    description: "Urban pool with contemporary styling"
+    alt: "Surrey Hills urban swimming pool with contemporary styling and modern aesthetics"
