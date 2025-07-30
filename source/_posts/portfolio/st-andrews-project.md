@@ -5,6 +5,7 @@ date: 2024-03-20
 categories: [portfolio]
 tags: [Lap Pool, Award Winning]
 thumbnail_image: st-andrews-pool-project-main.jpg
+hero_image: st-andrews-pool-project-main.jpg
 gallery:
   - st-andrews-pool-project-gallery-1.jpg
   - st-andrews-pool-project-gallery-2.jpg

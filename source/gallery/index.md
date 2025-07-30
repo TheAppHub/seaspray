@@ -1,7 +1,7 @@
 ---
 title: Gallery
 layout: gallery
-description: Gallery of our latest projects.
+description: Gallery of our latest custom concrete pool & spa projects.
 image: /img/hero-pool-6.jpg
 ---
 
