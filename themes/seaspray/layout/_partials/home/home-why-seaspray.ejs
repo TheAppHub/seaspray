@@ -1,14 +1,14 @@
 <% const whySeaspray = site.data.why_seaspray || {} %>
 
 <!-- Why choose Seaspray Pools? -->
-<section class="bg-primary-800">
+<section class="bg-primary-800 overflow-x-hidden">
 	<div class="grid grid-cols-1 md:grid-cols-2">
 		<div class="py-16 px-4 md:pl-4 md:pr-0">
-			<div class="max-w-3xl mx-auto">
-				<h3 class="text-2xl font-semibold text-white mb-6">
+			<div class="max-w-3xl mx-auto home-why-seaspray">
+				<h3 class="text-2xl font-semibold text-white mb-6 home-why-title">
 					<%- whySeaspray.title || 'Why Choose Seaspray Pools?' %>
 				</h3>
-				<div class="prose prose-lg prose-invert">
+				<div class="prose prose-lg prose-invert home-why-content">
 					<p class="text-primary-200 mb-6"><%- whySeaspray.subtitle || '' %></p>
 					<ul class="space-y-4 text-primary-200 list-none">
 						<% if (whySeaspray['dot-points'] && Array.isArray(whySeaspray['dot-points'])) { %>
@@ -46,7 +46,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="relative h-full">
+		<div class="relative h-full home-why-image">
 			<img
 				src="/img/hero-pool-2.jpg"
 				alt="Luxury Pool Design"
