@@ -3229,6 +3229,21 @@ input:checked + .toggle-bg {
   padding-bottom: 2rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -4431,6 +4446,16 @@ html {
   .lg\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .lg\:py-64 {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
   }
 
   .lg\:pb-24 {
