@@ -3,7 +3,7 @@ title: Kew Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [Plunge Pool]
+tags: [Plunge Pool, Award Winning]
 featured: 2
 thumbnail_image: kew-pool-project-main.jpg
 hero_image: kew-pool-project-gallery-1.jpg
@@ -26,8 +26,9 @@ project_details:
     - Curved swimout seat
     - Concealed filtration shed
   
-  awards:
-    - 2019 SPASA Victoria Gold Award - Best Residential Concrete Pool Under $60,000
+awards:
+- name: 2019 SPASA Victoria Gold Award
+  description: Best Residential Concrete Pool Under $60,000
 ---
 
 A custom-built 4m circular concrete plunge pool in Kew, designed to complement an established garden oasis despite challenging site access.

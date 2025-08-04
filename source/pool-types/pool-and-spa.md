@@ -4,36 +4,38 @@ layout: pool-type
 permalink: /pool-types/pool-and-spa/
 description: We design and build the most stylish lap pools in Melbourne.
 shortDesc: The most stylish lap pools in Melbourne.
-thumbnail_image: /images/pool-types/lap-pool.jpg
+thumbnail_image: /images/pool-types/pool-and-spa.jpg
 features:
-  - title: Space-Saving Design
+  - title: Relaxation & Recovery
     content: |
-      Long, slender lap pools are perfect for smaller spaces – indoors or outdoors – and great if the thought of sharing the local community pool with hundreds of others makes you cringe. A lap pool's proportions work beautifully in Melbourne's compact inner-city gardens where a full-sized pool might be out of the question.
-  - title: Health Benefits
+      With a custom spa built into your pool design, you can move effortlessly between cool swimming and warm hydrotherapy. It’s the perfect way to unwind after a busy day or soothe tired muscles post-exercise.
+  - title: All-Season Enjoyment
     content: |
-      You'll get a pleasant, relaxing, joint-friendly workout without having to leave home and hit the gym. Swimming regularly is great for flexibility, posture, and keeps your heart rate up without stressing your body. Doing laps builds endurance, muscle strength and cardiovascular fitness while toning your muscles.
-  - title: Family-Friendly
+      A spa makes your outdoor space enjoyable all year round. Even during cooler Melbourne months, heated spas offer a comfortable, calming retreat.
+  - title: Entertainment-Ready
     content: |
-      You can swim for fitness at any age – it's great exercise for everyone from toddlers to pensioners. Keep down your weight effortlessly – swimming uses all your muscles for an all-over body workout.
-features_title: Installing lap pools in Melbourne homes can deliver extra health benefits for your family
-cta_title: Build the lap pool of your dreams today
-cta_text: Visit our award-winning display centre today or contact us now
+     Whether you're hosting friends or spending time with family, a pool and spa setup gives everyone a space to relax and enjoy. Kids love the variety, and adults appreciate the luxury.
+features_title: Why choose a pool and spa combination?
+cta_title: Custom-designed pools and spas for total backyard luxury
+cta_text: Start your pool and spa journey today
 ---
 
-## We design and build the most stylish lap pools in Melbourne.
+## Custom Pool and Spa Designs for Everyday Luxury
 
-Get fit and look fabulous at home with a lap pool.
+A custom pool and spa combination brings together the best of both worlds - the fitness and fun of a swimming pool with the calm, therapeutic benefits of a spa. At Seaspray Pools, we design integrated solutions tailored to your lifestyle and home.
 
-Whether for fitness or a refreshing dip on a hot day, our customised lap pools for the Melbourne climate will enliven your daily routine and bring your family fun and fitness for years to come.
+Whether you’re entertaining friends, relaxing after work, or giving the kids a space to enjoy, our designs deliver comfort, elegance and flexibility - all year round. Every detail is carefully considered, from integrated heating and lighting to cohesive tiling that brings the entire space together.
 
-### Design a lap pool for Melbourne's unique architecture and climate.
+### Why integrate your spa into the pool design?
 
-When designing your lap pool, you should consider how it can enhance your property and lifestyle. A one-off concrete design can give you the flexibility to shape your lap pool to fit your outdoor living area—and we can help you design the right size and length to give you maximum enjoyment at a price you can afford.
+An integrated spa not only saves space, it also enhances usability and overall flow. Rather than separate systems or disconnected areas, we create a complete experience. Shared heating and filtration systems keep things simple and seamless, both in use and appearance.
 
-If you've got a particularly tight space, you can always maximise your workout with a smaller lap pool by adding a high-flow swim jet to deliver multilevel resistance for a high-impact swim station.
+### Popular pool & spa designs:
 
-### While our lap pools are certainly gorgeous to look at, most of our customers install them for fitness purposes. And, when studies show swimming decreases anxiety and improves mood, who can blame them?
+#### Side-by-side spa and pool designs
 
-### Our custom lap pools are ideal for small Melbourne backyards.
+Clean and simple, with a clear divide and matching finishes. Easy to access, heat and enjoy throughout the year.
 
-We can customise the ideal lap pool for your backyard or indoor area. Once you install one, it's guaranteed to deliver endless hours of recreation, health benefits and relaxation.
+#### Raised spa with spillover edge
+
+Add a striking visual feature with a spa that gently cascades into the main pool - combining beauty, sound and movement.

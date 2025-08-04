@@ -5,7 +5,7 @@ menu:
   "Pool Types":
     default: /pool-types
     "Concrete Pools": /pool-types/concrete-swimming-pools
-    "Lap Pools": /pool-types/lap-swimming-pools
+    "Infinity Pools": /pool-types/infinity-pools
     "Indoor Pools": /pool-types/indoor-swimming-pools
     "Pool and Spa": /pool-types/pool-and-spa
   Portfolio: /portfolio

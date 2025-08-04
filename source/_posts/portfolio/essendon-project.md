@@ -3,7 +3,7 @@ title: Essendon Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [Pool & Spa Combo]
+tags: [Pool & Spa Combo, Award Winning]
 thumbnail_image: essendon-project-main.jpg
 hero_image: essendon-project-5.jpg
 gallery:
@@ -24,10 +24,12 @@ project_details:
     - Bisazza glass mosaics
     - Frameless glass barrier
     - Rain drop waterfall
-  awards:
-    - SPASA Australia Pool of the Year Award 2014
-    - SPASA Victoria Gold Award - Best Residential Concrete Pool Under $100,000
-    - SPASA Victoria Highly Commended - Best Residential Concrete Lap Pool
+awards:
+  - name: SPASA Australia Pool of the Year Award 2014
+  - name: SPASA Victoria Gold Award
+    description: Best Residential Concrete Pool Under $100,000
+  - name: SPASA Victoria Highly Commended
+    description: Best Residential Concrete Lap Pool
 ---
 
 A custom-designed concrete pool and spa maximising a compact backyard space in Essendon, with architectural tiling and a striking rain drop waterfall feature.
