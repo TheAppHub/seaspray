@@ -13,7 +13,7 @@ This plugin automatically optimizes your images and generates responsive `<pictu
 ## Installation
 
 ```bash
-npm install hexo-image-opt --save
+npm install CodeRabbitInc/hexo-image-opt --save
 ```
 
 ## Usage

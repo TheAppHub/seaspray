@@ -12,27 +12,27 @@
 			<div class="absolute inset-0 bg-black bg-opacity-50"></div>
 		</div>
 		<div class="absolute top-20 left-1/2 px-4 mx-auto w-full max-w-screen-xl -translate-x-1/2 xl:top-1/2 xl:-translate-y-1/2 xl:px-0">
-			<div class="block mb-4 font-bold text-gray-300">Seaspray Pools <span class="font-normal text-white hover:underline">Melbourne</span></div>
-			<h1 class="mb-4 max-w-4xl text-2xl font-extrabold leading-none text-white sm:text-3xl lg:text-4xl"><%= page.title %></h1>
-			<p class="text-lg font-normal text-gray-300"><%= page.description %></p>
+			<div class="block mb-4 font-bold text-gray-300 pool-type-breadcrumb">Seaspray Pools <span class="font-normal text-white hover:underline">Melbourne</span></div>
+			<h1 class="mb-4 max-w-4xl text-2xl font-extrabold leading-none text-white sm:text-3xl lg:text-4xl pool-type-title"><%= page.title %></h1>
+			<p class="text-lg font-normal text-gray-300 pool-type-description"><%= page.description %></p>
 		</div>
 	</header>
 	<div class="flex relative z-20 justify-between p-6 -m-36 mx-4 max-w-screen-xl bg-primary-700 rounded xl:-m-32 xl:p-9 xl:mx-auto">
 		<article class="xl:w-[828px] w-full max-w-none format format-sm sm:format-base lg:format-lg format-blue">
 
-			<div class="prose lg:prose-lg mx-auto">
+			<div class="prose lg:prose-lg mx-auto pool-type-content">
 				<%- page.content %>
 			</div>
 
 			<% if (page.features && page.features.length > 0) { %>
 				<div class="container mx-auto px-4">
-					<div class="mt-16">
-						<h2 class="text-3xl font-display font-bold text-white mb-8">
+					<div class="mt-16 pool-type-features">
+						<h2 class="text-3xl font-display font-bold text-white mb-8 pool-type-features-title">
 							<%= page.features_title || 'Key Features' %>
 						</h2>
-						<div class="grid gap-8">
+						<div class="grid gap-8 pool-type-features-grid">
 							<% page.features.forEach(function(feature) { %>
-							<div class="bg-primary-800 rounded-lg p-6">
+							<div class="bg-primary-800 rounded-lg p-6 pool-type-feature-item">
 								<h3 class="text-xl font-display font-bold text-white mb-4">
 									<%= feature.title %>
 								</h3>
@@ -46,9 +46,9 @@
 		</article>
 
 		<aside class="hidden xl:block" aria-labelledby="sidebar-label">
-			<div class="xl:w-[336px] sticky top-6">
+			<div class="xl:w-[336px] sticky top-6 pool-type-sidebar">
 				<h3 id="sidebar-label" class="sr-only">Sidebar</h3>
-				<div class="mb-12">
+				<div class="mb-12 pool-type-sidebar-cta">
 					<h4 class="mb-2 text-sm font-bold text-gray-200 uppercase">Seapray Pools Melbourne</h4>
 					<p class="mb-4 text-sm text-gray-300">We are a family-run business for over 30 years, we know a thing (or three) about pool building for Melbourne's unique climate.</p>
 					<a href="/contact" type="button" class="block text-white bg-secondary-400 hover:bg-secondary-600 focus:ring-4 focus:ring-secondary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none text-center w-full">Get a quote</a> 
@@ -86,16 +86,16 @@
 
 	<!-- CTA Section -->
 	<aside aria-label="Featured Projects" class="py-32 lg:py-64 bg-primary-900">
-		<div class="mt-16 text-center">
-			<h2 class="text-3xl font-display font-bold text-white mb-6">
+		<div class="mt-16 text-center pool-type-cta">
+			<h2 class="text-3xl font-display font-bold text-white mb-6 pool-type-cta-title">
 				<%= page.cta_title || 'Ready to Start Your Project?' %>
 			</h2>
-			<p class="text-xl text-primary-200 mb-8">
+			<p class="text-xl text-primary-200 mb-8 pool-type-cta-text">
 				<%= page.cta_text || 'Contact us today to discuss your dream pool.' %>
 			</p>
 			<a
 				href="/contact"
-				class="inline-flex items-center px-8 py-3 bg-primary-600 hover:bg-primary-500 text-white rounded-lg transition-colors"
+				class="inline-flex items-center px-8 py-3 bg-primary-600 hover:bg-primary-500 text-white rounded-lg transition-colors pool-type-cta-button"
 			>
 				Get a Free Quote
 				<svg
