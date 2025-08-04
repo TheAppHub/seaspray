@@ -3066,6 +3066,10 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-primary-800\/90 {
+  background-color: rgb(10 27 38 / 0.9);
+}
+
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
 }
