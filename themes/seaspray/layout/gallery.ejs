@@ -36,7 +36,7 @@
         <div class="relative mx-auto my-8 p-4 w-11/12 max-w-6xl">
             <% site.data.gallery.images.forEach(function(image, index) { %>
                 <div class="mySlides hidden text-center" data-description="<%= image.description %>">
-                    <div class="absolute top-4 left-4 text-sm text-white bg-white bg-opacity-80 text-black px-3 py-1 rounded-br"><%= index + 1 %> / <%= site.data.gallery.images.length %></div>
+                    <div class="absolute top-4 left-4 text-sm text-primary-500 bg-white bg-opacity-80 px-3 py-1 rounded-br"><%= index + 1 %> / <%= site.data.gallery.images.length %></div>
                     <img src="<%= image.image %>" class="max-h-[80vh] w-auto mx-auto object-contain rounded-lg">
                 </div>
             <% }); %>
