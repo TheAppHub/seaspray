@@ -20,11 +20,11 @@
     <section class="py-16 px-4 md:px-8 lg:px-16">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <% site.data.gallery.images.forEach(function(image, index) { %>
-                <div class="aspect-[4/3]">
+                <div class="aspect-[4/3] gallery-item" data-index="<%= index %>">
                     <img class="h-full w-full object-cover rounded-lg transition-opacity hover:shadow-lg md:cursor-pointer md:hover:opacity-90" 
                          src="<%= image.image %>" 
                          alt="<%= image.alt %>"
-                         onclick="if (window.innerWidth >= 768) { openModal();currentSlide(<%= index + 1 %>); }">
+                         onclick="if (window.innerWidth >= 768) { openModal();currentSlide(<%- index + 1 %>); }">
                 </div>
             <% }); %>
         </div>
@@ -52,3 +52,42 @@
         </div>
     </div>
 </main>
+
+<!-- GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+    // Register ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+    
+    // Gallery animation on scroll - based on CodePen design
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initial state - hide all gallery items
+        gsap.set('.gallery-item', {
+            opacity: 0,
+            y: 100,
+            scale: 0.8
+        });
+        
+        // Animate each gallery item individually when it comes into view
+        gsap.utils.toArray('.gallery-item').forEach((item, index) => {
+            gsap.to(item, {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                duration: 1.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 85%",
+                    end: "bottom 15%",
+                    toggleActions: "play none none reverse",
+                    markers: false
+                }
+            });
+        });
+        
+
+    });
+</script>
