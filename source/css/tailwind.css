@@ -2172,6 +2172,10 @@ input:checked + .toggle-bg {
   z-index: 50;
 }
 
+.order-first {
+  order: -9999;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -4452,6 +4456,10 @@ html {
 }
 
 @media (min-width: 1024px) {
+  .lg\:order-last {
+    order: 9999;
+  }
+
   .lg\:col-span-3 {
     grid-column: span 3 / span 3;
   }
