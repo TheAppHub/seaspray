@@ -1,7 +1,9 @@
 # Header
 menu:
   Home: /
-  About: /about
+  About:
+    "About us": /about
+    "Design Center": /design-center
   "Pool Types":
     default: /pool-types
     "Concrete Pools": /pool-types/concrete-swimming-pools
