@@ -1,21 +1,21 @@
-title: "Design Center"
-subtitle: "Experience our state-of-the-art design center where your pool dreams come to life"
+title: "Design Centre"
+subtitle: "Step into the Seasprays Pools Design Centre Experience"
 video_url: "/videos/3015497-hd_1920_1080_24fps.mp4"
 video_poster: "/img/1-1.png"
 
 intro:
-  title: "Your Vision, Our Expertise"
-  subtitle: "Transform your backyard into a stunning outdoor oasis"
+  title: "Bring your dream pool to life"
+  subtitle: "Touch. Compare. Create."
   content: "Our design center showcases the latest in pool technology, materials, and design trends. Our experienced team will guide you through every step of the design process, from initial concept to final installation."
 
 content_section:
   title: "Why Choose Our Design Center?"
-  text: "Our design center features interactive displays, 3D modeling technology, and a comprehensive selection of pool finishes, tiles, and equipment. You'll see real examples of our work and get hands-on experience with different materials and features."
-  image: "/img/design-center-showroom.jpg"
+  text: "At the Seaspray Design Centre, you’ll experience what brochures can’t deliver: a fully hands-on journey to creating your dream pool. See and touch real tiles, finishes, and landscaping options, explore working pools with water features and lighting displays, and enjoy a personalised consultation with our expert designers. Clients love how the interactive displays and tailored guidance make the process clear, inspiring, and stress-free so you can make confident choices and watch your vision come to life."
+  image: "/img/design-centre-showroom.jpg"
   image_alt: "Seaspray Pools Design Center Showroom"
 
 contact_section:
-  title: "Visit Our Design Center"
+  title: "Visit Our Design Centre"
   subtitle: "Book your consultation today"
   address:
     street: "829 Burwood Highway"

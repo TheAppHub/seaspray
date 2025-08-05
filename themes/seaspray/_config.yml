@@ -3,7 +3,7 @@ menu:
   Home: /
   About:
     "About us": /about
-    "Design Center": /design-center
+    "Design Centre": /design-centre
   "Pool Types":
     default: /pool-types
     "Concrete Pools": /pool-types/concrete-swimming-pools
