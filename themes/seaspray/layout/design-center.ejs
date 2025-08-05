@@ -54,12 +54,12 @@
 <!-- Intro Section -->
 <section class="py-16 bg-primary-900" id="design-content">
     <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-4xl font-bold text-white mb-4"><%- designCenter.intro.title %></h2>
-            <h3 class="text-2xl font-normal text-primary-200 mb-6">
+        <div class="max-w-3xl mx-auto text-center design-center-intro">
+            <h2 class="text-4xl font-bold text-white mb-4 design-center-intro-title"><%- designCenter.intro.title %></h2>
+            <h3 class="text-2xl font-normal text-primary-200 mb-6 design-center-intro-subtitle">
                 <%- designCenter.intro.subtitle %>
             </h3>
-            <div class="text-primary-200">
+            <div class="text-primary-200 design-center-intro-content">
                 <%- designCenter.intro.content %>
             </div>
         </div>
@@ -71,17 +71,17 @@
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <!-- Text Content -->
-            <div>
-                <h2 class="text-3xl font-bold text-white mb-6">
+            <div class="design-center-content">
+                <h2 class="text-3xl font-bold text-white mb-6 design-center-content-title">
                     <%- designCenter.content_section.title %>
                 </h2>
-                <div class="text-primary-200 space-y-4">
+                <div class="text-primary-200 space-y-4 design-center-content-text">
                     <%- designCenter.content_section.text %>
                 </div>
             </div>
             
             <!-- Image -->
-            <div class="order-first lg:order-last">
+            <div class="order-first lg:order-last design-center-image">
                 <img 
                     src="<%- designCenter.content_section.image %>" 
                     alt="<%- designCenter.content_section.image_alt %>"
@@ -97,12 +97,12 @@
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <!-- Contact Info -->
-            <div class="space-y-8">
+            <div class="space-y-8 design-center-contact">
                 <div class="bg-primary-800 p-8 rounded-lg">
-                    <h2 class="text-3xl font-bold text-white mb-6">
+                    <h2 class="text-3xl font-bold text-white mb-6 design-center-contact-title">
                         <%- designCenter.contact_section.title %>
                     </h2>
-                    <div class="space-y-4 text-primary-200">
+                    <div class="space-y-4 text-primary-200 design-center-contact-info">
                         <p>
                             <%- designCenter.contact_section.address.street %><br />
                             <%- designCenter.contact_section.address.city %>, <%- designCenter.contact_section.address.state %> <%- designCenter.contact_section.address.zip %><br />
@@ -123,11 +123,11 @@
             </div>
 
             <!-- Booking Form -->
-            <div class="bg-primary-800 p-8 rounded-lg">
-                <h2 class="text-3xl font-bold text-white mb-6">
+            <div class="bg-primary-800 p-8 rounded-lg design-center-form">
+                <h2 class="text-3xl font-bold text-white mb-6 design-center-form-title">
                     Book Your Consultation
                 </h2>
-                <p class="text-primary-200 mb-8">
+                <p class="text-primary-200 mb-8 design-center-form-subtitle">
                     <%- designCenter.contact_section.subtitle %>
                 </p>
 

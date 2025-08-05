@@ -464,6 +464,215 @@ function initPoolTypeAnimations() {
 	);
 }
 
+// Design Center Page Animations
+function initDesignCenterAnimations() {
+	// Intro section animations
+	gsap.fromTo(
+		".design-center-intro-title",
+		{ opacity: 0, y: 50 },
+		{
+			opacity: 1,
+			y: 0,
+			duration: 1,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: ".design-center-intro",
+				start: "top 80%",
+				toggleActions: "play none none none",
+			},
+		},
+	);
+
+	gsap.fromTo(
+		".design-center-intro-subtitle",
+		{ opacity: 0, y: 30 },
+		{
+			opacity: 1,
+			y: 0,
+			duration: 1,
+			delay: 0.2,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: ".design-center-intro",
+				start: "top 80%",
+				toggleActions: "play none none none",
+			},
+		},
+	);
+
+	gsap.fromTo(
+		".design-center-intro-content",
+		{ opacity: 0, y: 30 },
+		{
+			opacity: 1,
+			y: 0,
+			duration: 1,
+			delay: 0.4,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: ".design-center-intro",
+				start: "top 80%",
+				toggleActions: "play none none none",
+			},
+		},
+	);
+
+	// Content section animations
+	gsap.fromTo(
+		".design-center-content-title",
+		{ opacity: 0, x: -50 },
+		{
+			opacity: 1,
+			x: 0,
+			duration: 1,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: ".design-center-content",
+				start: "top 80%",
+				toggleActions: "play none none none",
+			},
+		},
+	);
+
+	gsap.fromTo(
+		".design-center-content-text",
+		{ opacity: 0, x: -50 },
+		{
+			opacity: 1,
+			x: 0,
+			duration: 1,
+			delay: 0.3,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: ".design-center-content",
+				start: "top 80%",
+				toggleActions: "play none none none",
+			},
+		},
+	);
+
+	gsap.fromTo(
+		".design-center-image",
+		{ opacity: 0, x: 50 },
+		{
+			opacity: 1,
+			x: 0,
+			duration: 1,
+			delay: 0.2,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: ".design-center-image",
+				start: "top 80%",
+				toggleActions: "play none none none",
+			},
+		},
+	);
+
+	// Contact section animations
+	gsap.fromTo(
+		".design-center-contact-title",
+		{ opacity: 0, y: 30 },
+		{
+			opacity: 1,
+			y: 0,
+			duration: 1,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: ".design-center-contact",
+				start: "top 80%",
+				toggleActions: "play none none none",
+			},
+		},
+	);
+
+	gsap.fromTo(
+		".design-center-contact-info",
+		{ opacity: 0, y: 30 },
+		{
+			opacity: 1,
+			y: 0,
+			duration: 1,
+			delay: 0.2,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: ".design-center-contact",
+				start: "top 80%",
+				toggleActions: "play none none none",
+			},
+		},
+	);
+
+	// Form section animations
+	gsap.fromTo(
+		".design-center-form-title",
+		{ opacity: 0, y: 30 },
+		{
+			opacity: 1,
+			y: 0,
+			duration: 1,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: ".design-center-form",
+				start: "top 80%",
+				toggleActions: "play none none none",
+			},
+		},
+	);
+
+	gsap.fromTo(
+		".design-center-form-subtitle",
+		{ opacity: 0, y: 30 },
+		{
+			opacity: 1,
+			y: 0,
+			duration: 1,
+			delay: 0.2,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: ".design-center-form",
+				start: "top 80%",
+				toggleActions: "play none none none",
+			},
+		},
+	);
+
+	// Form fields stagger animation
+	gsap.fromTo(
+		"#designCenterForm input, #designCenterForm select, #designCenterForm textarea",
+		{ opacity: 0, y: 20 },
+		{
+			opacity: 1,
+			y: 0,
+			duration: 0.6,
+			stagger: 0.1,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: "#designCenterForm",
+				start: "top 85%",
+				toggleActions: "play none none none",
+			},
+		},
+	);
+
+	// Submit button animation
+	gsap.fromTo(
+		"#designCenterForm button[type='submit']",
+		{ opacity: 0, y: 20 },
+		{
+			opacity: 1,
+			y: 0,
+			duration: 0.8,
+			delay: 0.4,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: "#designCenterForm",
+				start: "top 85%",
+				toggleActions: "play none none none",
+			},
+		},
+	);
+}
+
 // Portfolio Project Page Animations
 function initPortfolioProjectAnimations() {
 	// Hero section animations
@@ -691,5 +900,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		document.querySelector(".portfolio-project-sidebar")
 	) {
 		initPortfolioProjectAnimations();
+	}
+
+	// Initialize design center animations if design center elements exist
+	if (
+		document.querySelector(".design-center-intro") ||
+		document.querySelector(".design-center-content") ||
+		document.querySelector(".design-center-contact") ||
+		document.querySelector(".design-center-form")
+	) {
+		initDesignCenterAnimations();
 	}
 });
