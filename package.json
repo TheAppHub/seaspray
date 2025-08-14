@@ -43,7 +43,7 @@
 		"flowbite-typography": "^1.0.5",
 		"postcss": "^8.4.35",
 		"postcss-cli": "^11.0.0",
-		"snyk": "^1.1297.1",
+		"snyk": "^1.1298.3",
 		"tailwindcss": "^3.4.1"
 	}
 }
