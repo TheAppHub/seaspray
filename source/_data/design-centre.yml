@@ -6,17 +6,17 @@ video_poster: "/img/1-1.png"
 intro:
   title: "Bring your dream pool to life"
   subtitle: "Touch. Compare. Create."
-  content: "Our design center showcases the latest in pool technology, materials, and design trends. Our experienced team will guide you through every step of the design process, from initial concept to final installation."
+  content: "Our design centre showcases the latest in pool technology, materials, and design trends. Our experienced team will guide you through every step of the design process, from initial concept to final installation."
 
 content_section:
-  title: "Why Choose Our Design Center?"
+  title: "Why Choose Our Design Centre?"
   text: "At the Seaspray Design Centre, you’ll experience what brochures can’t deliver: a fully hands-on journey to creating your dream pool. See and touch real tiles, finishes, and landscaping options, explore working pools with water features and lighting displays, and enjoy a personalised consultation with our expert designers. Clients love how the interactive displays and tailored guidance make the process clear, inspiring, and stress-free so you can make confident choices and watch your vision come to life."
   image: "/img/design-centre-showroom.jpg"
   image_alt: "Seaspray Pools Design Center Showroom"
 
 contact_section:
   title: "Visit Our Design Centre"
-  subtitle: "Book your consultation today"
+  subtitle: "Request a Consultation. By Appointment only."
   address:
     street: "829 Burwood Highway"
     city: "Ferntree Gully"
