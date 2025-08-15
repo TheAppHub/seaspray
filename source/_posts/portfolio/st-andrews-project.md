@@ -22,23 +22,20 @@ project_details:
     - Cliff-face construction
     - Automatic pool cover
     - White tiled lap lane
-   
+
 awards:
-- name: SPASA Australia Pool of the Year Award 2014
-- name: SPASA Victoria Gold Award
-  description: Best Residential Concrete Pool Under $100,000
-- name: SPASA Victoria Highly Commended
-  description: Best Residential Concrete Lap Pool
+  - name: SPASA Australia Pool of the Year Award 2014
+  - name: SPASA Victoria Gold Award
+    description: Best Residential Concrete Pool Under $100,000
+  - name: SPASA Victoria Highly Commended
+    description: Best Residential Concrete Lap Pool
 ---
 
-
 A secluded 25m custom concrete lap pool in St Andrews, thoughtfully built into a bushland sanctuary and winner of multiple SPASA Awards for design and excellence.
-
 
 ## Project Overview
 
 This award-winning custom concrete swimming pool sits within its own private retreat, surrounded by tranquil bushland and the property’s home-grown vineyard. Hidden from roads and neighbours, the design maximises seclusion and connection with nature, creating an idyllic space for daily swimming and relaxation.
-
 
 ## Design Process
 

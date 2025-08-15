@@ -862,6 +862,8 @@ function initPortfolioProjectAnimations() {
 	});
 }
 
+// Awards Page Animations
+
 // Initialize animations when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
 	// Initialize gallery animations if gallery items exist

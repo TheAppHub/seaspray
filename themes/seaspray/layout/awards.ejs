@@ -1,0 +1,52 @@
+<div class="relative z-0">
+    <div class="bg-gradient-to-b from-primary-800 to-primary-700">
+      <div class="w-[90vw] max-w-[1360px] mx-auto">
+        <div class="pt-40 pb-24">
+          <div class="text-white text-center max-w-[640px] mx-auto">
+            <div class="mb-6">
+              <h1 class="text-4xl md:text-5xl text-white">Award Winning Pools</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative z-[-3] bg-primary-700">
+      <div class="w-[90vw] max-w-[1360px] mx-auto">
+        <div class="flex flex-col justify-center items-center max-w-[1120px] mx-auto relative">
+          <div class="timeline_progress">
+            <div class="timeline_progress-bar"></div>
+          </div>
+          <% site.data.awards.awards.forEach(function(award, index) { %>
+          <div class="timeline_item">
+            <div class="timeline_left">
+              <div class="timeline_date-text text-secondary-400"><%= award.year %></div>
+            </div>
+            <div class="timeline_centre">
+              <div class="timeline_circle"></div>
+            </div>
+            <div class="timeline_right">
+              <div class="mb-4">
+                <div class="timeline_text">
+                    <%= award.title %>
+                </div>
+              </div>
+              <div class="mb-8">
+                <p class="text-white opacity-70">
+                    <%= award.description %>
+                </p>
+              </div>
+              <div>
+                <img src="<%= award.image %>" loading="lazy" alt="<%= award.title %>" class="w-[480px] align-middle max-w-full inline-block rounded-xl" />
+              </div>
+            </div>
+          </div>
+          <% }); %>
+
+          <div class="overlay-fade-top"></div>
+          <div class="overlay-fade-bottom"></div>
+        </div>
+      </div>
+  
+      <div style="height: 30vh;"></div>
+    </div>
+  </div>
