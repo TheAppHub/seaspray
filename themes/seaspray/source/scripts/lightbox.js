@@ -2,13 +2,19 @@
 let slideIndex = 1;
 
 function openModal() {
-	document.getElementById("myModal").classList.remove("hidden");
-	document.getElementById("myModal").classList.add("block");
+	const modal = document.getElementById("myModal");
+	if (modal) {
+		modal.classList.remove("hidden");
+		modal.classList.add("block");
+	}
 }
 
 function closeModal() {
-	document.getElementById("myModal").classList.add("hidden");
-	document.getElementById("myModal").classList.remove("block");
+	const modal = document.getElementById("myModal");
+	if (modal) {
+		modal.classList.add("hidden");
+		modal.classList.remove("block");
+	}
 }
 
 function plusSlides(n) {
@@ -59,14 +65,15 @@ function showSlides(n) {
 // Close modal when clicking outside of it
 window.onclick = function (event) {
 	let modal = document.getElementById("myModal");
-	if (event.target == modal) {
+	if (modal && event.target == modal) {
 		closeModal();
 	}
 };
 
 // Keyboard navigation
 document.addEventListener("keydown", function (event) {
-	if (!document.getElementById("myModal").classList.contains("hidden")) {
+	const modal = document.getElementById("myModal");
+	if (modal && !modal.classList.contains("hidden")) {
 		if (event.key === "Escape") {
 			closeModal();
 		} else if (event.key === "ArrowLeft") {

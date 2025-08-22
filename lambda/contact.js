@@ -2,11 +2,14 @@ const AWS = require("aws-sdk");
 const ses = new AWS.SES({ region: process.env.AWS_REGION });
 
 exports.handler = async (event) => {
-	// Enable CORS
+	// Enable CORS - Allow your specific domain
 	const headers = {
-		"Access-Control-Allow-Origin": "*",
-		"Access-Control-Allow-Headers": "Content-Type",
+		"Access-Control-Allow-Origin": "https://d2lcxzu5bokjz5.cloudfront.net",
+		"Access-Control-Allow-Headers":
+			"Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
 		"Access-Control-Allow-Methods": "POST,OPTIONS",
+		"Access-Control-Allow-Credentials": "true",
+		"Access-Control-Max-Age": "86400",
 	};
 
 	// Handle preflight requests
