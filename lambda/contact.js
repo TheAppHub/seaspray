@@ -1,5 +1,5 @@
 const AWS = require("aws-sdk");
-const ses = new AWS.SES({ region: process.env.AWS_REGION });
+const ses = new AWS.SES({ region: "ap-southeast-2" });
 
 exports.handler = async (event) => {
 	console.log("Event received:", JSON.stringify(event, null, 2));
@@ -78,6 +78,22 @@ exports.handler = async (event) => {
 			}
 		}
 
+		// Check if environment variables are set
+		if (!process.env.FROM_EMAIL || !process.env.TO_EMAIL) {
+			console.error("Missing environment variables:", {
+				FROM_EMAIL: process.env.FROM_EMAIL,
+				TO_EMAIL: process.env.TO_EMAIL,
+				AWS_REGION: "ap-southeast-2",
+			});
+			return {
+				statusCode: 500,
+				headers,
+				body: JSON.stringify({
+					error: "Server configuration error - missing email settings",
+				}),
+			};
+		}
+
 		// Prepare email content
 		const emailParams = {
 			Source: process.env.FROM_EMAIL,
@@ -122,7 +138,10 @@ exports.handler = async (event) => {
 		return {
 			statusCode: 500,
 			headers,
-			body: JSON.stringify({ error: "Failed to send email" }),
+			body: JSON.stringify({
+				error: "Failed to send email",
+				details: error.message,
+			}),
 		};
 	}
 };
