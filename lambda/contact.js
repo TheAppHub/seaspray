@@ -1,7 +1,8 @@
-const AWS = require("aws-sdk");
-const ses = new AWS.SES({ region: "ap-southeast-2" });
+import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 
-exports.handler = async (event) => {
+const sesClient = new SESClient({ region: "ap-southeast-2" });
+
+export const handler = async (event) => {
 	console.log("Event received:", JSON.stringify(event, null, 2));
 
 	// Get the origin from the request headers
@@ -32,8 +33,11 @@ exports.handler = async (event) => {
 		"Access-Control-Max-Age": "86400",
 	};
 
+	// Get HTTP method from HTTP API v2 event structure
+	const httpMethod = event.requestContext?.http?.method || event.httpMethod;
+
 	// Handle preflight requests
-	if (event.httpMethod === "OPTIONS") {
+	if (httpMethod === "OPTIONS") {
 		console.log("Handling OPTIONS preflight request from origin:", origin);
 		return {
 			statusCode: 200,
@@ -43,8 +47,8 @@ exports.handler = async (event) => {
 	}
 
 	// Only allow POST
-	if (event.httpMethod !== "POST") {
-		console.log("Method not allowed:", event.httpMethod);
+	if (httpMethod !== "POST") {
+		console.log("Method not allowed:", httpMethod);
 		return {
 			statusCode: 405,
 			headers,
@@ -57,17 +61,18 @@ exports.handler = async (event) => {
 		const data = JSON.parse(event.body);
 		console.log("Parsed data:", data);
 
-		// Validate required fields
-		const requiredFields = [
-			"firstName",
-			"lastName",
-			"email",
-			"phone",
-			"suburb",
-			"enquiry",
-		];
+		// Determine form type based on fields present
+		const isDesignCentreForm =
+			data.preferredDate && data.preferredTime && data.projectType;
+		const isContactForm = data.enquiry && data.suburb;
 
-		for (const field of requiredFields) {
+		console.log("Form type detected:", { isDesignCentreForm, isContactForm });
+
+		// Common required fields for both forms
+		const commonRequiredFields = ["firstName", "lastName", "email", "phone"];
+
+		// Validate common required fields
+		for (const field of commonRequiredFields) {
 			if (!data[field]) {
 				console.log("Missing required field:", field);
 				return {
@@ -76,6 +81,46 @@ exports.handler = async (event) => {
 					body: JSON.stringify({ error: `Missing required field: ${field}` }),
 				};
 			}
+		}
+
+		// Validate form-specific fields
+		if (isDesignCentreForm) {
+			// Design centre form validation
+			const designCentreFields = [
+				"preferredDate",
+				"preferredTime",
+				"projectType",
+			];
+			for (const field of designCentreFields) {
+				if (!data[field]) {
+					console.log("Missing design centre field:", field);
+					return {
+						statusCode: 400,
+						headers,
+						body: JSON.stringify({ error: `Missing required field: ${field}` }),
+					};
+				}
+			}
+		} else if (isContactForm) {
+			// Contact form validation
+			if (!data.suburb) {
+				console.log("Missing suburb field for contact form");
+				return {
+					statusCode: 400,
+					headers,
+					body: JSON.stringify({ error: "Missing required field: suburb" }),
+				};
+			}
+		} else {
+			// Neither form type detected
+			console.log("Could not determine form type");
+			return {
+				statusCode: 400,
+				headers,
+				body: JSON.stringify({
+					error: "Invalid form data - could not determine form type",
+				}),
+			};
 		}
 
 		// Check if environment variables are set
@@ -94,6 +139,37 @@ exports.handler = async (event) => {
 			};
 		}
 
+		// Get the message content from either 'enquiry' or 'message' field
+		const messageContent =
+			data.enquiry || data.message || "No additional information provided";
+
+		// Prepare email content based on form type
+		let subject = "New Contact Form Submission - Seaspray Pools";
+		let emailBody = `
+			<h2>New Contact Form Submission</h2>
+			<p><strong>Name:</strong> ${data.firstName} ${data.lastName}</p>
+			<p><strong>Email:</strong> ${data.email}</p>
+			<p><strong>Phone:</strong> ${data.phone}</p>
+		`;
+
+		if (isDesignCentreForm) {
+			subject = "🎨 DESIGN CENTRE: New Consultation Request - Seaspray Pools";
+			emailBody += `
+				<p><strong>Preferred Date:</strong> ${data.preferredDate}</p>
+				<p><strong>Preferred Time:</strong> ${data.preferredTime}</p>
+				<p><strong>Project Type:</strong> ${data.projectType}</p>
+				<p><strong>Additional Information:</strong></p>
+				<p>${messageContent.replace(/\n/g, "<br>")}</p>
+			`;
+		} else {
+			subject = "📧 CONTACT FORM: New Enquiry - Seaspray Pools";
+			emailBody += `
+				<p><strong>Suburb:</strong> ${data.suburb}</p>
+				<p><strong>Enquiry:</strong></p>
+				<p>${messageContent.replace(/\n/g, "<br>")}</p>
+			`;
+		}
+
 		// Prepare email content
 		const emailParams = {
 			Source: process.env.FROM_EMAIL,
@@ -102,21 +178,11 @@ exports.handler = async (event) => {
 			},
 			Message: {
 				Subject: {
-					Data: "New Contact Form Submission - Seaspray Pools",
+					Data: subject,
 				},
 				Body: {
 					Html: {
-						Data: `
-                            <h2>New Contact Form Submission</h2>
-                            <p><strong>Name:</strong> ${data.firstName} ${
-							data.lastName
-						}</p>
-                            <p><strong>Email:</strong> ${data.email}</p>
-                            <p><strong>Phone:</strong> ${data.phone}</p>
-                            <p><strong>Suburb:</strong> ${data.suburb}</p>
-                            <p><strong>Enquiry:</strong></p>
-                            <p>${data.enquiry.replace(/\n/g, "<br>")}</p>
-                        `,
+						Data: emailBody,
 					},
 				},
 			},
@@ -124,8 +190,9 @@ exports.handler = async (event) => {
 
 		console.log("Sending email with params:", emailParams);
 
-		// Send email
-		await ses.sendEmail(emailParams).promise();
+		// Send email using AWS SDK v3
+		const command = new SendEmailCommand(emailParams);
+		await sesClient.send(command);
 		console.log("Email sent successfully");
 
 		return {
