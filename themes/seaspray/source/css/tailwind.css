@@ -3628,6 +3628,11 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-primary-800 {
+  --tw-text-opacity: 1;
+  color: rgb(10 27 38 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
