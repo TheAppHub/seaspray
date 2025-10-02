@@ -1,3 +1,5 @@
+<% const designCenter = site.data['design-centre'] %>
+
 <!-- prettier-ignore -->
 <%- partial('_partials/page-hero', { title: page.title, description: page.description, heroImage: page.image, heroAlt: page.title }) %>
 
@@ -158,10 +160,13 @@
 							back to you, or simply email us at:
 						</p>
 						<a
-							href="mailto:<%= config.email %>"
+							href="mailto:< %= config.email %>"
 							class="text-primary-300 hover:text-primary-200"
 							><%= config.email %></a
 						>
+						<p>
+                            <%- designCenter.contact_section.hours.split('\n').join('<br />') %>
+                        </p>
 					</div>
 				</div>
 

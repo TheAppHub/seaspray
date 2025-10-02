@@ -5,32 +5,19 @@ const sesClient = new SESClient({ region: "ap-southeast-2" });
 export const handler = async (event) => {
 	console.log("Event received:", JSON.stringify(event, null, 2));
 
-	// Get the origin from the request headers
+	// Get the origin from the request headers (kept for logs/debugging)
 	const origin = event.headers?.origin || event.headers?.Origin;
 
-	// Define allowed origins
-	const allowedOrigins = [
-		"https://d2lcxzu5bokjz5.cloudfront.net",
-		"http://d2lcxzu5bokjz5.cloudfront.net",
-		"https://seaspraypools.com.au",
-		"https://www.seaspraypools.com.au",
-		"http://seaspraypools.com.au",
-		"http://www.seaspraypools.com.au",
-	];
-
-	// Check if origin is allowed, default to first allowed origin if not
-	const allowedOrigin = allowedOrigins.includes(origin)
-		? origin
-		: allowedOrigins[0];
-
-	// Enable CORS - Allow multiple domains
-	const headers = {
-		"Access-Control-Allow-Origin": allowedOrigin,
+	// CORS headers (simple, robust): wildcard origin, no credentials
+	const baseHeaders = {
+		"Access-Control-Allow-Origin": "*",
 		"Access-Control-Allow-Headers":
-			"Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
+			"Origin,Accept,Content-Type,Authorization,X-Requested-With,X-Amz-Date,X-Api-Key,X-Amz-Security-Token",
 		"Access-Control-Allow-Methods": "POST,OPTIONS",
-		"Access-Control-Allow-Credentials": "true",
 		"Access-Control-Max-Age": "86400",
+		"Access-Control-Expose-Headers": "Content-Type",
+		Vary: "Origin",
+		"Content-Type": "application/json",
 	};
 
 	// Get HTTP method from HTTP API v2 event structure
@@ -41,7 +28,7 @@ export const handler = async (event) => {
 		console.log("Handling OPTIONS preflight request from origin:", origin);
 		return {
 			statusCode: 200,
-			headers,
+			headers: baseHeaders,
 			body: "",
 		};
 	}
@@ -51,7 +38,7 @@ export const handler = async (event) => {
 		console.log("Method not allowed:", httpMethod);
 		return {
 			statusCode: 405,
-			headers,
+			headers: baseHeaders,
 			body: JSON.stringify({ error: "Method Not Allowed" }),
 		};
 	}
@@ -77,7 +64,7 @@ export const handler = async (event) => {
 				console.log("Missing required field:", field);
 				return {
 					statusCode: 400,
-					headers,
+					headers: baseHeaders,
 					body: JSON.stringify({ error: `Missing required field: ${field}` }),
 				};
 			}
@@ -96,7 +83,7 @@ export const handler = async (event) => {
 					console.log("Missing design centre field:", field);
 					return {
 						statusCode: 400,
-						headers,
+						headers: baseHeaders,
 						body: JSON.stringify({ error: `Missing required field: ${field}` }),
 					};
 				}
@@ -107,7 +94,7 @@ export const handler = async (event) => {
 				console.log("Missing suburb field for contact form");
 				return {
 					statusCode: 400,
-					headers,
+					headers: baseHeaders,
 					body: JSON.stringify({ error: "Missing required field: suburb" }),
 				};
 			}
@@ -116,7 +103,7 @@ export const handler = async (event) => {
 			console.log("Could not determine form type");
 			return {
 				statusCode: 400,
-				headers,
+				headers: baseHeaders,
 				body: JSON.stringify({
 					error: "Invalid form data - could not determine form type",
 				}),
@@ -132,7 +119,7 @@ export const handler = async (event) => {
 			});
 			return {
 				statusCode: 500,
-				headers,
+				headers: baseHeaders,
 				body: JSON.stringify({
 					error: "Server configuration error - missing email settings",
 				}),
@@ -197,14 +184,14 @@ export const handler = async (event) => {
 
 		return {
 			statusCode: 200,
-			headers,
+			headers: baseHeaders,
 			body: JSON.stringify({ message: "Email sent successfully" }),
 		};
 	} catch (error) {
 		console.error("Error:", error);
 		return {
 			statusCode: 500,
-			headers,
+			headers: baseHeaders,
 			body: JSON.stringify({
 				error: "Failed to send email",
 				details: error.message,
