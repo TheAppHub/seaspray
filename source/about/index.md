@@ -6,7 +6,7 @@ description: "Work with the award-winning, custom pool builders that Melbourne f
 
 ## Seaspray Pools Melbourne
 
-### Family-run business for over 30 years
+### Family-run business for over 35 years
 
 We're proud of our reputation for outstanding custom designs, spectacular landscape design options, and unrivalled customer service.
 
