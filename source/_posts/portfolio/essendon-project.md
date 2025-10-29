@@ -3,7 +3,7 @@ title: Essendon Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [Pool & Spa Combo, Award Winning]
+tags: [Pool & Spa Combo, Family Pool]
 thumbnail_image: essendon-project-main.jpg
 hero_image: essendon-project-5.jpg
 gallery:
@@ -17,19 +17,19 @@ project_details:
   location: Essendon, VIC
   completion_date: 2024-02-01
   pool_type: Concrete Swimming Pool & Spa
-  size: 
+  size: 7.4m x 3.5m
   features:
     - Modern design
-    - Fully tiled pool walls
-    - Bisazza glass mosaics
-    - Frameless glass barrier
-    - Rain drop waterfall
+    - Structural upgrades to allow block wall to be built on top of pool shell
+    - Built in conjunction with house construction
+    - Custom glass fully tiled interior 
+    - Rainfall cascade water feature 
+    - LED multicolour lighting
+    - Automatic solar heating
+    - Gas heater
+    
 awards:
-  - name: SPASA Australia Pool of the Year Award 2014
-  - name: SPASA Victoria Gold Award
-    description: Best Residential Concrete Pool Under $100,000
-  - name: SPASA Victoria Highly Commended
-    description: Best Residential Concrete Lap Pool
+
 ---
 
 A custom-designed concrete pool and spa maximising a compact backyard space in Essendon, with architectural tiling and a striking rain drop waterfall feature.
@@ -40,7 +40,7 @@ Positioned along the property boundary, this concrete pool and spa transform a n
 
 
 ## Design Process
-To achieve the seamless look, Seaspray engineered thicker-than-standard pool walls so the fully tiled interior extends beyond the waterline into the surrounding block walls. Bisazza blue glass mosaics add depth and a touch of artistry, replacing plain render with a sophisticated finish. Every detail was considered to blend the pool with the home’s modern architecture.
+To achieve the seamless look, Seaspray engineered thicker-than-standard pool walls so the fully tiled interior extends beyond the waterline into the surrounding block walls. Custom glass blue mosaics add depth and a touch of artistry, replacing plain render with a sophisticated finish. Every detail was considered to blend the pool with the home’s modern architecture.
 
 ## Results
 

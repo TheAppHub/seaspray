@@ -3,7 +3,7 @@ title: Essendon 2 Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [Plunge Pool]
+tags: [Plunge Pool, Award Winning, Family Pool]
 thumbnail_image: essendon-pool-project-gallery-7.jpg
 hero_image: essendon-pool-project-gallery-7.jpg
 gallery:
@@ -17,12 +17,26 @@ project_details:
   location: Essendon, VIC
   completion_date: 2024-02-01
   pool_type: Concrete Plunge Pool
-  size: 8m x 4m
+  size: 4.5m x 3m
   features:
     - Compact plunge pool design
     - Acrylic underwater viewing window
     - Hidden Swimroll pool cover
-    - 1.7m flat depth
+    - Surface water feature with LED light
+    -	Integrated raised wall
+    -	Automation
+    -	Freshwater and chemical management system 
+    -	LED multicolour lighting
+    -	Fully tiled interior 
+    -	Electric heat pump system
+    -	Gas heater
+    -	Automatic water leveller
+    
+
+awards:
+  - name: 2024 SPASA VIC Concrete Pool - Up to $120,000
+  - name: 2024 SPASA VIC Courtyard or Small Pool - Over $80,000
+  - name: 2024 SPASA VIC Residential Lighting Feature
 ---
 
 A bold and innovative plunge pool in Essendon, cleverly designed for tight spaces with an acrylic viewing window, hidden swim cover and year-round comfort.
