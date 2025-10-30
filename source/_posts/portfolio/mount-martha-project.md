@@ -3,7 +3,7 @@ title: Mount Martha Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [Family Pool]
+tags: [Family Pool, Lap Pool]
 thumbnail_image: mount-martha-pool-project-gallery-5.jpg
 hero_image: mount-martha-pool-project-gallery-5.jpg
 gallery:
@@ -21,10 +21,18 @@ project_details:
   pool_type: Oceanfront Concrete Swimming Pool
   size: 12m x 3m
   features:
-    - Modern coastal design
-    - Above-ground construction
-    - Mini spa with Venturi jets
-    - Sandstone pool coping
+   -	Coastal, out of ground design
+   -	External ledge for mini spa design with 3 x jets
+   -	Custom internal steps
+   -	Fully tiled interior with 23mm ceramic tiles
+   -	Tiled horizon edge in lieu of coping
+   -	LED multicolour lighting
+   -	Automatic solar heating
+   -	Water and chemical management system with pH doser 
+   -	Infloor cleaning design
+   -	Automatic water leveller
+   -	Internal footing system due to sloping site conditions
+  
 ---
 
 A stunning 12m x 3m custom concrete pool and mini spa in Mount Martha, designed for uninterrupted ocean views and effortless coastal living.

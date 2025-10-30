@@ -18,13 +18,16 @@ project_details:
   location: Kew, VIC
   completion_date: 2024-02-01
   pool_type: Circular Concrete Plunge Pool
-  size: 4m diameter, 1.7m flat depth
+  size: 4m diameter
   features:
-    - Modern design
+    - Custom design
     - 4m circular concrete pool
-    - Light blue glass pebble finish
-    - Curved swimout seat
-    - Concealed filtration shed
+    -	Custom Seaspray interior 
+    -	Curved swimout seat 
+    -	LED multicolour lighting
+    -	Electric heat pump system
+    -	Water and chemical management system 
+    
   
 awards:
 - name: 2019 SPASA Victoria Gold Award
@@ -40,7 +43,7 @@ Tucked within a mature residential block in Kew, this distinctive round concrete
 
 ## Design Process
 
-The pool’s standout circular shape showcases the versatility of concrete construction, blending naturally with the flowing garden landscape. Finished in a sparkling light blue glass pebble interior, it reflects sunlight beautifully. At the far end, a curved external swimout (2m x 500mm) serves as both an entry point and a tranquil seat facing the lush garden.
+The pool’s standout circular shape showcases the versatility of concrete construction, blending naturally with the flowing garden landscape. Finished in a sparkling light blue custom designed interior, it reflects sunlight beautifully. At the far end, a curved external swimout (2m x 500mm) serves as both an entry point and a tranquil seat facing the lush garden.
 
 ## Results
 

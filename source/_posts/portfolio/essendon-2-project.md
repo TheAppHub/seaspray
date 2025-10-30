@@ -22,7 +22,7 @@ project_details:
     - Compact plunge pool design
     - Acrylic underwater viewing window
     - Hidden Swimroll pool cover
-    - Surface water feature with LED light
+    - Sheerface water feature with LED light
     -	Integrated raised wall
     -	Automation
     -	Freshwater and chemical management system 
