@@ -3,7 +3,7 @@ title: Romsey Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [Pool & Spa Combo, Family Pool]
+tags: [Pool & Spa Combo, Lap Pool]
 thumbnail_image: romsey-pool-project-main.jpg
 hero_image: romsey-pool-project-main.jpg
 gallery:
@@ -17,12 +17,19 @@ project_details:
   location: Romsey, VIC
   completion_date: 2024-02-01
   pool_type: Concrete Swimming Pool & Spa
-  size: 15m x 15m
+  size: 15m x 5m
   features:
-    - Modern design
-    - Fully tiled spa
-    - Raised water feature
-    - Shallow safety edge
+    - Partially out of ground design 
+    -	External fully tiled spa with 6 x spa jets
+    -	Full length internal ledge with highlighted tiled edge
+    -	External swimout with highlighted tiled edge
+    -	Sheerface water feature incorporated into raised wall
+    -	Waterline tile band with custom Seaspray interior 
+    -	LED multicolour lighting
+    -	Gas heater 
+    -	Automatic solar heating
+    -	Water and chemical management system with pH doser 
+    
 
   awards:
   
