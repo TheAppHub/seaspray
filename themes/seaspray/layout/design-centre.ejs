@@ -259,7 +259,7 @@
 
             if (response.ok) {
                 statusDiv.className = "mt-4 p-4 rounded-lg bg-green-500 text-white";
-                statusDiv.textContent = "Thank you for booking your consultation. We will contact you to confirm your appointment.";
+                statusDiv.textContent = "Thanks — your email was sent successfully. We'll be in touch soon.";
                 form.reset();
             } else {
                 throw new Error("Form submission failed");
@@ -269,7 +269,7 @@
             statusDiv.textContent = "Sorry, there was an error submitting your booking. Please try again.";
         } finally {
             submitButton.disabled = false;
-            submitButton.textContent = "Book Consultation";
+            submitButton.textContent = "Request a Consultation";
             statusDiv.classList.remove("hidden");
         }
     });

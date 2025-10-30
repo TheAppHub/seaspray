@@ -130,6 +130,19 @@ export const handler = async (event) => {
 		const messageContent =
 			data.enquiry || data.message || "No additional information provided";
 
+		// Normalise optional fields used by the contact form
+		const homeType = data.homeType || "Not specified";
+		const plansAvailable = (() => {
+			const v = data.plansAvailable;
+			if (typeof v === "boolean") return v ? "Yes" : "No";
+			if (typeof v === "string") {
+				return ["true", "on", "1", "yes", "y"].includes(v.toLowerCase())
+					? "Yes"
+					: "No";
+			}
+			return "No"; // unchecked checkbox will be absent
+		})();
+
 		// Prepare email content based on form type
 		let subject = "New Contact Form Submission - Seaspray Pools";
 		let emailBody = `
@@ -152,6 +165,8 @@ export const handler = async (event) => {
 			subject = "📧 CONTACT FORM: New Enquiry - Seaspray Pools";
 			emailBody += `
 				<p><strong>Suburb:</strong> ${data.suburb}</p>
+				<p><strong>Home Type:</strong> ${homeType}</p>
+				<p><strong>Plans Available:</strong> ${plansAvailable}</p>
 				<p><strong>Enquiry:</strong></p>
 				<p>${messageContent.replace(/\n/g, "<br>")}</p>
 			`;
