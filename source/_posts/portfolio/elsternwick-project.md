@@ -3,7 +3,7 @@ title: Elsternwick Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [Pool & Spa Combo, Family Pool, Award Winning]
+tags: [Pool & Spa Combo, Family Pool]
 thumbnail_image: elsternwick-pool-project-main.jpg
 hero_image: elsternwick-pool-project-gallery-1.jpg
 featured: 2
@@ -21,19 +21,17 @@ project_details:
   size: 7m x 3m
   features:
     - Modern design
-    - Built-in heated spa
-    - Water and chemical management system
+    - Integrated spa design
+    - Water and chemical management system with pH doser 
     - LED multicolour lighting
-    - Fully tiled interior
-    - Solar heating
-    - Smart control integration
+    - Fully tiled interior 
+    - Infloor cleaning design
+    - Automatic solar heating
+    - Gas heater
+    - Automatic water leveller
+    
 awards:
-  - name: SPASA Australia Pool of the Year Award 2014
-  - name: SPASA Victoria Gold Award
-    description: Best Residential Concrete Pool Under $100,000
-  - name: SPASA Victoria Highly Commended
-    description: Best Residential Concrete Lap Pool
-type: portfolio
+
 ---
 
 A stunning modern concrete swimming pool project in Elsternwick, designed to create a luxurious outdoor living space that complements the contemporary architecture of the home.

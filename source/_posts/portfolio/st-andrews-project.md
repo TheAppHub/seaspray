@@ -15,13 +15,19 @@ project_details:
   location: St Andrews, VIC
   completion_date: 2024-02-01
   pool_type: Concrete Lap Pool
-  size: 25m
+  size: 25m x 2.5m-3.5m
   features:
-    - Modern design
-    - 25m concrete lap pool
-    - Cliff-face construction
-    - Automatic pool cover
-    - White tiled lap lane
+    - Lap pool design 
+    -	Out of ground construction 
+    -	Uniform depth design 
+    -	External seating ledge with spa jets
+    -	Internal custom entry steps
+    -	Fully tiled interior with step highlights and internal swimming lane marker
+    -	LED multicolour lighting
+    -	Electric heat pump system
+    -	Water and chemical management system 
+    -	Hidden automatic pool cover
+    
 
 awards:
   - name: SPASA Australia Pool of the Year Award 2014
@@ -43,4 +49,4 @@ Constructed on a sheer cliff face, this steep site demanded innovative engineeri
 
 ## Results
 
-At the shallow end, a concealed tank houses an automatic Remco pool cover neatly hidden beneath the deck for safety and effortless maintenance. Solar and electric heating, an advanced water and chemical management system, LED multicolour lighting, and a dark blue fully tiled interior with a crisp white lap lane combine to create a premium swimming experience, year-round. This pool was proudly awarded the SPASA Australia Pool of the Year and SPASA Victoria Gold Award for Best Residential Concrete Pool under $100,000.
+At the shallow end, a concealed tank houses an automatic pool cover neatly hidden beneath the deck for safety and effortless maintenance. Electric heating, an advanced water and chemical management system, LED multicolour lighting, and a dark blue fully tiled interior with a crisp white lap lane combine to create a premium swimming experience, year-round. This pool was proudly awarded the SPASA Australia Pool of the Year!

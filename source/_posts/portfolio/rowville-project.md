@@ -15,13 +15,17 @@ project_details:
   location: Rowville, VIC
   completion_date: 2024-02-01
   pool_type: Concrete Swimming Pool for a Small Backyard
-  size: 
+  size: 7m x 4.6m x 2.8-3.5m 
   features:
-    - Modern design
-    - Compact custom concrete pool
-    - Built-in concrete stools
-    - Extended step nook
-    - Deep-end play ledge
+    - Custom, innovative design wrapping around house
+    -	Internal seating ledge with custom entry steps
+    -	Custom designed bar seats 
+    -	Glass waterline tile band with custom Seaspray interior 
+    -	LED multicolour lighting
+    -	Automatic solar heating
+    -	Water and chemical management system 
+    -	Automatic water leveller
+    
 
   awards:
 

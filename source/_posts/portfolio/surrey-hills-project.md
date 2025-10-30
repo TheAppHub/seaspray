@@ -15,12 +15,18 @@ project_details:
   location: Surrey Hills, VIC
   completion_date: 2024-02-01
   pool_type: Concrete Swimming Pool & Elevated Spa
-  size: 
+  size: 7m x 2.5m
   features:
-    - Modern design
-    - Elevated tiled spa
-    - Cornered spillway waterfall
-    - Underwater bluestone paving
+    - Out of ground design 
+    -	Integrated elevated spa with 6 x jets
+    -	Cornered spillway waterfall
+    -	Underwater bluestone paving for full length ledge and spa seat
+    -	Waterline tile band with custom Seaspray interior 
+    -	LED multicolour lighting
+    -	Electric heat pump system
+    -	Gas heater 
+    -	Automatic solar heating
+    
  
 awards:
   - name: 2018 SPASA Victoria Gold Award

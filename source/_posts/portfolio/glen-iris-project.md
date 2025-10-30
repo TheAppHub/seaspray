@@ -3,7 +3,7 @@ title: Glen Iris Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
-tags: [Pool & Spa Combo]
+tags: [Pool & Spa Combo, Family Pool]
 thumbnail_image: glen-iris-pool-project-main.jpg
 hero_image: glen-iris-pool-project-main.jpg
 gallery:
@@ -17,12 +17,21 @@ project_details:
   location: Glen Iris, VIC
   completion_date: 2024-02-01
   pool_type: Concrete Swimming Pool & Spa
-  size: 
+  size: 9m x 4m
   features:
-    - Modern design
-    - Centre-depth layout with steps
-    - 23mm 'Seaspray' interior tiles
-    - Full automation and infloor cleaning
+    - Fully tiled interior with 23mm ceramic tiles
+    -	LED multicolour lighting
+    -	Electric heat pump system
+    -	Gas heater
+    -	Automation
+    -	Automatic water leveller
+    -	Integrated underground pool cover
+    -	Centre depth design with steps at each end
+    -	Partially out of ground
+    -	Infloor cleaning design 
+    -	Integrated spa with 8 x spa jets
+    -	Water and chemical management system with pH doser 
+    
   awards:
 
 ---
