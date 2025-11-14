@@ -5,7 +5,7 @@ date: 2024-03-20
 categories: [portfolio]
 tags: [Pool & Spa Combo, Family Pool]
 thumbnail_image: lilydale-seaspray-pools1.jpg
-hero_image: lilydale-seaspray-pools1.jpg
+hero_image: lilydale-seaspray-pools2.jpg
 featured: 
 gallery:
   - lilydale-seaspray-pools1.jpg
