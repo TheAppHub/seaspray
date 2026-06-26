@@ -20,7 +20,7 @@ project_details:
   location: Caulfield North, VIC
   completion_date: 2024-02-01
   pool_type: Concrete Swimming Pool & Spa
-  size: 
+  size: 10mx 4.5m x 2.5m
   features:
     - Custom concrete pool with a multi-zone layout
     - Integrated lap pool section for swimming and exercise
