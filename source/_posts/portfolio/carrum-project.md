@@ -1,5 +1,5 @@
 ---
-title: Bonbeach Project
+title: Carrum Project
 layout: portfolio-project
 date: 2024-03-20
 categories: [portfolio]
@@ -15,7 +15,7 @@ gallery:
   - seaspray_pools_project_carrum5.jpg
   - seaspray_pools_project_carrum6.jpg
 project_details:
-  location: Bonbeach, VIC
+  location: Carrum, VIC
   completion_date: 2024-02-01
   pool_type: Concrete Swimming Pool & Spa
   size: 4m x 2.5m
